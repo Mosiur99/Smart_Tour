@@ -10,4 +10,4 @@ echo "Building SmartTour..."
 mvn -q package -DskipTests
 
 echo "Starting on http://localhost:${PORT}"
-java -jar target/smart-tour-planner-1.0.0.jar
+java -jar target/smart-tour-planner-1.0.0.war

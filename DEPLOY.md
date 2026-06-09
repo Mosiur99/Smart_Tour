@@ -64,7 +64,7 @@ User=www-data
 WorkingDirectory=/opt/smarttour
 Environment=SPRING_PROFILES_ACTIVE=prod
 Environment=PORT=8080
-ExecStart=/usr/bin/java -jar /opt/smarttour/target/smart-tour-planner-1.0.0.jar
+ExecStart=/usr/bin/java -jar /opt/smarttour/target/smart-tour-planner-1.0.0.war
 Restart=always
 
 [Install]

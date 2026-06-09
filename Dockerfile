@@ -1,17 +1,19 @@
 # Build stage
-FROM eclipse-temurin:19-jdk-alpine AS build
+FROM eclipse-temurin:19-jdk AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
-RUN apk add --no-cache maven && \
-    mvn -q package -DskipTests
+RUN apt-get update && apt-get install -y --no-install-recommends maven && \
+    mvn -q package -DskipTests && \
+    rm -rf /var/lib/apt/lists/*
 
-# Run stage
-FROM eclipse-temurin:19-jre-alpine
+# Run stage — Debian-based JRE (Alpine breaks JSP compilation in fat JARs)
+FROM eclipse-temurin:19-jre
 WORKDIR /app
-RUN addgroup -S app && adduser -S app -G app
-COPY --from=build /app/target/smart-tour-planner-1.0.0.jar app.jar
+RUN useradd -r -u 10001 app
+COPY --from=build /app/target/smart-tour-planner-1.0.0.war app.war
 USER app
 EXPOSE 8080
 ENV JAVA_OPTS="-Xmx512m"
-ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -Djava.awt.headless=true -jar app.jar"]
+ENV SPRING_PROFILES_ACTIVE=prod
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -Djava.awt.headless=true -Djava.io.tmpdir=/tmp -jar app.war"]
