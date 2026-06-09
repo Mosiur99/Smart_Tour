@@ -1,0 +1,124 @@
+{
+  "id": "gopalganj",
+  "name": "Gopalganj",
+  "division": "Dhaka",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Gopalganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 330,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 330-550 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Gopalganj to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 330,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 330-550 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Tungipara Bangabandhu Mausoleum Complex",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Orakandi Thakur Bari",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Ulpur Zamindar Bari",
+      "area": "district",
+      "priority": 3
+    },
+    {
+      "name": "Madhumati river areas",
+      "area": "nature",
+      "priority": 4
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Modhumoti",
+      "location": "Tungipara, Gopalganj",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/4-gopalganj"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Chhana sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local fish dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 900,
+    "foodPerPerson": 900
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Tungipara Bangabandhu Mausoleum Complex",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Orakandi Thakur Bari",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Ulpur Zamindar Bari",
+      "area": "district",
+      "priority": 3
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Gopalganj Science and Technology University",
+      "type": "public",
+      "location": "Gopalganj",
+      "note": "Verify the current official institution name before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Hotel Modhumoti",
+      "type": "hotel",
+      "recommendedArea": "Tungipara, Gopalganj",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/4-gopalganj"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Gopalganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 330,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 330-550 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

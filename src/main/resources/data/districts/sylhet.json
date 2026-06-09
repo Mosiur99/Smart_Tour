@@ -1,0 +1,170 @@
+{
+  "id": "sylhet",
+  "name": "Sylhet",
+  "division": "Sylhet",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Sylhet",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 540,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 540-900 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Sylhet or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 360,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 360-1190 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Sylhet to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 540,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 540-900 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Sylhet or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 360,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 360-1190 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Ratargul Swamp Forest",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Jaflong",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Bichanakandi",
+      "area": "district",
+      "priority": 3
+    },
+    {
+      "name": "Hazrat Shah Jalal shrine",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Lalakhal",
+      "area": "district",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Motel Sylhet",
+      "location": "Airport Road, Borosola, Sylhet",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/54-sylhet"
+    },
+    {
+      "name": "Motel Jaflong",
+      "location": "Guccha Gram, Jaflong, Sylhet",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/54-sylhet"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Satkora beef",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Tea",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local citrus fruits",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1300,
+    "foodPerPerson": 1100
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Hazrat Shah Jalal shrine",
+      "area": "heritage",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Shahjalal University of Science and Technology",
+      "type": "public",
+      "location": "Sylhet",
+      "note": "Representative public university"
+    },
+    {
+      "name": "Sylhet Agricultural University",
+      "type": "public",
+      "location": "Sylhet",
+      "note": "Representative agricultural university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Motel Sylhet",
+      "type": "motel",
+      "recommendedArea": "Airport Road, Borosola, Sylhet",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/54-sylhet"
+    },
+    {
+      "name": "Motel Jaflong",
+      "type": "motel",
+      "recommendedArea": "Guccha Gram, Jaflong, Sylhet",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/54-sylhet"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Sylhet",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 540,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 540-900 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Sylhet or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 360,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 360-1190 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

@@ -1,0 +1,112 @@
+{
+  "id": "khagrachhari",
+  "name": "Khagrachhari",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Khagrachhari",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 610,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 610-1010 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Khagrachhari to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 610,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 610-1010 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Alutila Cave",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Richhang waterfall",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Horticulture Heritage Park",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Debotar Pukur",
+      "area": "district",
+      "priority": 4
+    },
+    {
+      "name": "District hill viewpoints",
+      "area": "nature",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Motel Khagrachari",
+      "location": "Main Road, adjacent to Chengi Bridge, Khagrachari Sadar",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/47-khagrachari"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Hill bamboo dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Seasonal fruits",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Horticulture Heritage Park",
+      "area": "nature",
+      "priority": 3
+    }
+  ],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "name": "Motel Khagrachari",
+      "type": "motel",
+      "recommendedArea": "Main Road, adjacent to Chengi Bridge, Khagrachari Sadar",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/47-khagrachari"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Khagrachhari",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 610,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 610-1010 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

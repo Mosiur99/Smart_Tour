@@ -1,0 +1,55 @@
+{
+  "id": "nawabganj",
+  "name": "Nawabganj",
+  "division": "Rajshahi",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Direct Bus to Nawabganj",
+        "departureTime": "22:00",
+        "costPerPerson": 800,
+        "note": "Overnight journey"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Direct Bus from Nawabganj",
+        "departureTime": "21:00",
+        "costPerPerson": 800
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Nawabganj District Museum / Landmark",
+      "area": "city",
+      "priority": 1
+    },
+    {
+      "name": "Nawabganj Local Market",
+      "area": "city",
+      "priority": 2
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Nawabganj Guest House",
+      "acPrice": 1500,
+      "nonAcPrice": 800,
+      "review": "Basic local accommodation"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Nawabganj local specialty",
+      "location": "Town center"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1000,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": ""
+}

@@ -1,0 +1,127 @@
+{
+  "id": "moulvibazar",
+  "name": "Moulvibazar",
+  "division": "Sylhet",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Moulvibazar",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 460,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 460-760 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Moulvibazar or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 300,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 300-1020 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Moulvibazar to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 460,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 460-760 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Moulvibazar or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 300,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 300-1020 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Lawachara National Park",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Madhabkunda Waterfall",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Sreemangal tea gardens",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Madhabpur Lake",
+      "area": "nature",
+      "priority": 4
+    },
+    {
+      "name": "Baikka Beel",
+      "area": "nature",
+      "priority": 5
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Seven-layer tea",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Pineapple",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Satkora dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1300,
+    "foodPerPerson": 1100
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Moulvibazar district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Moulvibazar",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 460,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 460-760 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Moulvibazar or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 300,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 300-1020 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

@@ -1,0 +1,108 @@
+{
+  "id": "faridpur",
+  "name": "Faridpur",
+  "division": "Dhaka",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Faridpur",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 250,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 250-420 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Faridpur to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 250,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 250-420 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Jasimuddin Museum and ancestral home",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Mathurapur Deul",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Gerda Mosque",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Faridpur riverfront areas",
+      "area": "nature",
+      "priority": 4
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Date molasses sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local river fish dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 900,
+    "foodPerPerson": 900
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Jasimuddin Museum and ancestral home",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Mathurapur Deul",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Gerda Mosque",
+      "area": "heritage",
+      "priority": 3
+    }
+  ],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Faridpur district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Faridpur",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 250,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 250-420 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

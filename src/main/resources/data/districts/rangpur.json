@@ -1,0 +1,150 @@
+{
+  "id": "rangpur",
+  "name": "Rangpur",
+  "division": "Rangpur",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Rangpur",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 670,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 670-1110 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Rangpur or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 440,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 440-1480 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Rangpur to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 670,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 670-1110 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Rangpur or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 440,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 440-1480 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Tajhat Palace",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Carmichael College heritage campus",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Begum Rokeya Memorial Centre, Pairaband",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Chikli Water Park area",
+      "area": "nature",
+      "priority": 4
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Motel Rangpur",
+      "location": "R. K. Road, Rangpur",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/32-rangpur"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Haribhanga mango",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1200,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Tajhat Palace",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Carmichael College heritage campus",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Begum Rokeya Memorial Centre, Pairaband",
+      "area": "heritage",
+      "priority": 3
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Begum Rokeya University, Rangpur",
+      "type": "public",
+      "location": "Rangpur",
+      "note": "Representative public university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Motel Rangpur",
+      "type": "motel",
+      "recommendedArea": "R. K. Road, Rangpur",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/32-rangpur"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Rangpur",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 670,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 670-1110 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Rangpur or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 440,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 440-1480 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

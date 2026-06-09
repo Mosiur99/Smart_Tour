@@ -1,0 +1,127 @@
+{
+  "id": "chapainawabganj",
+  "name": "Chapainawabganj",
+  "division": "Rajshahi",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Chapainawabganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 720,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 720-1190 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Chapainawabganj to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 720,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 720-1190 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Choto Sona Mosque",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Tahkhana Complex",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Darasbari Mosque",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Gour archaeological areas",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Mango orchards",
+      "area": "nature",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Motel Sonamosjid",
+      "location": "Sonamosjid, Shibgonj, Chapainawabganj",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/65-chapainawabganj"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Mango",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Kalai roti",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1100,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Choto Sona Mosque",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Tahkhana Complex",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Darasbari Mosque",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Gour archaeological areas",
+      "area": "heritage",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "name": "Motel Sonamosjid",
+      "type": "motel",
+      "recommendedArea": "Sonamosjid, Shibgonj, Chapainawabganj",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/65-chapainawabganj"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Chapainawabganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 720,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 720-1190 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

@@ -1,0 +1,182 @@
+{
+  "id": "coxs-bazar",
+  "name": "Cox's Bazar",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Cox's Bazar",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 870,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 870-1440 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Cox's Bazar to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 870,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 870-1440 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Cox's Bazar sea beach",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Inani Beach",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Himchari National Park",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Marine Drive",
+      "area": "district",
+      "priority": 4
+    },
+    {
+      "name": "Maheshkhali Island",
+      "area": "district",
+      "priority": 5
+    },
+    {
+      "name": "Teknaf and Saint Martin route gateway",
+      "area": "district",
+      "priority": 6
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Shaibal",
+      "location": "Motel Road, Cox's Bazar",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Motel Labonee",
+      "location": "Cox's Bazar",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Motel Upal",
+      "location": "Motel Road, Cox's Bazar",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Motel Probal",
+      "location": "Motel Road, Cox's Bazar",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Hotel Ne-Taung",
+      "location": "Teknaf, Cox's Bazar",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Seafood",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Dried fish",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Coconut-based snacks",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [],
+  "popularUniversities": [
+    {
+      "name": "Cox's Bazar International University",
+      "type": "private",
+      "location": "Cox's Bazar",
+      "note": "Verify current UGC status before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Hotel Shaibal",
+      "type": "hotel",
+      "recommendedArea": "Motel Road, Cox's Bazar",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Motel Labonee",
+      "type": "motel",
+      "recommendedArea": "Cox's Bazar",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Motel Upal",
+      "type": "motel",
+      "recommendedArea": "Motel Road, Cox's Bazar",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Motel Probal",
+      "type": "motel",
+      "recommendedArea": "Motel Road, Cox's Bazar",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    },
+    {
+      "name": "Hotel Ne-Taung",
+      "type": "hotel",
+      "recommendedArea": "Teknaf, Cox's Bazar",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/45-coxs-bazar"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Cox's Bazar",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 870,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 870-1440 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

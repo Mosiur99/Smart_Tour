@@ -1,0 +1,8 @@
+target/
+.git/
+.idea/
+*.iml
+.cursor/
+bangladesh_64_district_tourism_dataset*.json
+*.md
+!DATA.md

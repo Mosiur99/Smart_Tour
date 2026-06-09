@@ -1,0 +1,127 @@
+{
+  "id": "bagerhat",
+  "name": "Bagerhat",
+  "division": "Khulna",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Bagerhat",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 600,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 600-990 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Bagerhat to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 600,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 600-990 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Historic Mosque City of Bagerhat",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Sixty Dome Mosque",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Khan Jahan Ali Shrine",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Nine Dome Mosque",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Sundarbans gateway route areas",
+      "area": "district",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Parjatan Motel & Youth INN, Bagerhat",
+      "location": "Ronobijoypur, Bagerhat",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/55-bagerhat"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Coconut-based sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Shrimp dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1200,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Historic Mosque City of Bagerhat",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Sixty Dome Mosque",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Khan Jahan Ali Shrine",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Nine Dome Mosque",
+      "area": "heritage",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "name": "Parjatan Motel & Youth INN, Bagerhat",
+      "type": "motel_and_youth_inn",
+      "recommendedArea": "Ronobijoypur, Bagerhat",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/55-bagerhat"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Bagerhat",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 600,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 600-990 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

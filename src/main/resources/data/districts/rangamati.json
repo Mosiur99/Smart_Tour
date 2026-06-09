@@ -1,0 +1,123 @@
+{
+  "id": "rangamati",
+  "name": "Rangamati",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Rangamati",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 700,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 700-1160 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Rangamati to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 700,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 700-1160 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Kaptai Lake",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Hanging Bridge",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Shuvolong waterfall",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Rajban Vihara",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Kaptai National Park",
+      "area": "nature",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Holiday Complex Rangamati",
+      "location": "Parjatan Holiday Complex, Rangamati",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/50-rangamati"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Bamboo chicken",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Lake fish",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Hill fruits",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Rajban Vihara",
+      "area": "heritage",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Rangamati Science and Technology University",
+      "type": "public",
+      "location": "Rangamati",
+      "note": "Verify current official name before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Holiday Complex Rangamati",
+      "type": "holiday_complex",
+      "recommendedArea": "Parjatan Holiday Complex, Rangamati",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/50-rangamati"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Rangamati",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 700,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 700-1160 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

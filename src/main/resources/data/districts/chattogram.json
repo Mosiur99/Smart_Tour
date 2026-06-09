@@ -1,0 +1,171 @@
+{
+  "id": "chattogram",
+  "name": "Chattogram",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Chattogram",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 600,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 600-990 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Chattogram or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 390,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 390-1320 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Chattogram to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 600,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 600-990 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Chattogram or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 390,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 390-1320 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Patenga Beach",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Foy's Lake",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "CRB hill area",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Ethnological Museum",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Anderkilla and old city heritage areas",
+      "area": "heritage",
+      "priority": 5
+    },
+    {
+      "name": "Sitakunda eco-park areas",
+      "area": "nature",
+      "priority": 6
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Shaikat",
+      "location": "Station Road, Chattogram",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/43-chattogram"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Mezban beef",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Kala bhuna",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Dried fish dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Ethnological Museum",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Anderkilla and old city heritage areas",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "University of Chittagong",
+      "type": "public",
+      "location": "Hathazari",
+      "note": "Representative public university"
+    },
+    {
+      "name": "Chittagong University of Engineering & Technology (CUET)",
+      "type": "public",
+      "location": "Raozan",
+      "note": "Representative engineering university"
+    },
+    {
+      "name": "Chattogram Veterinary and Animal Sciences University",
+      "type": "public",
+      "location": "Chattogram city",
+      "note": "Representative specialist university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Hotel Shaikat",
+      "type": "hotel",
+      "recommendedArea": "Station Road, Chattogram",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/43-chattogram"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Chattogram",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 600,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 600-990 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Chattogram or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 390,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 390-1320 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

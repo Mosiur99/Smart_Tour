@@ -1,0 +1,162 @@
+{
+  "id": "dhaka",
+  "name": "Dhaka",
+  "division": "Dhaka",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "local",
+        "name": "Travel within Dhaka metropolitan area",
+        "note": "Use local bus, metro rail, ride-sharing or CNG as appropriate; check live fares.",
+        "costPerPerson": 230,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 230-680 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "local",
+        "name": "Return within Dhaka metropolitan area",
+        "note": "Check live route and fare information.",
+        "costPerPerson": 230,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 230-680 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Lalbagh Fort",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Ahsan Manzil Museum",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Bangladesh National Parliament Complex",
+      "area": "district",
+      "priority": 3
+    },
+    {
+      "name": "Dhakeshwari National Temple",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "National Museum",
+      "area": "heritage",
+      "priority": 5
+    },
+    {
+      "name": "Old Dhaka riverfront at Sadarghat",
+      "area": "nature",
+      "priority": 6
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Hotel Abakash",
+      "location": "Mohakhali C/A, Dhaka",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/1-dhaka"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Bakarkhani",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Kacchi biryani",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Old Dhaka kebab",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 900,
+    "foodPerPerson": 900
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Lalbagh Fort",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Ahsan Manzil Museum",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Bangladesh National Parliament Complex",
+      "area": "district",
+      "priority": 3
+    },
+    {
+      "name": "Dhakeshwari National Temple",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "National Museum",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "University of Dhaka",
+      "type": "public",
+      "location": "Dhaka city",
+      "note": "Representative major university"
+    },
+    {
+      "name": "Bangladesh University of Engineering and Technology (BUET)",
+      "type": "public",
+      "location": "Dhaka city",
+      "note": "Representative engineering university"
+    },
+    {
+      "name": "Jagannath University",
+      "type": "public",
+      "location": "Dhaka city",
+      "note": "Representative public university"
+    },
+    {
+      "name": "Jahangirnagar University",
+      "type": "public",
+      "location": "Savar",
+      "note": "Located within Dhaka District"
+    },
+    {
+      "name": "Sher-e-Bangla Agricultural University",
+      "type": "public",
+      "location": "Dhaka city",
+      "note": "Representative agricultural university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Hotel Abakash",
+      "type": "hotel",
+      "recommendedArea": "Mohakhali C/A, Dhaka",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/1-dhaka"
+    }
+  ],
+  "busTrainTransport": {
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

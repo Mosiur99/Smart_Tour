@@ -1,0 +1,241 @@
+{
+  "id": "rajshahi",
+  "name": "Rajshahi",
+  "division": "Rajshahi",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "train",
+        "name": "Banalata Express",
+        "departureTime": "13:30",
+        "ticketBookingNote": "Ticket katar somoy",
+        "costPerPerson": 450,
+        "note": "night journey"
+      },
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Rajshahi",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 560,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 560-930 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Rajshahi or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 370,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 370-1240 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "train",
+        "name": "Dhumketu Express",
+        "departureTime": "23:30",
+        "ticketBookingNote": "Ticket katar somoy",
+        "costPerPerson": 495,
+        "note": ""
+      },
+      {
+        "mode": "bus",
+        "name": "Bus from Rajshahi to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 560,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 560-930 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Rajshahi or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 370,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 370-1240 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Varendra Research Museum",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Puthia Temple Complex",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Padma river embankment",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Bagha Mosque",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Usha Silk / Sopura Silk Mill",
+      "tip": "best",
+      "area": "city",
+      "priority": 4
+    },
+    {
+      "name": "Shah Makhdum shrine area",
+      "area": "heritage",
+      "priority": 5
+    },
+    {
+      "name": "Puthia Rajbari",
+      "offDay": "Sunday",
+      "tip": "Robibar off day",
+      "area": "puthia",
+      "priority": 6
+    },
+    {
+      "name": "Sharif Tea Garden",
+      "area": "outskirts",
+      "priority": 10
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Parjatan Motel Rajshahi",
+      "location": "Abdul Mojid Road, Rajshahi",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/24-rajshahi"
+    },
+    {
+      "name": "Hotel Swiss International",
+      "acPrice": 1800,
+      "nonAcPrice": 1000,
+      "review": "Review eto valo na"
+    },
+    {
+      "name": "Hotel Nice International",
+      "acPrice": 2200,
+      "nonAcPrice": 1500,
+      "review": "Valo maner hotel"
+    },
+    {
+      "name": "Laxmipur Mor (Mintu Chattar) Area Hotels",
+      "acPrice": 800,
+      "nonAcPrice": 300,
+      "review": "Ekhan kom damer onk gulo avashik hotel pawoa jay",
+      "location": "Laxmipur Mor (Mintu Chattar)"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Mango",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Kalai roti",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Rana Mishti Ghor",
+      "location": "CNG Mor"
+    },
+    {
+      "name": "Kala Vuna",
+      "location": "Hanif Kala Vuna, Gorur Hat"
+    },
+    {
+      "name": "Street Food",
+      "location": "C & B Mor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1100,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "https://youtu.be/BMW19WuApt0",
+  "historicalPlaces": [
+    {
+      "name": "Varendra Research Museum",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Puthia Temple Complex",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Bagha Mosque",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Shah Makhdum shrine area",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "University of Rajshahi",
+      "type": "public",
+      "location": "Rajshahi",
+      "note": "Representative public university"
+    },
+    {
+      "name": "Rajshahi University of Engineering & Technology (RUET)",
+      "type": "public",
+      "location": "Rajshahi",
+      "note": "Representative engineering university"
+    },
+    {
+      "name": "Varendra University",
+      "type": "private",
+      "location": "Rajshahi",
+      "note": "Verify current UGC status before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Parjatan Motel Rajshahi",
+      "type": "motel",
+      "recommendedArea": "Abdul Mojid Road, Rajshahi",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/24-rajshahi"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Rajshahi",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 560,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 560-930 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Rajshahi or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 370,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 370-1240 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

@@ -1,0 +1,5062 @@
+{
+  "metadata": {
+    "title": "Bangladesh District Tourist Spots and Popular Foods",
+    "country": "Bangladesh",
+    "generatedOn": "2026-06-09",
+    "districtCount": 64,
+    "divisionCount": 8,
+    "language": "English",
+    "scope": "Curated planning starter dataset covering all 64 districts. Spots and foods are representative rather than exhaustive.",
+    "importantDisclaimer": "Transport schedules, fares, hotel listings, ticket prices, opening hours, permissions and local access conditions change frequently. Null values are intentional: verify live details before booking or publishing.",
+    "administrativeSources": [
+      "https://bangladesh.gov.bd/views/district-list",
+      "https://bangladesh.gov.bd/views/division-list"
+    ],
+    "tourismReferenceSources": [
+      "https://parjatan.gov.bd/",
+      "https://beautifulbangladesh.gov.bd/"
+    ]
+  },
+  "districts": [
+    {
+      "id": "dhaka",
+      "name": "Dhaka",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "local",
+            "name": "Travel within Dhaka metropolitan area",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Use local bus, metro rail, ride-sharing or CNG as appropriate; check live fares."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "local",
+            "name": "Return within Dhaka metropolitan area",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check live route and fare information."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Lalbagh Fort",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Ahsan Manzil Museum",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Bangladesh National Parliament Complex",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Dhakeshwari National Temple",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "National Museum",
+          "area": "heritage",
+          "priority": 5
+        },
+        {
+          "name": "Old Dhaka riverfront at Sadarghat",
+          "area": "nature",
+          "priority": 6
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Bakarkhani",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Kacchi biryani",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Old Dhaka kebab",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "faridpur",
+      "name": "Faridpur",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Faridpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Faridpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Jasimuddin Museum and ancestral home",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Mathurapur Deul",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Gerda Mosque",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Faridpur riverfront areas",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Date molasses sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local river fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "gazipur",
+      "name": "Gazipur",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Gazipur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Gazipur or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Gazipur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Gazipur or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Bhawal National Park",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Nuhash Palli",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Bhawal Rajbari",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Bangabandhu Safari Park, Gazipur",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Jackfruit",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "gopalganj",
+      "name": "Gopalganj",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Gopalganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Gopalganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Tungipara Bangabandhu Mausoleum Complex",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Orakandi Thakur Bari",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Ulpur Zamindar Bari",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Madhumati river areas",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Chhana sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "kishoreganj",
+      "name": "Kishoreganj",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Kishoreganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Kishoreganj or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Kishoreganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Kishoreganj or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Nikli Haor",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Mithamain Haor Road",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Austagram haor areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Sholakia Eidgah",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Jangalbari Fort",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Balish mishti",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Haor fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "madaripur",
+      "name": "Madaripur",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Madaripur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Madaripur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Hazrat Shah Madar Dargah",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Raja Ram Mandir",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Arial Khan river areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Shakuni Lake",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Date molasses sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "manikganj",
+      "name": "Manikganj",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Manikganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Manikganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Baliati Palace",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Teota Zamindar Bari",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Aricha riverfront",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Nahar Garden Picnic Spot",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Mustard-based local dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "munshiganj",
+      "name": "Munshiganj",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Munshiganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Munshiganj where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Munshiganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Munshiganj toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Idrakpur Fort",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Baba Adam Mosque",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Mawa riverfront",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Atish Dipankar memorial area",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Padma Bridge viewpoint areas",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Mawa hilsa dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "narayanganj",
+      "name": "Narayanganj",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Narayanganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Narayanganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Panam City, Sonargaon",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Bangladesh Folk Arts and Crafts Museum",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Goaldi Mosque",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Murapara Jamidar Bari",
+          "area": "district",
+          "priority": 4
+        },
+        {
+          "name": "Meghna river areas",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Jamdani-area snacks",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "narsingdi",
+      "name": "Narsingdi",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Narsingdi",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Narsingdi or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Narsingdi to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Narsingdi or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Wari-Bateshwar archaeological area",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Dream Holiday Park",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Meghna riverfront areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Belabo local heritage sites",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Sagar banana",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "rajbari",
+      "name": "Rajbari",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Rajbari",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Rajbari to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Goalanda river port area",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Kalyan Dighi",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Rajbari railway heritage areas",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Padma river viewpoints",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Goalanda chicken curry",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "shariatpur",
+      "name": "Shariatpur",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Shariatpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Shariatpur where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Shariatpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Shariatpur toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Padma riverfront areas",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Sureshwar Darbar Sharif",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Rudrakar Math",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Naria river viewpoints",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Hilsa dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "tangail",
+      "name": "Tangail",
+      "division": "Dhaka",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Tangail",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Tangail or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Tangail to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Tangail or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Mohera Zamindar Bari",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Madhupur National Park",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Dhanbari Nawab Palace",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Atiya Mosque",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Pakutia Zamindar Bari",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Porabari chomchom",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Tangail sari-area snacks",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 900,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "bandarban",
+      "name": "Bandarban",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Bandarban",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Bandarban to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Nilgiri",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Meghla Tourist Complex",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Boga Lake",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Nilachal",
+          "area": "district",
+          "priority": 4
+        },
+        {
+          "name": "Chimbuk Hill",
+          "area": "nature",
+          "priority": 5
+        },
+        {
+          "name": "Nafakhum waterfall area",
+          "area": "nature",
+          "priority": 6
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Bamboo chicken",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Hill-tracts seasonal fruits",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local tribal-style dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "brahmanbaria",
+      "name": "Brahmanbaria",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Brahmanbaria",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Brahmanbaria or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Brahmanbaria to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Brahmanbaria or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Kal Bhairab Temple",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Anderson Canal and town areas",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Haripur Zamindar Bari",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Titas river areas",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Chhanamukhi sweet",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "chandpur",
+      "name": "Chandpur",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Chandpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Chandpur or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Chandpur where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Chandpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Chandpur or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Chandpur toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Chandpur river confluence",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Boro Station riverfront",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Rupsha Zamindar Bari",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Meghna river cruise areas",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Hilsa dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "chattogram",
+      "name": "Chattogram",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Chattogram",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Chattogram or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Chattogram to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Chattogram or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Patenga Beach",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Foy's Lake",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "CRB hill area",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Ethnological Museum",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Anderkilla and old city heritage areas",
+          "area": "heritage",
+          "priority": 5
+        },
+        {
+          "name": "Sitakunda eco-park areas",
+          "area": "nature",
+          "priority": 6
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Mezban beef",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Kala bhuna",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Dried fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "cumilla",
+      "name": "Cumilla",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Cumilla",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Cumilla or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Cumilla to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Cumilla or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Mainamati archaeological site",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Shalban Vihara",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Mainamati Museum",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Dharmasagar lake",
+          "area": "nature",
+          "priority": 4
+        },
+        {
+          "name": "Rupban Mura",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Rasmalai",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Khadi-area snacks",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "coxs-bazar",
+      "name": "Cox's Bazar",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Cox's Bazar",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Cox's Bazar to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Cox's Bazar sea beach",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Inani Beach",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Himchari National Park",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Marine Drive",
+          "area": "district",
+          "priority": 4
+        },
+        {
+          "name": "Maheshkhali Island",
+          "area": "district",
+          "priority": 5
+        },
+        {
+          "name": "Teknaf and Saint Martin route gateway",
+          "area": "district",
+          "priority": 6
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Seafood",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Dried fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Coconut-based snacks",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "feni",
+      "name": "Feni",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Feni",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Feni or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Feni to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Feni or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Muhuri Irrigation Project",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Bijoy Singh Dighi",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Feni river areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Rajajhir Dighi",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "khagrachhari",
+      "name": "Khagrachhari",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Khagrachhari",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Khagrachhari to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Alutila Cave",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Richhang waterfall",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Horticulture Heritage Park",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Debotar Pukur",
+          "area": "district",
+          "priority": 4
+        },
+        {
+          "name": "District hill viewpoints",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Hill bamboo dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Seasonal fruits",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "lakshmipur",
+      "name": "Lakshmipur",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Lakshmipur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Lakshmipur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Dalal Bazar Zamindar Bari",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Ramgati Meghna riverfront",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Kamankhola Zamindar Bari",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Char Alexander areas",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Coconut sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "noakhali",
+      "name": "Noakhali",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Noakhali",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Noakhali where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Noakhali to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Noakhali toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Nijhum Dwip",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Bajra Shahi Mosque",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Noakhali District Museum",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Hatiya island areas",
+          "area": "district",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Coconut-based sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Buffalo milk yogurt",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River and coastal fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "rangamati",
+      "name": "Rangamati",
+      "division": "Chattogram",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Rangamati",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Rangamati to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Kaptai Lake",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Hanging Bridge",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Shuvolong waterfall",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Rajban Vihara",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Kaptai National Park",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Bamboo chicken",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Lake fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Hill fruits",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1400,
+        "foodPerPerson": 1200,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "bogura",
+      "name": "Bogura",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Bogura",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Bogura or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Bogura to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Bogura or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Mahasthangarh",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Govinda Bhita",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Behular Bashor Ghor",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Vasu Vihara",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Bogura town heritage areas",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Bogura doi",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "joypurhat",
+      "name": "Joypurhat",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Joypurhat",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Joypurhat or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Joypurhat to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Joypurhat or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Paharpur-adjacent regional route areas",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Achranga Dighi",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Baro Shibalaya Temple area",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Joypurhat local heritage sites",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Rice-based pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "naogaon",
+      "name": "Naogaon",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Naogaon",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Naogaon or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Naogaon to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Naogaon or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Somapura Mahavihara, Paharpur",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Kusumba Mosque",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Balihar Rajbari",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Dibar Dighi",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Rice-based local dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "natore",
+      "name": "Natore",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Natore",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Natore or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Natore to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Natore or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Uttara Ganabhaban",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Natore Rajbari",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Chalan Beel areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Dighapatia heritage area",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Kacha golla",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "chapainawabganj",
+      "name": "Chapainawabganj",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Chapainawabganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Chapainawabganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Choto Sona Mosque",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Tahkhana Complex",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Darasbari Mosque",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Gour archaeological areas",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Mango orchards",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Mango",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Kalai roti",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "pabna",
+      "name": "Pabna",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Pabna",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Pabna or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Pabna to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Pabna or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Hardinge Bridge viewpoint",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Pakshi riverfront",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Jor Bangla Temple",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Hemayetpur Satsang Ashram",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Chalan Beel route areas",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Ghee",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "rajshahi",
+      "name": "Rajshahi",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Rajshahi",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Rajshahi or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Rajshahi to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Rajshahi or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Varendra Research Museum",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Puthia Temple Complex",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Padma river embankment",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Bagha Mosque",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Shah Makhdum shrine area",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Mango",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Kalai roti",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "sirajganj",
+      "name": "Sirajganj",
+      "division": "Rajshahi",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Sirajganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Sirajganj or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Sirajganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Sirajganj or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Bangabandhu Bridge viewpoint",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Rabindranath Tagore's Kachharibari, Shahjadpur",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Jamuna riverfront",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Navaratna Temple, Hatikumrul",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Dhaner khoi and pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1100,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "bagerhat",
+      "name": "Bagerhat",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Bagerhat",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Bagerhat to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Historic Mosque City of Bagerhat",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Sixty Dome Mosque",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Khan Jahan Ali Shrine",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Nine Dome Mosque",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Sundarbans gateway route areas",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Coconut-based sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Shrimp dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "chuadanga",
+      "name": "Chuadanga",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Chuadanga",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Chuadanga or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Chuadanga to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Chuadanga or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Keru & Company heritage area, Darshana",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Mathabhanga river areas",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Local zamindar-era heritage sites",
+          "area": "heritage",
+          "priority": 3
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Date molasses",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "jashore",
+      "name": "Jashore",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Jashore",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Jashore or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Jashore to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Jashore or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Michael Madhusudan Dutt memorial, Sagardari",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Chanchra Shiva Temple",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Godkhali flower market",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Jess Garden Park",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Jashore date molasses",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Chui jhal dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "jhenaidah",
+      "name": "Jhenaidah",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Jhenaidah",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Jhenaidah to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Naldanga temple complex",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Mia Dalon heritage building",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Pagla Kanai memorial area",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Dhol Samudra Dighi",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Date molasses",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "khulna",
+      "name": "Khulna",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Khulna",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Khulna or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Khulna to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Khulna or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Sundarbans gateway",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Rupsha riverfront",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Khulna Divisional Museum",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Gallamari memorial area",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Karamjal route gateway",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Chui jhal beef",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Shrimp dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "kushtia",
+      "name": "Kushtia",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Kushtia",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Kushtia or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Kushtia to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Kushtia or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Lalon Shah Shrine",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Shilaidaha Kuthibari",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Tagore Lodge",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Islamic University area",
+          "area": "district",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Kulfi and local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Til khaja",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "magura",
+      "name": "Magura",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Magura",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Magura to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Raja Sitaram Ray Palace area",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Siddheshwari Math",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Nabganga riverfront",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Local heritage mosques and temples",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Date molasses sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "meherpur",
+      "name": "Meherpur",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Meherpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Meherpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Mujibnagar Memorial Complex",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Amjhupi Neelkuthi",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Bhatpara Neelkuthi",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Meherpur local heritage areas",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Sabitri sweet",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Date molasses sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "narail",
+      "name": "Narail",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Narail",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Narail to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "SM Sultan Memorial Museum",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Chitra riverfront",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Badhaghat areas",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Arunima eco-park route area",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Chitra river fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "satkhira",
+      "name": "Satkhira",
+      "division": "Khulna",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Satkhira",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Satkhira to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Sundarbans gateway via Munshiganj/Shyamnagar",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Karamjal-adjacent route areas",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Jeshoreshwari Kali Temple",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Tetulia Jami Mosque",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Kaliganj heritage areas",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Shrimp",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Crab dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Date molasses",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "barguna",
+      "name": "Barguna",
+      "division": "Barishal",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Barguna",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Barguna where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Barguna to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Barguna toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Taltali and coastal forest areas",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Haringhata Forest",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Bishkhali river areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Patharghata coastal route",
+          "area": "district",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Coastal fish dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Coconut sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "barishal",
+      "name": "Barishal",
+      "division": "Barishal",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Barishal",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Barishal where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Barishal to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Barishal toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Floating guava market route, Banaripara-Jhalokathi region",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Durga Sagar",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Oxford Mission Church",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Guthia Mosque",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Kirtankhola riverfront",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Peyara-based snacks",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "bhola",
+      "name": "Bhola",
+      "division": "Barishal",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Bhola",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Bhola where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Bhola to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Bhola toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Char Kukri-Mukri",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Monpura Island",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Tetulia river areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Coastal char landscapes",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Buffalo milk yogurt",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Hilsa dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "jhalokathi",
+      "name": "Jhalokathi",
+      "division": "Barishal",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Jhalokathi",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Jhalokathi where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Jhalokathi to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Jhalokathi toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Floating guava market areas",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Bhimruli canal route",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Gabkhan Bridge",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Sugandha river areas",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Guava",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "patuakhali",
+      "name": "Patuakhali",
+      "division": "Barishal",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Patuakhali",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Patuakhali where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Patuakhali to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Patuakhali toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Kuakata sea beach",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Gangamati Reserved Forest",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Fatrar Char",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Lebur Char",
+          "area": "nature",
+          "priority": 4
+        },
+        {
+          "name": "Rakhine cultural areas",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Seafood",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Dried fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Coconut snacks",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "pirojpur",
+      "name": "Pirojpur",
+      "division": "Barishal",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Pirojpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option toward Pirojpur where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Pirojpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "launch",
+            "name": "River transport option from Pirojpur toward Dhaka where available",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Rayerkathi Zamindar Bari",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Baleshwar river areas",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Swarupkathi canal routes",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Local floating-market routes",
+          "area": "district",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Guava",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Coconut sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "habiganj",
+      "name": "Habiganj",
+      "division": "Sylhet",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Habiganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Habiganj or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Habiganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Habiganj or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Satchari National Park",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Rema-Kalenga Wildlife Sanctuary",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Baniachong village heritage areas",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Shankarpasha Shahi Mosque",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Satkora dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Tea",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1300,
+        "foodPerPerson": 1100,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "moulvibazar",
+      "name": "Moulvibazar",
+      "division": "Sylhet",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Moulvibazar",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Moulvibazar or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Moulvibazar to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Moulvibazar or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Lawachara National Park",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Madhabkunda Waterfall",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Sreemangal tea gardens",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Madhabpur Lake",
+          "area": "nature",
+          "priority": 4
+        },
+        {
+          "name": "Baikka Beel",
+          "area": "nature",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Seven-layer tea",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Pineapple",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Satkora dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1300,
+        "foodPerPerson": 1100,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "sunamganj",
+      "name": "Sunamganj",
+      "division": "Sylhet",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Sunamganj",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Sunamganj to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Tanguar Haor",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Niladri Lake area",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Shimul Bagan",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Barikka Tila",
+          "area": "district",
+          "priority": 4
+        },
+        {
+          "name": "Hason Raja Museum",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Haor fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Duck dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1300,
+        "foodPerPerson": 1100,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "sylhet",
+      "name": "Sylhet",
+      "division": "Sylhet",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Sylhet",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Sylhet or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Sylhet to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Sylhet or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Ratargul Swamp Forest",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Jaflong",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Bichanakandi",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Hazrat Shah Jalal shrine",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Lalakhal",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Satkora beef",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Tea",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local citrus fruits",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1300,
+        "foodPerPerson": 1100,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "dinajpur",
+      "name": "Dinajpur",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Dinajpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Dinajpur or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dinajpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Dinajpur or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Kantajew Temple",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Ramsagar National Park",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Nayabad Mosque",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Dinajpur Rajbari",
+          "area": "heritage",
+          "priority": 4
+        },
+        {
+          "name": "Swapnapuri picnic spot",
+          "area": "district",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Litchi",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Katari bhog rice dishes",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "gaibandha",
+      "name": "Gaibandha",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Gaibandha",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Gaibandha to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Bharatkhali river areas",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Balasi Ghat",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Vabaniganj heritage areas",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Teesta-Brahmaputra char landscapes",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Rasmanjuri sweet",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "kurigram",
+      "name": "Kurigram",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Kurigram",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Kurigram to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Dharla Bridge viewpoint",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Chilmari river port",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Brahmaputra char areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Local riverfront landscapes",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "lalmonirhat",
+      "name": "Lalmonirhat",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Lalmonirhat",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Lalmonirhat to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Teesta Barrage route areas",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Burimari land-port route landscapes",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Tushbhandar Zamindar Bari area",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Local railway heritage",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "River fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "nilphamari",
+      "name": "Nilphamari",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Nilphamari",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Nilphamari or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Nilphamari to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Nilphamari or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Nilphamari railway heritage",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Teesta river areas",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Saidpur railway workshop heritage",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Nilsagar",
+          "area": "district",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Seasonal fruits",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "panchagarh",
+      "name": "Panchagarh",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Panchagarh",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Panchagarh to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Tetulia tea gardens",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Kanchanjangha viewpoint seasonally visible from Tetulia",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Banglabandha land-port area",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Maharaja Dighi",
+          "area": "nature",
+          "priority": 4
+        },
+        {
+          "name": "Rocks Museum",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Tea",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "rangpur",
+      "name": "Rangpur",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Rangpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Rangpur or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Rangpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Rangpur or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Tajhat Palace",
+          "area": "heritage",
+          "priority": 1
+        },
+        {
+          "name": "Carmichael College heritage campus",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Begum Rokeya Memorial Centre, Pairaband",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Chikli Water Park area",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Haribhanga mango",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "thakurgaon",
+      "name": "Thakurgaon",
+      "division": "Rangpur",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Thakurgaon",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Thakurgaon to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Tangon Barrage",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Haripur Rajbari",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Nekmarad archaeological area",
+          "area": "heritage",
+          "priority": 3
+        },
+        {
+          "name": "Local countryside landscapes",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Seasonal fruits",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1200,
+        "foodPerPerson": 1000,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "jamalpur",
+      "name": "Jamalpur",
+      "division": "Mymensingh",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Jamalpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Jamalpur or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Jamalpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Jamalpur or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Lauchapra picnic area",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Hazrat Shah Jamal shrine",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Brahmaputra riverfront",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Gandhi Ashram area",
+          "area": "heritage",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Chhanar polao-style sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1000,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "mymensingh",
+      "name": "Mymensingh",
+      "division": "Mymensingh",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Mymensingh",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Mymensingh or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Mymensingh to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Mymensingh or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Shashi Lodge",
+          "area": "district",
+          "priority": 1
+        },
+        {
+          "name": "Zainul Abedin Museum",
+          "area": "heritage",
+          "priority": 2
+        },
+        {
+          "name": "Bangladesh Agricultural University campus",
+          "area": "district",
+          "priority": 3
+        },
+        {
+          "name": "Brahmaputra riverfront",
+          "area": "nature",
+          "priority": 4
+        },
+        {
+          "name": "Muktagacha Rajbari",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Muktagacha monda",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1000,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "netrokona",
+      "name": "Netrokona",
+      "division": "Mymensingh",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Netrokona",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option toward Netrokona or nearest practical station",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Netrokona to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          },
+          {
+            "mode": "train",
+            "name": "Rail option from Netrokona or nearest practical station toward Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Check the current Bangladesh Railway timetable and station suitability before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Birishiri ceramic hill areas",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Someshwari River",
+          "area": "nature",
+          "priority": 2
+        },
+        {
+          "name": "Durgapur hill landscapes",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Haor areas around Khaliajuri",
+          "area": "nature",
+          "priority": 4
+        },
+        {
+          "name": "Ranikong Mission area",
+          "area": "heritage",
+          "priority": 5
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Balish mishti",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Haor fish",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1000,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    },
+    {
+      "id": "sherpur",
+      "name": "Sherpur",
+      "division": "Mymensingh",
+      "transport": {
+        "fromDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Dhaka to Sherpur",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ],
+        "returnToDhaka": [
+          {
+            "mode": "bus",
+            "name": "Bus from Sherpur to Dhaka",
+            "departureTime": null,
+            "costPerPerson": null,
+            "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+          }
+        ]
+      },
+      "spots": [
+        {
+          "name": "Madhutila Eco Park",
+          "area": "nature",
+          "priority": 1
+        },
+        {
+          "name": "Gajni Obokash",
+          "area": "district",
+          "priority": 2
+        },
+        {
+          "name": "Garjaripa forest areas",
+          "area": "nature",
+          "priority": 3
+        },
+        {
+          "name": "Hill-border viewpoints",
+          "area": "nature",
+          "priority": 4
+        }
+      ],
+      "hotels": [],
+      "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation and current booking information before travel.",
+      "foods": [
+        {
+          "name": "Chhanar payesh-style sweets",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        },
+        {
+          "name": "Local pitha",
+          "location": "District town and local markets; ask locally for a reputable vendor"
+        }
+      ],
+      "budgetDefaults": {
+        "localTransportPerPerson": 1000,
+        "foodPerPerson": 900,
+        "currency": "BDT",
+        "note": "Planning estimates only; adjust for itinerary, season and group size."
+      },
+      "tourGuideUrl": "",
+      "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes."
+    }
+  ]
+}

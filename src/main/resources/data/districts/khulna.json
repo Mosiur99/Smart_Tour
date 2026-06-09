@@ -1,0 +1,157 @@
+{
+  "id": "khulna",
+  "name": "Khulna",
+  "division": "Khulna",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Khulna",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 560,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 560-930 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Khulna or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 370,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 370-1240 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Khulna to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 560,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 560-930 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Khulna or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 370,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 370-1240 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Sundarbans gateway",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Rupsha riverfront",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Khulna Divisional Museum",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Gallamari memorial area",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Karamjal route gateway",
+      "area": "district",
+      "priority": 5
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Chui jhal beef",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Shrimp dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local fish",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1200,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Khulna Divisional Museum",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Gallamari memorial area",
+      "area": "heritage",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Khulna University",
+      "type": "public",
+      "location": "Khulna",
+      "note": "Representative public university"
+    },
+    {
+      "name": "Khulna University of Engineering & Technology (KUET)",
+      "type": "public",
+      "location": "Khulna",
+      "note": "Representative engineering university"
+    },
+    {
+      "name": "Khulna Agricultural University",
+      "type": "public",
+      "location": "Khulna",
+      "note": "Verify current official name before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Khulna district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Khulna",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 560,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 560-930 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Khulna or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 370,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 370-1240 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

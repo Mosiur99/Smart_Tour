@@ -1,0 +1,112 @@
+{
+  "id": "bandarban",
+  "name": "Bandarban",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Bandarban",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 720,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 720-1190 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Bandarban to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 720,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 720-1190 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Nilgiri",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Meghla Tourist Complex",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Boga Lake",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Nilachal",
+      "area": "district",
+      "priority": 4
+    },
+    {
+      "name": "Chimbuk Hill",
+      "area": "nature",
+      "priority": 5
+    },
+    {
+      "name": "Nafakhum waterfall area",
+      "area": "nature",
+      "priority": 6
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Bamboo chicken",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Hill-tracts seasonal fruits",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local tribal-style dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Meghla Tourist Complex",
+      "area": "district",
+      "priority": 2
+    }
+  ],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Bandarban district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Bandarban",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 720,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 720-1190 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

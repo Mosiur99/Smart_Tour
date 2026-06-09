@@ -1,0 +1,141 @@
+{
+  "id": "pabna",
+  "name": "Pabna",
+  "division": "Rajshahi",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Pabna",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 480,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 480-800 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Pabna or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 320,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 320-1060 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Pabna to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 480,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 480-800 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Pabna or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 320,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 320-1060 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Hardinge Bridge viewpoint",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Pakshi riverfront",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Jor Bangla Temple",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Hemayetpur Satsang Ashram",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Chalan Beel route areas",
+      "area": "nature",
+      "priority": 5
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Ghee",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1100,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Jor Bangla Temple",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Hemayetpur Satsang Ashram",
+      "area": "heritage",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Pabna University of Science and Technology",
+      "type": "public",
+      "location": "Pabna",
+      "note": "Representative public university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Pabna district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Pabna",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 480,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 480-800 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Pabna or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 320,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 320-1060 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

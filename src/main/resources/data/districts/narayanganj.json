@@ -1,0 +1,113 @@
+{
+  "id": "narayanganj",
+  "name": "Narayanganj",
+  "division": "Dhaka",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Narayanganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 60,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 60-210 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Narayanganj to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 60,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 60-210 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Panam City, Sonargaon",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Bangladesh Folk Arts and Crafts Museum",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Goaldi Mosque",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Murapara Jamidar Bari",
+      "area": "district",
+      "priority": 4
+    },
+    {
+      "name": "Meghna river areas",
+      "area": "nature",
+      "priority": 5
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Jamdani-area snacks",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 900,
+    "foodPerPerson": 900
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Bangladesh Folk Arts and Crafts Museum",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Goaldi Mosque",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Murapara Jamidar Bari",
+      "area": "district",
+      "priority": 4
+    }
+  ],
+  "popularUniversities": [],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Narayanganj district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Narayanganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 60,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 60-210 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "No representative university has been added for this district. Use an empty list unless a current UGC-verified institution is confirmed."
+}

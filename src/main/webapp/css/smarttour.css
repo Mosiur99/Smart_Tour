@@ -1,0 +1,598 @@
+/* SmartTour Design System — Plan Smart, Travel More */
+
+:root {
+    --st-navy: #1a3d6d;
+    --st-navy-dark: #122a4a;
+    --st-teal: #14b8a6;
+    --st-teal-dark: #0d9488;
+    --st-teal-light: #ccfbf1;
+    --st-orange: #f97316;
+    --st-orange-dark: #ea580c;
+    --st-green: #059669;
+    --st-bg: #f1f5f9;
+    --st-bg-alt: #e8f4f8;
+    --st-card: #ffffff;
+    --st-text: #1e293b;
+    --st-muted: #64748b;
+    --st-border: #e2e8f0;
+    --st-shadow: 0 4px 24px rgba(26, 61, 109, 0.08);
+    --st-shadow-lg: 0 12px 40px rgba(26, 61, 109, 0.12);
+    --st-radius: 16px;
+    --st-radius-sm: 10px;
+    --st-font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--st-font);
+    color: var(--st-text);
+    background: var(--st-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .st-main {
+    flex: 1;
+}
+
+/* ── Navbar ── */
+.st-navbar {
+    background: var(--st-card);
+    border-bottom: 1px solid var(--st-border);
+    box-shadow: 0 1px 12px rgba(26, 61, 109, 0.06);
+    padding: 0.6rem 0;
+}
+
+.st-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--st-navy) !important;
+    text-decoration: none;
+}
+
+.st-navbar .navbar-brand img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.st-navbar .brand-text .smart {
+    color: var(--st-navy);
+}
+
+.st-navbar .brand-text .tour {
+    color: var(--st-teal);
+}
+
+.st-nav-link {
+    color: var(--st-muted) !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: var(--st-radius-sm);
+    transition: all 0.2s ease;
+}
+
+.st-nav-link:hover,
+.st-nav-link.active {
+    color: var(--st-teal-dark) !important;
+    background: var(--st-teal-light);
+}
+
+.st-nav-cta {
+    background: linear-gradient(135deg, var(--st-teal), var(--st-teal-dark));
+    color: #fff !important;
+    font-weight: 600;
+    padding: 0.5rem 1.25rem !important;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+}
+
+.st-nav-cta:hover {
+    background: linear-gradient(135deg, var(--st-teal-dark), var(--st-navy));
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(20, 184, 166, 0.35);
+}
+
+/* ── Hero ── */
+.st-hero {
+    background: linear-gradient(135deg, var(--st-navy-dark) 0%, var(--st-navy) 45%, var(--st-teal-dark) 100%);
+    color: #fff;
+    padding: 3rem 0 3.5rem;
+    position: relative;
+    overflow: visible;
+}
+
+.st-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(20, 184, 166, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.st-hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Home page: card floats over hero without clipping */
+.st-hero-home {
+    padding-bottom: 4.5rem;
+}
+
+.st-main-overlap {
+    position: relative;
+    z-index: 10;
+    margin-top: -3rem;
+}
+
+.st-card-overlap {
+    box-shadow: var(--st-shadow-lg);
+}
+
+.st-hero-compact {
+    padding: 2rem 0 2.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.st-hero h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+}
+
+.st-hero p {
+    opacity: 0.9;
+    font-size: 1.05rem;
+    max-width: 540px;
+}
+
+.st-tagline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--st-teal-light);
+    margin-top: 0.75rem;
+}
+
+.st-tagline::before,
+.st-tagline::after {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--st-teal);
+    border-radius: 1px;
+}
+
+/* ── Cards ── */
+.st-card {
+    background: var(--st-card);
+    border: 1px solid var(--st-border);
+    border-radius: var(--st-radius);
+    box-shadow: var(--st-shadow);
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.st-card:hover {
+    box-shadow: var(--st-shadow-lg);
+}
+
+.st-card-header {
+    background: linear-gradient(to right, var(--st-teal-light), transparent);
+    border-bottom: 1px solid var(--st-border);
+    padding: 1rem 1.25rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--st-navy);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.st-card-header i {
+    color: var(--st-teal);
+    font-size: 1.1rem;
+}
+
+.st-card-body {
+    padding: 1.25rem;
+}
+
+/* ── Page header ── */
+.st-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.st-page-header h1 {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--st-navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+}
+
+.st-page-header .subtitle {
+    color: var(--st-muted);
+    font-size: 0.95rem;
+}
+
+/* ── Breadcrumb ── */
+.st-breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.st-breadcrumb a {
+    color: var(--st-teal-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.st-breadcrumb a:hover {
+    color: var(--st-navy);
+}
+
+.st-breadcrumb .breadcrumb-item.active {
+    color: var(--st-muted);
+}
+
+/* ── Buttons ── */
+.btn-st-primary {
+    background: linear-gradient(135deg, var(--st-teal), var(--st-teal-dark));
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.65rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+
+.btn-st-primary:hover {
+    background: linear-gradient(135deg, var(--st-teal-dark), var(--st-navy));
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(20, 184, 166, 0.35);
+}
+
+.btn-st-secondary {
+    background: var(--st-card);
+    border: 2px solid var(--st-border);
+    color: var(--st-navy);
+    font-weight: 600;
+    padding: 0.65rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+
+.btn-st-secondary:hover {
+    border-color: var(--st-teal);
+    color: var(--st-teal-dark);
+    background: var(--st-teal-light);
+}
+
+.btn-st-accent {
+    background: linear-gradient(135deg, var(--st-orange), var(--st-orange-dark));
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.65rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+}
+
+.btn-st-accent:hover {
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
+}
+
+.btn-st-outline {
+    background: transparent;
+    border: 2px solid var(--st-teal);
+    color: var(--st-teal-dark);
+    font-weight: 600;
+    padding: 0.55rem 1.25rem;
+    border-radius: 50px;
+}
+
+.btn-st-outline:hover {
+    background: var(--st-teal);
+    color: #fff;
+}
+
+.btn-st-danger {
+    background: #fff;
+    border: 2px solid #fecaca;
+    color: #dc2626;
+    font-weight: 600;
+    padding: 0.55rem 1.25rem;
+    border-radius: 50px;
+}
+
+.btn-st-danger:hover {
+    background: #dc2626;
+    color: #fff;
+    border-color: #dc2626;
+}
+
+/* ── Forms ── */
+.st-form-label {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--st-navy);
+    margin-bottom: 0.4rem;
+}
+
+.st-form-control,
+.st-form-select {
+    border: 2px solid var(--st-border);
+    border-radius: var(--st-radius-sm);
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.st-form-control:focus,
+.st-form-select:focus {
+    border-color: var(--st-teal);
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.15);
+}
+
+.st-form-hint {
+    font-size: 0.8rem;
+    color: var(--st-muted);
+    margin-top: 0.35rem;
+}
+
+/* ── Spot tiles ── */
+.st-spot-tile {
+    background: var(--st-bg);
+    border: 1px solid var(--st-border);
+    border-radius: var(--st-radius-sm);
+    padding: 1rem;
+    height: 100%;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.st-spot-tile:hover {
+    border-color: var(--st-teal);
+    background: var(--st-teal-light);
+}
+
+/* ── Badges ── */
+.st-badge-teal {
+    background: var(--st-teal-light);
+    color: var(--st-teal-dark);
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0.25em 0.6em;
+    border-radius: 50px;
+}
+
+.st-badge-navy {
+    background: rgba(26, 61, 109, 0.1);
+    color: var(--st-navy);
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0.25em 0.6em;
+    border-radius: 50px;
+}
+
+.st-badge-warn {
+    background: #fef3c7;
+    color: #b45309;
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0.25em 0.6em;
+    border-radius: 50px;
+}
+
+.st-badge-danger {
+    background: #fee2e2;
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 0.25em 0.6em;
+    border-radius: 50px;
+}
+
+/* ── List items ── */
+.st-list-item {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--st-border);
+    transition: background 0.15s;
+}
+
+.st-list-item:last-child {
+    border-bottom: none;
+}
+
+.st-list-item:hover {
+    background: var(--st-bg);
+}
+
+/* ── Budget panel ── */
+.st-budget-card {
+    border: 2px solid var(--st-teal);
+    border-radius: var(--st-radius);
+    overflow: hidden;
+    box-shadow: var(--st-shadow-lg);
+}
+
+.st-budget-card .st-card-header {
+    background: linear-gradient(135deg, var(--st-navy), var(--st-teal-dark));
+    color: #fff;
+    border: none;
+}
+
+.st-budget-card .st-card-header i {
+    color: #fff;
+}
+
+.st-budget-total {
+    background: linear-gradient(135deg, var(--st-teal-light), #fff);
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--st-navy);
+}
+
+.st-budget-total td {
+    padding: 1rem 1.25rem !important;
+}
+
+/* ── Alert ── */
+.st-alert-warn {
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-left: 4px solid var(--st-orange);
+    border-radius: var(--st-radius-sm);
+    padding: 1rem 1.25rem;
+    color: #92400e;
+    font-size: 0.9rem;
+}
+
+.st-alert-info {
+    background: var(--st-teal-light);
+    border: 1px solid #99f6e4;
+    border-left: 4px solid var(--st-teal);
+    border-radius: var(--st-radius-sm);
+    padding: 1rem 1.25rem;
+    color: var(--st-navy);
+    font-size: 0.9rem;
+}
+
+/* ── Feature stats (home) ── */
+.st-stats {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.st-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.st-stat i {
+    color: var(--st-teal-light);
+}
+
+/* ── Checkbox styling ── */
+.st-check-item {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--st-border);
+    border-radius: var(--st-radius-sm);
+    margin-bottom: 0.5rem;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.st-check-item:hover {
+    border-color: var(--st-teal);
+    background: var(--st-teal-light);
+}
+
+.st-check-item .form-check-input:checked {
+    background-color: var(--st-teal);
+    border-color: var(--st-teal);
+}
+
+/* ── Footer ── */
+.st-footer {
+    background: var(--st-navy-dark);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.st-footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.st-footer-brand img {
+    height: 36px;
+    opacity: 0.9;
+}
+
+.st-footer-tagline {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--st-teal);
+}
+
+.st-footer-copy {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* ── Sticky sidebar ── */
+.st-sticky-sidebar {
+    position: sticky;
+    top: 1.25rem;
+}
+
+/* ── Transport mode pill ── */
+.st-mode-pill {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2em 0.6em;
+    border-radius: 50px;
+    background: var(--st-teal-light);
+    color: var(--st-teal-dark);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .st-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .st-page-header h1 {
+        font-size: 1.35rem;
+    }
+
+    .st-navbar .navbar-brand img {
+        height: 40px;
+    }
+}

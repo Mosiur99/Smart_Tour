@@ -1,0 +1,130 @@
+{
+  "id": "noakhali",
+  "name": "Noakhali",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Noakhali",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 430,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 430-710 BDT (verify before booking)"
+      },
+      {
+        "mode": "launch",
+        "name": "River transport option toward Noakhali where available",
+        "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable.",
+        "costPerPerson": 310,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 310-860 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Noakhali to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 430,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 430-710 BDT (verify before booking)"
+      },
+      {
+        "mode": "launch",
+        "name": "River transport option from Noakhali toward Dhaka where available",
+        "note": "Availability is route- and season-dependent; confirm terminal, weather and current timetable.",
+        "costPerPerson": 310,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 310-860 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Nijhum Dwip",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Bajra Shahi Mosque",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Noakhali District Museum",
+      "area": "heritage",
+      "priority": 3
+    },
+    {
+      "name": "Hatiya island areas",
+      "area": "district",
+      "priority": 4
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Coconut-based sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Buffalo milk yogurt",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "River and coastal fish",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Bajra Shahi Mosque",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Noakhali District Museum",
+      "area": "heritage",
+      "priority": 3
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Noakhali Science and Technology University",
+      "type": "public",
+      "location": "Noakhali",
+      "note": "Representative public university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Noakhali district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Noakhali",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 430,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 430-710 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

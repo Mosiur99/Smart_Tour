@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: smarttour
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: PORT
+        value: 8080

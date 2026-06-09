@@ -1,0 +1,141 @@
+{
+  "id": "kishoreganj",
+  "name": "Kishoreganj",
+  "division": "Dhaka",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Kishoreganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 330,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 330-550 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Kishoreganj or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 220,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 220-730 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Kishoreganj to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 330,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 330-550 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Kishoreganj or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 220,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 220-730 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Nikli Haor",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Mithamain Haor Road",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Austagram haor areas",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Sholakia Eidgah",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Jangalbari Fort",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Balish mishti",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Haor fish dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 900,
+    "foodPerPerson": 900
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Sholakia Eidgah",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Jangalbari Fort",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Kishoreganj University",
+      "type": "public",
+      "location": "Kishoreganj",
+      "note": "Verify current operating status and official name before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Kishoreganj district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Kishoreganj",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 330,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 330-550 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Kishoreganj or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 220,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 220-730 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

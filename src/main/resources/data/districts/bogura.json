@@ -1,0 +1,150 @@
+{
+  "id": "bogura",
+  "name": "Bogura",
+  "division": "Rajshahi",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Bogura",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 440,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 440-730 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Bogura or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 290,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 290-970 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Bogura to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 440,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 440-730 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Bogura or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 290,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 290-970 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Mahasthangarh",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Govinda Bhita",
+      "area": "district",
+      "priority": 2
+    },
+    {
+      "name": "Behular Bashor Ghor",
+      "area": "district",
+      "priority": 3
+    },
+    {
+      "name": "Vasu Vihara",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Bogura town heritage areas",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Parjatan Motel Bogura",
+      "location": "Banani, Sherpur Road, Bogura",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/18-bogura"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Bogura doi",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Local sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1100,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Vasu Vihara",
+      "area": "heritage",
+      "priority": 4
+    },
+    {
+      "name": "Bogura town heritage areas",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Pundra University of Science & Technology",
+      "type": "private",
+      "location": "Bogura",
+      "note": "Verify current UGC status before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Parjatan Motel Bogura",
+      "type": "motel",
+      "recommendedArea": "Banani, Sherpur Road, Bogura",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/18-bogura"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Bogura",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 440,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 440-730 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Bogura or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 290,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 290-970 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

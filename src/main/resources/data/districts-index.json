@@ -1,0 +1,386 @@
+[
+  {
+    "id": "dhaka",
+    "name": "Dhaka",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "faridpur",
+    "name": "Faridpur",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "gazipur",
+    "name": "Gazipur",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "gopalganj",
+    "name": "Gopalganj",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "kishoreganj",
+    "name": "Kishoreganj",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "madaripur",
+    "name": "Madaripur",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "manikganj",
+    "name": "Manikganj",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "munshiganj",
+    "name": "Munshiganj",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "narayanganj",
+    "name": "Narayanganj",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "narsingdi",
+    "name": "Narsingdi",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "rajbari",
+    "name": "Rajbari",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "shariatpur",
+    "name": "Shariatpur",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "tangail",
+    "name": "Tangail",
+    "division": "Dhaka",
+    "hasDetailData": true
+  },
+  {
+    "id": "bandarban",
+    "name": "Bandarban",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "brahmanbaria",
+    "name": "Brahmanbaria",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "chandpur",
+    "name": "Chandpur",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "chattogram",
+    "name": "Chattogram",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "cumilla",
+    "name": "Cumilla",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "coxs-bazar",
+    "name": "Cox's Bazar",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "feni",
+    "name": "Feni",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "khagrachhari",
+    "name": "Khagrachhari",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "lakshmipur",
+    "name": "Lakshmipur",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "noakhali",
+    "name": "Noakhali",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "rangamati",
+    "name": "Rangamati",
+    "division": "Chattogram",
+    "hasDetailData": true
+  },
+  {
+    "id": "bogura",
+    "name": "Bogura",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "joypurhat",
+    "name": "Joypurhat",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "naogaon",
+    "name": "Naogaon",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "natore",
+    "name": "Natore",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "chapainawabganj",
+    "name": "Chapainawabganj",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "pabna",
+    "name": "Pabna",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "rajshahi",
+    "name": "Rajshahi",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "sirajganj",
+    "name": "Sirajganj",
+    "division": "Rajshahi",
+    "hasDetailData": true
+  },
+  {
+    "id": "bagerhat",
+    "name": "Bagerhat",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "chuadanga",
+    "name": "Chuadanga",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "jashore",
+    "name": "Jashore",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "jhenaidah",
+    "name": "Jhenaidah",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "khulna",
+    "name": "Khulna",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "kushtia",
+    "name": "Kushtia",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "magura",
+    "name": "Magura",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "meherpur",
+    "name": "Meherpur",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "narail",
+    "name": "Narail",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "satkhira",
+    "name": "Satkhira",
+    "division": "Khulna",
+    "hasDetailData": true
+  },
+  {
+    "id": "barguna",
+    "name": "Barguna",
+    "division": "Barishal",
+    "hasDetailData": true
+  },
+  {
+    "id": "barishal",
+    "name": "Barishal",
+    "division": "Barishal",
+    "hasDetailData": true
+  },
+  {
+    "id": "bhola",
+    "name": "Bhola",
+    "division": "Barishal",
+    "hasDetailData": true
+  },
+  {
+    "id": "jhalokathi",
+    "name": "Jhalokathi",
+    "division": "Barishal",
+    "hasDetailData": true
+  },
+  {
+    "id": "patuakhali",
+    "name": "Patuakhali",
+    "division": "Barishal",
+    "hasDetailData": true
+  },
+  {
+    "id": "pirojpur",
+    "name": "Pirojpur",
+    "division": "Barishal",
+    "hasDetailData": true
+  },
+  {
+    "id": "habiganj",
+    "name": "Habiganj",
+    "division": "Sylhet",
+    "hasDetailData": true
+  },
+  {
+    "id": "moulvibazar",
+    "name": "Moulvibazar",
+    "division": "Sylhet",
+    "hasDetailData": true
+  },
+  {
+    "id": "sunamganj",
+    "name": "Sunamganj",
+    "division": "Sylhet",
+    "hasDetailData": true
+  },
+  {
+    "id": "sylhet",
+    "name": "Sylhet",
+    "division": "Sylhet",
+    "hasDetailData": true
+  },
+  {
+    "id": "dinajpur",
+    "name": "Dinajpur",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "gaibandha",
+    "name": "Gaibandha",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "kurigram",
+    "name": "Kurigram",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "lalmonirhat",
+    "name": "Lalmonirhat",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "nilphamari",
+    "name": "Nilphamari",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "panchagarh",
+    "name": "Panchagarh",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "rangpur",
+    "name": "Rangpur",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "thakurgaon",
+    "name": "Thakurgaon",
+    "division": "Rangpur",
+    "hasDetailData": true
+  },
+  {
+    "id": "jamalpur",
+    "name": "Jamalpur",
+    "division": "Mymensingh",
+    "hasDetailData": true
+  },
+  {
+    "id": "mymensingh",
+    "name": "Mymensingh",
+    "division": "Mymensingh",
+    "hasDetailData": true
+  },
+  {
+    "id": "netrokona",
+    "name": "Netrokona",
+    "division": "Mymensingh",
+    "hasDetailData": true
+  },
+  {
+    "id": "sherpur",
+    "name": "Sherpur",
+    "division": "Mymensingh",
+    "hasDetailData": true
+  }
+]

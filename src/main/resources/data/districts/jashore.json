@@ -1,0 +1,145 @@
+{
+  "id": "jashore",
+  "name": "Jashore",
+  "division": "Khulna",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Jashore",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 480,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 480-800 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Jashore or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 320,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 320-1060 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Jashore to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 480,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 480-800 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Jashore or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 320,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 320-1060 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Michael Madhusudan Dutt memorial, Sagardari",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Chanchra Shiva Temple",
+      "area": "heritage",
+      "priority": 2
+    },
+    {
+      "name": "Godkhali flower market",
+      "area": "district",
+      "priority": 3
+    },
+    {
+      "name": "Jess Garden Park",
+      "area": "nature",
+      "priority": 4
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Motel Benapole",
+      "location": "Benapole, Sharsha, Jashore",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/57-jashore"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Jashore date molasses",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Chui jhal dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1200,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Michael Madhusudan Dutt memorial, Sagardari",
+      "area": "heritage",
+      "priority": 1
+    },
+    {
+      "name": "Chanchra Shiva Temple",
+      "area": "heritage",
+      "priority": 2
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Jashore University of Science and Technology",
+      "type": "public",
+      "location": "Jashore",
+      "note": "Representative public university"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Motel Benapole",
+      "type": "motel",
+      "recommendedArea": "Benapole, Sharsha, Jashore",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/57-jashore"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Jashore",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 480,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 480-800 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Jashore or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 320,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 320-1060 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

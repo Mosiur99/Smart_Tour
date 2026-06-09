@@ -1,0 +1,125 @@
+{
+  "id": "feni",
+  "name": "Feni",
+  "division": "Chattogram",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Feni",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 350,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 350-580 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Feni or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 230,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 230-780 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Feni to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 350,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 350-580 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Feni or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 230,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 230-780 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Muhuri Irrigation Project",
+      "area": "district",
+      "priority": 1
+    },
+    {
+      "name": "Bijoy Singh Dighi",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Feni river areas",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Rajajhir Dighi",
+      "area": "nature",
+      "priority": 4
+    }
+  ],
+  "hotels": [],
+  "foods": [
+    {
+      "name": "Local sweets",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Fish dishes",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1400,
+    "foodPerPerson": 1200
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [],
+  "popularUniversities": [
+    {
+      "name": "Feni University",
+      "type": "private",
+      "location": "Feni",
+      "note": "Verify current UGC status before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house_research_required",
+      "recommendedArea": "Feni district town or nearest tourist hub",
+      "currency": "BDT",
+      "verificationStatus": "add_verified_named_hotel_before_publishing",
+      "note": "No named accommodation was added without a verified source. Research a currently operating hotel, motel or guest house and confirm availability, address, phone and price before publishing."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Feni",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 350,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 350-580 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Feni or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 230,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 230-780 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "No verified named hotel has been embedded for this district. A manual research placeholder is included to avoid publishing an invented listing.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

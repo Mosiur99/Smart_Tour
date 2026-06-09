@@ -1,0 +1,145 @@
+{
+  "id": "netrokona",
+  "name": "Netrokona",
+  "division": "Mymensingh",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Netrokona",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 360,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 360-600 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option toward Netrokona or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 240,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 240-800 BDT (verify before booking)"
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Netrokona to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 360,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 360-600 BDT (verify before booking)"
+      },
+      {
+        "mode": "train",
+        "name": "Rail option from Netrokona or nearest practical station toward Dhaka",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 240,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 240-800 BDT (verify before booking)"
+      }
+    ]
+  },
+  "spots": [
+    {
+      "name": "Birishiri ceramic hill areas",
+      "area": "nature",
+      "priority": 1
+    },
+    {
+      "name": "Someshwari River",
+      "area": "nature",
+      "priority": 2
+    },
+    {
+      "name": "Durgapur hill landscapes",
+      "area": "nature",
+      "priority": 3
+    },
+    {
+      "name": "Haor areas around Khaliajuri",
+      "area": "nature",
+      "priority": 4
+    },
+    {
+      "name": "Ranikong Mission area",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Ahdorshonagar Parjatan Kendro",
+      "location": "Netrokona",
+      "review": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/13-netrokona"
+    }
+  ],
+  "foods": [
+    {
+      "name": "Balish mishti",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    },
+    {
+      "name": "Haor fish",
+      "location": "District town and local markets; ask locally for a reputable vendor"
+    }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1000,
+    "foodPerPerson": 900
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    {
+      "name": "Ranikong Mission area",
+      "area": "heritage",
+      "priority": 5
+    }
+  ],
+  "popularUniversities": [
+    {
+      "name": "Netrokona University",
+      "type": "public",
+      "location": "Netrokona",
+      "note": "Verify current operating status and official name before publishing"
+    }
+  ],
+  "hotelsForStay": [
+    {
+      "name": "Ahdorshonagar Parjatan Kendro",
+      "type": "tourist_accommodation",
+      "recommendedArea": "Netrokona",
+      "currency": "BDT",
+      "verificationStatus": "official_listing_check_live_before_booking",
+      "note": "Official Bangladesh Parjatan Corporation accommodation directory entry. Confirm live availability and room price before booking.",
+      "website": "https://www.hotels.gov.bd/frontend/hotels/13-netrokona"
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to Netrokona",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking.",
+        "costPerPerson": 360,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 360-600 BDT (verify before booking)"
+      }
+    ],
+    "train": [
+      {
+        "mode": "train",
+        "name": "Rail option toward Netrokona or nearest practical station",
+        "note": "Check the current Bangladesh Railway timetable and station suitability before booking.",
+        "costPerPerson": 240,
+        "costVerificationStatus": "check_live_before_booking",
+        "costEstimateNote": "Est. 240-800 BDT (verify before booking)"
+      }
+    ],
+    "note": "Bus and train schedules, fares, stations and seat availability are live data. Verify with the operator or official railway service before travel."
+  },
+  "hotelNote": "Contains official Bangladesh Parjatan Corporation accommodation records. Confirm live availability, contact details and prices before booking.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel. Extra caution is needed for coastal, island, haor and hill routes.",
+  "universityNote": "Representative universities only; verify the current official name and UGC status before publishing."
+}

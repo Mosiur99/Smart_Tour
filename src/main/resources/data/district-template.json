@@ -1,0 +1,55 @@
+{
+  "id": "DISTRICT_ID",
+  "name": "District Name",
+  "division": "Division Name",
+  "transport": {
+    "fromDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from Dhaka to District Name",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+      }
+    ],
+    "returnToDhaka": [
+      {
+        "mode": "bus",
+        "name": "Bus from District Name to Dhaka",
+        "note": "Schedule, boarding point and fare vary by operator and travel date; verify before booking."
+      }
+    ]
+  },
+  "spots": [
+    { "name": "Landmark name", "area": "heritage", "priority": 1 }
+  ],
+  "hotels": [],
+  "foods": [
+    { "name": "Local specialty", "location": "District town and local markets; ask locally for a reputable vendor" }
+  ],
+  "budgetDefaults": {
+    "localTransportPerPerson": 1000,
+    "foodPerPerson": 1000
+  },
+  "tourGuideUrl": "",
+  "historicalPlaces": [
+    { "name": "Heritage site", "area": "heritage", "priority": 1 }
+  ],
+  "popularUniversities": [
+    { "name": "University name", "type": "public", "location": "District town", "note": "Representative university" }
+  ],
+  "hotelsForStay": [
+    {
+      "type": "hotel_or_guest_house",
+      "recommendedArea": "District town",
+      "verificationStatus": "check_live_before_booking",
+      "note": "Confirm price and availability before booking."
+    }
+  ],
+  "busTrainTransport": {
+    "bus": [],
+    "train": [],
+    "note": "Verify schedules and fares with operators before travel."
+  },
+  "hotelNote": "Live hotel inventory and prices are not embedded. Check registered accommodation before travel.",
+  "travelNote": "Confirm weather, local access rules, operating hours and route conditions before travel.",
+  "universityNote": "Representative universities only; verify official names and UGC status before publishing."
+}
