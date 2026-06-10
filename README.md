@@ -181,11 +181,6 @@ export SPRING_PROFILES_ACTIVE=prod
 | GET | `/new` | Clear session and start over |
 | GET | `/health` | Health check |
 
----
-
-## License
-
-This project is open source. Add a license file if you plan to publish under a specific terms (e.g. MIT).
 
 ---
 
