@@ -12,12 +12,16 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
+import org.springframework.jdbc.core.simple.JdbcClient;
 
 /** Runs the real server and renders real JSP pages. */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(
+        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
+        properties = "smarttour.catalog.version-check-interval=0s")
 @Import(TestDatabaseConfig.class)
 class SiteSmokeTest {
 
@@ -31,6 +35,9 @@ class SiteSmokeTest {
 
     @Value("${local.server.port}")
     private int port;
+
+    @Autowired
+    private JdbcClient jdbc;
 
     @Test
     void homePageListsDistricts() throws Exception {
@@ -68,6 +75,25 @@ class SiteSmokeTest {
 
         assertThat(pdf.statusCode()).isEqualTo(200);
         assertThat(pdf.headers().firstValue("Content-Type")).contains("application/pdf");
+    }
+
+    @Test
+    void districtPageShowsDatabaseChangesWithoutARedeploy() throws Exception {
+        jdbc.sql("UPDATE destination SET travel_note = 'Live database note' WHERE slug = 'khulna'").update();
+        jdbc.sql("UPDATE catalog_version SET version = version + 1").update();
+
+        assertThat(get("/district/khulna").body()).contains("Live database note");
+    }
+
+    @Test
+    void apiAnswersWithNotModifiedWhenDataIsUnchanged() throws Exception {
+        String etag = get("/api/v1/hubs").headers().firstValue("ETag").orElseThrow();
+
+        HttpResponse<String> repeat = client.send(
+                request("/api/v1/hubs").header("If-None-Match", etag).GET().build(),
+                HttpResponse.BodyHandlers.ofString());
+
+        assertThat(repeat.statusCode()).isEqualTo(304);
     }
 
     @Test

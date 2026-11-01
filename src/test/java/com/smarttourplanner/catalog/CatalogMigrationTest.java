@@ -50,6 +50,11 @@ class CatalogMigrationTest {
     }
 
     @Test
+    void importsUniversities() throws IOException {
+        assertThat(count("university")).isEqualTo(distinctNames("popularUniversities"));
+    }
+
+    @Test
     void importsTransportBothWaysExceptDhakaToItself() {
         assertThat(count("transport_leg")).isEqualTo(206);
         Integer hubLoops = jdbc.queryForObject(

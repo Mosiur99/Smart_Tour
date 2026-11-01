@@ -22,8 +22,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class CatalogController {
 
     private static final String SLUG = "^[a-z0-9]+(-[a-z0-9]+)*$";
-    private static final CacheControl ONE_HOUR = CacheControl.maxAge(Duration.ofHours(1)).cachePublic();
-    private static final CacheControl TEN_MINUTES = CacheControl.maxAge(Duration.ofMinutes(10)).cachePublic();
+    // Browsers recheck after a minute. The CDN keeps a longer copy, which publishing will purge.
+    private static final CacheControl HUBS = CacheControl.maxAge(Duration.ofMinutes(5))
+            .sMaxAge(Duration.ofHours(1)).cachePublic();
+    private static final CacheControl DESTINATIONS = CacheControl.maxAge(Duration.ofMinutes(1))
+            .sMaxAge(Duration.ofMinutes(10)).cachePublic();
 
     private final CatalogService catalog;
 
@@ -33,7 +36,7 @@ public class CatalogController {
 
     @GetMapping("/hubs")
     public ResponseEntity<List<Hub>> hubs() {
-        return ResponseEntity.ok().cacheControl(ONE_HOUR).body(catalog.hubs());
+        return ResponseEntity.ok().cacheControl(HUBS).body(catalog.hubs());
     }
 
     @GetMapping("/destinations")
@@ -42,13 +45,13 @@ public class CatalogController {
             @RequestParam(required = false) @Pattern(regexp = SLUG) String division,
             @RequestParam(required = false) @Pattern(regexp = SLUG) String cursor,
             @RequestParam(defaultValue = "20") @Min(1) @Max(50) int limit) {
-        return ResponseEntity.ok().cacheControl(TEN_MINUTES).body(catalog.destinations(q, division, cursor, limit));
+        return ResponseEntity.ok().cacheControl(DESTINATIONS).body(catalog.destinations(q, division, cursor, limit));
     }
 
     @GetMapping("/destinations/{slug}")
     public ResponseEntity<DestinationDetail> destination(@PathVariable @Pattern(regexp = SLUG) String slug) {
         DestinationDetail destination = catalog.destination(slug)
                 .orElseThrow(() -> new CatalogNotFoundException("We couldn't find a destination called " + slug + "."));
-        return ResponseEntity.ok().cacheControl(TEN_MINUTES).body(destination);
+        return ResponseEntity.ok().cacheControl(DESTINATIONS).body(destination);
     }
 }

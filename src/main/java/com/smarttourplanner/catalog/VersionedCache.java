@@ -32,7 +32,7 @@ public class VersionedCache {
                 .build();
     }
 
-    /** A loader that returns null is not cached. */
+    /** A loader that returns null is not cached. A loader must not call this cache itself. */
     @SuppressWarnings("unchecked")
     public <T> T get(String key, Supplier<T> loader) {
         return (T) entries.get(version.get(VERSION_KEY) + ":" + key, ignored -> loader.get());

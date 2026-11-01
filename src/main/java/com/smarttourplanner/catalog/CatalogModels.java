@@ -21,8 +21,8 @@ public final class CatalogModels {
     }
 
     public record Place(
-            String nameEn, String nameBn, Double lat, Double lng, Integer visitMinutes, Integer feeMin,
-            Integer feeMax, List<String> tags, String note, LocalDate checkedAt, boolean verified) {
+            String nameEn, String nameBn, Double lat, Double lng, int priority, Integer visitMinutes,
+            Integer feeMin, Integer feeMax, List<String> tags, String note, LocalDate checkedAt, boolean verified) {
     }
 
     public record Hotel(
@@ -36,6 +36,9 @@ public final class CatalogModels {
             boolean verified) {
     }
 
+    public record University(String nameEn, String kind, String location, String note) {
+    }
+
     public record Places(
             List<Place> spots, List<Place> heritage, List<Place> markets, List<Place> food, List<Place> crafts) {
     }
@@ -45,7 +48,7 @@ public final class CatalogModels {
 
     public record DestinationDetail(
             DestinationSummary summary, Double lat, Double lng, Integer localTransportDaily, Integer foodDaily,
-            String travelNote, String hotelNote, String guideUrl, Places places, List<Hotel> hotels,
-            Transport transport) {
+            String travelNote, String hotelNote, String universityNote, String guideUrl, Places places,
+            List<Hotel> hotels, List<University> universities, Transport transport) {
     }
 }

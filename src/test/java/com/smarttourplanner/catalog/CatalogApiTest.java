@@ -59,7 +59,7 @@ class CatalogApiTest {
                 .andExpect(jsonPath("$", hasSize(64)))
                 .andExpect(jsonPath("$[0].nameEn", is("Bagerhat")))
                 .andExpect(jsonPath("$[?(@.slug == 'rajshahi')].nameBn", hasItem("রাজশাহী")))
-                .andExpect(header().string("Cache-Control", containsString("max-age=3600")))
+                .andExpect(header().string("Cache-Control", containsString("s-maxage=3600")))
                 .andExpect(header().string("Cache-Control", containsString("public")));
     }
 
@@ -119,6 +119,11 @@ class CatalogApiTest {
     }
 
     @Test
+    void findsABanglaNameWithASpellingMistake() throws Exception {
+        mvc.perform(get(DESTINATIONS).param("q", "রাজশাহি")).andExpect(jsonPath("$.items[0].slug", is("rajshahi")));
+    }
+
+    @Test
     void combinesSearchWithDivision() throws Exception {
         mvc.perform(get(DESTINATIONS).param("q", "Rajshahi").param("division", "sylhet"))
                 .andExpect(jsonPath("$.items", empty()));
@@ -148,7 +153,7 @@ class CatalogApiTest {
                 .andExpect(jsonPath("$.hotels.length()", greaterThan(0)))
                 .andExpect(jsonPath("$.transport.arriving[?(@.mode == 'BUS')].fareMax", hasItem(930)))
                 .andExpect(jsonPath("$.transport.leaving[*].toHub", everyItem(is("dhaka"))))
-                .andExpect(header().string("Cache-Control", containsString("max-age=600")));
+                .andExpect(header().string("Cache-Control", containsString("s-maxage=600")));
     }
 
     @Test

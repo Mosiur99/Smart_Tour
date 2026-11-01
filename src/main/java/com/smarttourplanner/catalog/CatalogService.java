@@ -16,6 +16,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class CatalogService {
 
+    private static final int ALL_DESTINATIONS = 1_000;
+
     private final CatalogRepository repository;
     private final VersionedCache cache;
 
@@ -33,6 +35,10 @@ public class CatalogService {
             return search(query.strip(), division, limit);
         }
         return cache.get("page:%s:%s:%d".formatted(division, cursor, limit), () -> page(division, cursor, limit));
+    }
+
+    public List<DestinationSummary> allDestinations() {
+        return repository.findDestinations(null, null, ALL_DESTINATIONS);
     }
 
     public Optional<DestinationDetail> destination(String slug) {
@@ -60,8 +66,9 @@ public class CatalogService {
     private DestinationDetail toDetail(DestinationRow row) {
         return new DestinationDetail(
                 row.summary(), row.lat(), row.lng(), row.localTransportDaily(), row.foodDaily(),
-                row.travelNote(), row.hotelNote(), row.guideUrl(),
-                places(row.id()), repository.findHotels(row.id()), transport(row.arrivalHubId()));
+                row.travelNote(), row.hotelNote(), row.universityNote(), row.guideUrl(),
+                places(row.id()), repository.findHotels(row.id()), repository.findUniversities(row.id()),
+                transport(row.arrivalHubId()));
     }
 
     private Places places(long destinationId) {

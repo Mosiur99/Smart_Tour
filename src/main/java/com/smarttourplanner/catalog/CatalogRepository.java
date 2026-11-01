@@ -5,6 +5,7 @@ import com.smarttourplanner.catalog.CatalogModels.Hotel;
 import com.smarttourplanner.catalog.CatalogModels.Hub;
 import com.smarttourplanner.catalog.CatalogModels.Place;
 import com.smarttourplanner.catalog.CatalogModels.TransportOption;
+import com.smarttourplanner.catalog.CatalogModels.University;
 import java.math.BigDecimal;
 import java.sql.Array;
 import java.sql.Date;
@@ -69,8 +70,9 @@ public class CatalogRepository {
                   AND (:division::text IS NULL OR v.slug = :division)
                   AND (d.name_en ILIKE :contains ESCAPE '\\'
                        OR d.name_bn ILIKE :contains ESCAPE '\\'
-                       OR word_similarity(:query, d.name_en) > 0.4)
-                ORDER BY word_similarity(:query, d.name_en) DESC, d.slug
+                       OR word_similarity(:query, d.name_en) > 0.4
+                       OR word_similarity(:query, d.name_bn) > 0.3)
+                ORDER BY greatest(word_similarity(:query, d.name_en), word_similarity(:query, d.name_bn)) DESC, d.slug
                 LIMIT :limit
                 """)
                 .param("division", division)
@@ -84,7 +86,7 @@ public class CatalogRepository {
     public Optional<DestinationRow> findDestination(String slug) {
         return jdbc.sql("""
                 SELECT d.slug, d.name_en, d.name_bn, d.status, d.id, d.arrival_hub_id, d.lat, d.lng,
-                       d.local_transport_daily, d.food_daily, d.travel_note, d.hotel_note, d.guide_url,
+                       d.local_transport_daily, d.food_daily, d.travel_note, d.hotel_note, d.university_note, d.guide_url,
                        v.slug AS division_slug, v.name_en AS division_en, v.name_bn AS division_bn
                 FROM destination d
                 JOIN district t ON t.id = d.district_id
@@ -102,13 +104,14 @@ public class CatalogRepository {
                         rs.getObject("food_daily", Integer.class),
                         rs.getString("travel_note"),
                         rs.getString("hotel_note"),
+                        rs.getString("university_note"),
                         rs.getString("guide_url")))
                 .optional();
     }
 
     public List<Place> findPlaces(long destinationId, String kind) {
         return jdbc.sql("""
-                SELECT name_en, name_bn, lat, lng, visit_minutes, fee_min, fee_max, tags, note, checked_at, status
+                SELECT name_en, name_bn, lat, lng, priority, visit_minutes, fee_min, fee_max, tags, note, checked_at, status
                 FROM poi
                 WHERE destination_id = :destination AND kind = :kind::poi_kind AND %s
                 ORDER BY priority, name_en
@@ -120,6 +123,7 @@ public class CatalogRepository {
                         rs.getString("name_bn"),
                         toDouble(rs.getBigDecimal("lat")),
                         toDouble(rs.getBigDecimal("lng")),
+                        rs.getInt("priority"),
                         rs.getObject("visit_minutes", Integer.class),
                         rs.getObject("fee_min", Integer.class),
                         rs.getObject("fee_max", Integer.class),
@@ -151,6 +155,18 @@ public class CatalogRepository {
                         rs.getString("note"),
                         toLocalDate(rs.getDate("checked_at")),
                         isVerified(rs)))
+                .list();
+    }
+
+    public List<University> findUniversities(long destinationId) {
+        return jdbc.sql("""
+                SELECT name_en, kind, location, note FROM university
+                WHERE destination_id = :destination
+                ORDER BY name_en
+                """)
+                .param("destination", destinationId)
+                .query((rs, row) -> new University(
+                        rs.getString("name_en"), rs.getString("kind"), rs.getString("location"), rs.getString("note")))
                 .list();
     }
 
@@ -222,6 +238,7 @@ public class CatalogRepository {
 
     public record DestinationRow(
             long id, Long arrivalHubId, DestinationSummary summary, Double lat, Double lng,
-            Integer localTransportDaily, Integer foodDaily, String travelNote, String hotelNote, String guideUrl) {
+            Integer localTransportDaily, Integer foodDaily, String travelNote, String hotelNote,
+            String universityNote, String guideUrl) {
     }
 }

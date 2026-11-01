@@ -4,7 +4,7 @@
 
 SmartTour is a web application for planning district tours across Bangladesh. Pick a destination, choose transport and hotels, select tourist spots, and get an automatic budget breakdown — then export your plan as a PDF.
 
-No database required. All tour data is loaded from JSON files at startup.
+Tour data lives in PostgreSQL. The JSON files in `src/main/resources/data` are only used by the one-time import migrations.
 
 **Live demo:** [https://smart-tour-700j.onrender.com](https://smart-tour-700j.onrender.com)
 
@@ -189,3 +189,23 @@ export SPRING_PROFILES_ACTIVE=prod
 - Bangladesh district tourism dataset (v4 with transport costs)
 - Bootstrap & Bootstrap Icons
 - Spring Boot & OpenPDF communities
+
+## Run locally without Docker
+
+Start a throwaway PostgreSQL in one terminal:
+
+```bash
+mvn test-compile org.codehaus.mojo:exec-maven-plugin:java -Dexec.classpathScope=test -Dexec.mainClass=com.smarttourplanner.support.LocalPostgres
+```
+
+Start the app in another:
+
+```bash
+DATABASE_URL=jdbc:postgresql://localhost:54329/postgres DB_USERNAME=postgres mvn spring-boot:run
+```
+
+## Speed check
+
+```bash
+mvn test -Dtest=ApiSpeedCheck -DexcludedGroups=none
+```
