@@ -1,5 +1,10 @@
-package com.smarttourplanner.catalog;
+package com.smarttourplanner.api;
 
+import com.smarttourplanner.catalog.CatalogController;
+import com.smarttourplanner.catalog.CatalogNotFoundException;
+import com.smarttourplanner.planner.NoRouteException;
+import com.smarttourplanner.plans.PlanController;
+import com.smarttourplanner.plans.PlanNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -9,7 +14,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 /** Returns every API error in the standard Problem Details format, without internal details. */
-@RestControllerAdvice(basePackageClasses = CatalogController.class)
+@RestControllerAdvice(basePackageClasses = {CatalogController.class, PlanController.class})
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(ApiExceptionHandler.class);
@@ -17,6 +22,18 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(CatalogNotFoundException.class)
     public ProblemDetail handleNotFound(CatalogNotFoundException exception) {
         return ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, exception.getMessage());
+    }
+
+    @ExceptionHandler(PlanNotFoundException.class)
+    public ProblemDetail handlePlanNotFound(PlanNotFoundException exception) {
+        return ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, exception.getMessage());
+    }
+
+    @ExceptionHandler(NoRouteException.class)
+    public ProblemDetail handleNoRoute(NoRouteException exception) {
+        return ProblemDetail.forStatusAndDetail(
+                HttpStatus.UNPROCESSABLE_CONTENT,
+                "We don't have a route for this trip in that month. Try another month or starting point.");
     }
 
     @ExceptionHandler(Exception.class)

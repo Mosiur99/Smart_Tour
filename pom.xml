@@ -149,6 +149,7 @@
                                 <include>com/smarttourplanner/service/*</include>
                                 <include>com/smarttourplanner/catalog/*</include>
                                 <include>com/smarttourplanner/planner/*</include>
+                                <include>com/smarttourplanner/plans/*</include>
                             </includes>
                             <rules>
                                 <rule>
