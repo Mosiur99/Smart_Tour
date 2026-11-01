@@ -38,10 +38,6 @@
                         <i class="bi bi-compass"></i> Start Planning
                     </div>
                     <div class="st-card-body p-4">
-                        <c:if test="${not empty param.error}">
-                            <div class="st-alert-warn mb-4">${param.error}</div>
-                        </c:if>
-
                         <form action="/district/" method="get" id="districtForm">
                             <div class="mb-4">
                                 <label for="origin" class="st-form-label">Origin City</label>

@@ -19,7 +19,7 @@ public class DistrictController {
     @GetMapping("/district/{id}")
     public String districtDetail(@PathVariable String id, Model model) {
         District district = districtDataService.getDistrict(id)
-                .orElseThrow(() -> new IllegalArgumentException("District not found: " + id));
+                .orElseThrow(() -> new DistrictNotFoundException(id));
 
         model.addAttribute("district", district);
         model.addAttribute("hasDetailData", districtDataService.getDistrictSummary(id)

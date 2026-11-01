@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -56,6 +57,10 @@ public class DistrictDataService {
     }
 
     public Optional<District> getDistrict(String id) {
+        if (getDistrictSummary(id).isEmpty()) {
+            return Optional.empty();
+        }
+
         District cached = districtCache.get(id);
         if (cached != null) {
             return Optional.of(cached);
@@ -63,16 +68,12 @@ public class DistrictDataService {
 
         String path = String.format(DISTRICT_PATH, id);
         ClassPathResource resource = new ClassPathResource(path);
-        if (!resource.exists()) {
-            return Optional.empty();
-        }
-
         try (InputStream inputStream = resource.getInputStream()) {
             District district = objectMapper.readValue(inputStream, District.class);
             districtCache.put(id, district);
             return Optional.of(district);
         } catch (IOException e) {
-            return Optional.empty();
+            throw new UncheckedIOException("Could not read district data: " + id, e);
         }
     }
 

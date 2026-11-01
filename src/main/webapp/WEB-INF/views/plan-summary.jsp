@@ -156,6 +156,11 @@
                             </tbody>
                         </table>
                     </div>
+                    <c:if test="${not empty plan.budget.missingCosts}">
+                        <div class="st-card-body py-2 border-top">
+                            <small class="text-muted">Not included: ${plan.budget.missingCostsLabel}</small>
+                        </div>
+                    </c:if>
                     <div class="st-card-body py-2 border-top">
                         <small class="text-muted"><i class="bi bi-info-circle me-1"></i> Estimated planning costs — verify live fares before booking</small>
                     </div>

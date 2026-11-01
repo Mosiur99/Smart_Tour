@@ -51,10 +51,6 @@ public class TransportOption {
         this.costPerPerson = costPerPerson;
     }
 
-    public int getCostPerPersonOrZero() {
-        return costPerPerson != null ? costPerPerson : 0;
-    }
-
     public String getNote() {
         return note;
     }

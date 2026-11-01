@@ -3,6 +3,7 @@ package com.smarttourplanner.controller;
 import com.lowagie.text.DocumentException;
 import com.smarttourplanner.model.District;
 import com.smarttourplanner.model.Hotel;
+import com.smarttourplanner.model.OriginCities;
 import com.smarttourplanner.model.TourPlan;
 import com.smarttourplanner.model.TouristSpot;
 import com.smarttourplanner.model.TransportOption;
@@ -53,14 +54,14 @@ public class TourPlanController {
     @GetMapping("/build/{districtId}")
     public String buildForm(
             @PathVariable String districtId,
-            @RequestParam(defaultValue = "Dhaka") String origin,
+            @RequestParam(required = false) String origin,
             Model model) {
         District district = districtDataService.getDistrict(districtId)
-                .orElseThrow(() -> new IllegalArgumentException("District not found: " + districtId));
+                .orElseThrow(() -> new DistrictNotFoundException(districtId));
 
         model.addAttribute("district", district);
         model.addAttribute("visitOptions", district.getVisitOptions());
-        model.addAttribute("originCity", origin);
+        model.addAttribute("originCity", OriginCities.resolve(origin));
         return "tour-builder";
     }
 
@@ -78,10 +79,10 @@ public class TourPlanController {
             HttpSession session) {
 
         District district = districtDataService.getDistrict(districtId)
-                .orElseThrow(() -> new IllegalArgumentException("District not found: " + districtId));
+                .orElseThrow(() -> new DistrictNotFoundException(districtId));
 
         TourPlan plan = new TourPlan();
-        plan.setOriginCity(originCity);
+        plan.setOriginCity(OriginCities.resolve(originCity));
         plan.setDistrictId(districtId);
         plan.setDistrictName(district.getName());
         plan.setTravelers(Math.max(travelers, 1));

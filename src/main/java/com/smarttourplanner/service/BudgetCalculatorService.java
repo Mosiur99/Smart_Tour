@@ -10,52 +10,74 @@ import org.springframework.stereotype.Service;
 @Service
 public class BudgetCalculatorService {
 
-    public BudgetBreakdown calculate(TourPlan plan, BudgetDefaults defaults) {
-        BudgetBreakdown breakdown = new BudgetBreakdown();
+    private static final int TRAVELERS_PER_ROOM = 2;
 
-        int outboundCost = getTransportCost(plan.getOutboundTransport());
-        int returnCost = getTransportCost(plan.getReturnTransport());
+    public BudgetBreakdown calculate(TourPlan plan, BudgetDefaults defaults) {
         int travelers = Math.max(plan.getTravelers(), 1);
         int nights = Math.max(plan.getNights(), 1);
 
-        breakdown.setTrainCost((outboundCost + returnCost) * travelers);
-        breakdown.setTrainDetail(
-                String.format("(%d + %d) × %d travelers (estimated base fares)", outboundCost, returnCost, travelers));
-
-        Hotel hotel = plan.getSelectedHotel();
-        int hotelPrice = 0;
-        if (hotel != null) {
-            hotelPrice = plan.isAcRoom() ? hotel.getAcPriceOrZero() : hotel.getNonAcPriceOrZero();
-            if (hotelPrice == 0 && !hotel.hasPrice()) {
-                breakdown.setHotelDetail(hotel.getName() + " (price TBD — verify before booking)");
-            } else {
-                breakdown.setHotelDetail(
-                        String.format("%s (%s) × %d night(s)",
-                                hotel.getName(), plan.isAcRoom() ? "AC" : "Non-AC", nights));
-            }
-        } else {
-            breakdown.setHotelDetail("No hotel selected");
-        }
-        breakdown.setHotelCost(hotelPrice * nights);
-
-        int localPerPerson = defaults.getLocalTransportPerPerson();
-        breakdown.setLocalTransportCost(localPerPerson * travelers);
-        breakdown.setLocalTransportDetail(String.format("%d × %d travelers", localPerPerson, travelers));
-
-        int foodPerPerson = defaults.getFoodPerPerson();
-        breakdown.setFoodCost(foodPerPerson * travelers);
-        breakdown.setFoodDetail(String.format("%d × %d travelers", foodPerPerson, travelers));
-
+        BudgetBreakdown breakdown = new BudgetBreakdown();
+        addTransport(breakdown, plan, travelers);
+        addHotel(breakdown, plan, travelers, nights);
+        addDailyCosts(breakdown, defaults, travelers, nights);
         breakdown.setTotal(
-                breakdown.getTrainCost()
+                breakdown.getTransportCost()
                         + breakdown.getHotelCost()
                         + breakdown.getLocalTransportCost()
                         + breakdown.getFoodCost());
-
         return breakdown;
     }
 
-    private int getTransportCost(TransportOption transport) {
-        return transport != null ? transport.getCostPerPersonOrZero() : 0;
+    private void addTransport(BudgetBreakdown breakdown, TourPlan plan, int travelers) {
+        int outbound = fareOrRecordMissing(breakdown, plan.getOutboundTransport(), "Outbound fare");
+        int inbound = fareOrRecordMissing(breakdown, plan.getReturnTransport(), "Return fare");
+
+        breakdown.setTransportCost((outbound + inbound) * travelers);
+        breakdown.setTransportDetail(
+                String.format("(%d + %d) × %d travelers (estimated base fares)", outbound, inbound, travelers));
+    }
+
+    private int fareOrRecordMissing(BudgetBreakdown breakdown, TransportOption transport, String label) {
+        if (transport == null || transport.getCostPerPerson() == null) {
+            breakdown.addMissingCost(label);
+            return 0;
+        }
+        return transport.getCostPerPerson();
+    }
+
+    private void addHotel(BudgetBreakdown breakdown, TourPlan plan, int travelers, int nights) {
+        Hotel hotel = plan.getSelectedHotel();
+        if (hotel == null) {
+            breakdown.setHotelDetail("No hotel selected");
+            return;
+        }
+
+        Integer pricePerNight = hotel.getPrice(plan.isAcRoom());
+        if (pricePerNight == null) {
+            breakdown.addMissingCost("Hotel");
+            breakdown.setHotelDetail(hotel.getName() + " (price TBD — verify before booking)");
+            return;
+        }
+
+        int rooms = roomsFor(travelers);
+        breakdown.setHotelCost(pricePerNight * rooms * nights);
+        breakdown.setHotelDetail(
+                String.format("%s (%s) × %d room(s) × %d night(s)",
+                        hotel.getName(), plan.isAcRoom() ? "AC" : "Non-AC", rooms, nights));
+    }
+
+    private int roomsFor(int travelers) {
+        return (travelers + TRAVELERS_PER_ROOM - 1) / TRAVELERS_PER_ROOM;
+    }
+
+    private void addDailyCosts(BudgetBreakdown breakdown, BudgetDefaults defaults, int travelers, int nights) {
+        int localTransport = defaults.getLocalTransportPerPerson();
+        breakdown.setLocalTransportCost(localTransport * travelers * nights);
+        breakdown.setLocalTransportDetail(
+                String.format("%d × %d travelers × %d night(s)", localTransport, travelers, nights));
+
+        int food = defaults.getFoodPerPerson();
+        breakdown.setFoodCost(food * travelers * nights);
+        breakdown.setFoodDetail(String.format("%d × %d travelers × %d night(s)", food, travelers, nights));
     }
 }

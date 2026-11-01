@@ -66,6 +66,73 @@ class BudgetCalculatorServiceTest {
                 .containsExactly("Transport (round trip)", "Hotel", "Local transport", "Food");
     }
 
+    @Test
+    void foodAndLocalTransportGrowWithEachNight() {
+        BudgetBreakdown budget = service.calculate(plan(2, 3), defaults(900, 800));
+
+        assertThat(budget.getLocalTransportCost()).isEqualTo(5400);
+        assertThat(budget.getFoodCost()).isEqualTo(4800);
+    }
+
+    @Test
+    void chargesEnoughRoomsForEveryTraveler() {
+        TourPlan plan = plan(5, 2);
+        plan.setSelectedHotel(hotel(1500, 1000));
+
+        BudgetBreakdown budget = service.calculate(plan, defaults(0, 0));
+
+        assertThat(budget.getHotelCost()).isEqualTo(6000);
+    }
+
+    @Test
+    void reportsAHotelWithNoPriceAsNotIncluded() {
+        TourPlan plan = plan(1, 1);
+        plan.setOutboundTransport(transport(500));
+        plan.setReturnTransport(transport(500));
+        plan.setSelectedHotel(hotel(null, null));
+
+        BudgetBreakdown budget = service.calculate(plan, defaults(0, 0));
+
+        assertThat(budget.getMissingCosts()).containsExactly("Hotel");
+    }
+
+    @Test
+    void reportsAMissingAcPriceEvenWhenANonAcPriceExists() {
+        TourPlan plan = plan(1, 1);
+        plan.setOutboundTransport(transport(500));
+        plan.setReturnTransport(transport(500));
+        plan.setAcRoom(true);
+        plan.setSelectedHotel(hotel(null, 1000));
+
+        BudgetBreakdown budget = service.calculate(plan, defaults(0, 0));
+
+        assertThat(budget.getHotelCost()).isZero();
+        assertThat(budget.getMissingCosts()).containsExactly("Hotel");
+    }
+
+    @Test
+    void reportsEachUnknownFareAsNotIncluded() {
+        TourPlan plan = plan(1, 1);
+        plan.setOutboundTransport(transport(null));
+        plan.setReturnTransport(transport(null));
+
+        BudgetBreakdown budget = service.calculate(plan, defaults(0, 0));
+
+        assertThat(budget.getMissingCosts()).containsExactly("Outbound fare", "Return fare");
+    }
+
+    @Test
+    void reportsNothingMissingWhenEveryPriceIsKnown() {
+        TourPlan plan = plan(2, 1);
+        plan.setOutboundTransport(transport(500));
+        plan.setReturnTransport(transport(600));
+        plan.setSelectedHotel(hotel(1500, 1000));
+
+        BudgetBreakdown budget = service.calculate(plan, defaults(900, 800));
+
+        assertThat(budget.getMissingCosts()).isEmpty();
+    }
+
     private static TourPlan plan(int travelers, int nights) {
         TourPlan plan = new TourPlan();
         plan.setTravelers(travelers);

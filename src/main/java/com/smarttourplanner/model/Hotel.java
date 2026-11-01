@@ -33,12 +33,8 @@ public class Hotel {
         this.nonAcPrice = nonAcPrice;
     }
 
-    public int getAcPriceOrZero() {
-        return acPrice != null ? acPrice : 0;
-    }
-
-    public int getNonAcPriceOrZero() {
-        return nonAcPrice != null ? nonAcPrice : 0;
+    public Integer getPrice(boolean acRoom) {
+        return acRoom ? acPrice : nonAcPrice;
     }
 
     public boolean hasPrice() {

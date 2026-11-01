@@ -5,9 +5,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.io.IOException;
 import java.net.CookieManager;
 import java.net.URI;
+import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,6 +17,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 /** Runs the real server and renders real JSP pages. */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class SiteSmokeTest {
+
+    private static final String SCRIPT = "<script>alert(1)</script>";
+    private static final String ENCODED_SCRIPT = URLEncoder.encode(SCRIPT, StandardCharsets.UTF_8);
 
     private final HttpClient client = HttpClient.newBuilder()
             .cookieHandler(new CookieManager())
@@ -65,6 +70,40 @@ class SiteSmokeTest {
     @Test
     void healthEndpointResponds() throws Exception {
         assertThat(get("/health").statusCode()).isEqualTo(200);
+    }
+
+    @Test
+    void unknownDistrictReturnsNotFoundWithoutEchoingInput() throws Exception {
+        HttpResponse<String> response = get("/district/atlantis");
+
+        assertThat(response.statusCode()).isEqualTo(404);
+        assertThat(response.body()).contains("couldn't find that district").doesNotContain("atlantis");
+    }
+
+    @Test
+    void homePageIgnoresTheErrorParameter() throws Exception {
+        assertThat(get("/?error=" + ENCODED_SCRIPT).body()).doesNotContain(SCRIPT);
+    }
+
+    @Test
+    void tourBuilderRejectsScriptInTheOrigin() throws Exception {
+        HttpResponse<String> response = get("/plan/build/rajshahi?origin=" + ENCODED_SCRIPT);
+
+        assertThat(response.body()).doesNotContain(SCRIPT).contains("Dhaka");
+    }
+
+    @Test
+    void savedPlanRejectsScriptInTheOrigin() throws Exception {
+        HttpResponse<String> response = post("/plan/save", "districtId=rajshahi&originCity=" + ENCODED_SCRIPT);
+
+        assertThat(response.body()).doesNotContain(SCRIPT);
+    }
+
+    @Test
+    void summaryListsCostsThatAreNotIncluded() throws Exception {
+        HttpResponse<String> response = post("/plan/save", "districtId=rangamati&originCity=Dhaka");
+
+        assertThat(response.body()).contains("Not included: Hotel");
     }
 
     private HttpResponse<String> get(String path) throws IOException, InterruptedException {

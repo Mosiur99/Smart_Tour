@@ -5,22 +5,23 @@ import java.util.List;
 
 public class BudgetBreakdown {
 
-    private int trainCost;
+    private int transportCost;
     private int hotelCost;
     private int localTransportCost;
     private int foodCost;
     private int total;
-    private String trainDetail;
+    private String transportDetail;
     private String hotelDetail;
     private String localTransportDetail;
     private String foodDetail;
+    private final List<String> missingCosts = new ArrayList<>();
 
-    public int getTrainCost() {
-        return trainCost;
+    public int getTransportCost() {
+        return transportCost;
     }
 
-    public void setTrainCost(int trainCost) {
-        this.trainCost = trainCost;
+    public void setTransportCost(int transportCost) {
+        this.transportCost = transportCost;
     }
 
     public int getHotelCost() {
@@ -55,12 +56,12 @@ public class BudgetBreakdown {
         this.total = total;
     }
 
-    public String getTrainDetail() {
-        return trainDetail;
+    public String getTransportDetail() {
+        return transportDetail;
     }
 
-    public void setTrainDetail(String trainDetail) {
-        this.trainDetail = trainDetail;
+    public void setTransportDetail(String transportDetail) {
+        this.transportDetail = transportDetail;
     }
 
     public String getHotelDetail() {
@@ -87,9 +88,21 @@ public class BudgetBreakdown {
         this.foodDetail = foodDetail;
     }
 
+    public List<String> getMissingCosts() {
+        return List.copyOf(missingCosts);
+    }
+
+    public void addMissingCost(String cost) {
+        missingCosts.add(cost);
+    }
+
+    public String getMissingCostsLabel() {
+        return String.join(", ", missingCosts);
+    }
+
     public List<BudgetLineItem> getLineItems() {
         List<BudgetLineItem> items = new ArrayList<>();
-        items.add(new BudgetLineItem("Transport (round trip)", trainDetail, trainCost));
+        items.add(new BudgetLineItem("Transport (round trip)", transportDetail, transportCost));
         items.add(new BudgetLineItem("Hotel", hotelDetail, hotelCost));
         items.add(new BudgetLineItem("Local transport", localTransportDetail, localTransportCost));
         items.add(new BudgetLineItem("Food", foodDetail, foodCost));

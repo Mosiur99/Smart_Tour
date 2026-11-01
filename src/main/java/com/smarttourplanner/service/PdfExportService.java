@@ -118,8 +118,8 @@ public class PdfExportService {
         document.add(new Paragraph("Hotel", HEADING_FONT));
         Hotel hotel = plan.getSelectedHotel();
         if (hotel != null) {
-            int price = plan.isAcRoom() ? hotel.getAcPriceOrZero() : hotel.getNonAcPriceOrZero();
-            String priceText = hotel.hasPrice() ? price + " tk/night" : "price TBD";
+            Integer price = hotel.getPrice(plan.isAcRoom());
+            String priceText = price != null ? price + " tk/night" : "price TBD";
             document.add(new Paragraph(hotel.getName() + " (" + (plan.isAcRoom() ? "AC" : "Non-AC")
                     + " - " + priceText + ")", NORMAL_FONT));
             if (hotel.getReview() != null && !hotel.getReview().isBlank()) {
@@ -162,6 +162,10 @@ public class PdfExportService {
         addTableCell(table, String.valueOf(budget.getTotal()));
 
         document.add(table);
+
+        if (!budget.getMissingCosts().isEmpty()) {
+            document.add(new Paragraph("Not included: " + budget.getMissingCostsLabel(), NORMAL_FONT));
+        }
     }
 
     private void addGuideSection(Document document, TourPlan plan) throws DocumentException {

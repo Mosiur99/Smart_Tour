@@ -1,6 +1,7 @@
 package com.smarttourplanner.controller;
 
 import com.smarttourplanner.model.DistrictSummary;
+import com.smarttourplanner.model.OriginCities;
 import com.smarttourplanner.service.DistrictDataService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,7 +30,7 @@ public class HomeController {
         model.addAttribute("districts", districts);
         model.addAttribute("divisions", districtDataService.getDivisions());
         model.addAttribute("selectedDivision", division);
-        model.addAttribute("originCities", List.of("Dhaka", "Chattogram", "Sylhet", "Khulna", "Rajshahi"));
+        model.addAttribute("originCities", OriginCities.ALL);
         return "home";
     }
 }

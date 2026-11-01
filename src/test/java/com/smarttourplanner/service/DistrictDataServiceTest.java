@@ -56,4 +56,9 @@ class DistrictDataServiceTest {
     void returnsEmptyForAnUnknownDistrict() {
         assertThat(service.getDistrict("atlantis")).isEmpty();
     }
+
+    @Test
+    void rejectsIdsThatPointOutsideTheDistrictFolder() {
+        assertThat(service.getDistrict("../districts-index")).isEmpty();
+    }
 }
