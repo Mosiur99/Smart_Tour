@@ -102,6 +102,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.tngtech.archunit</groupId>
+            <artifactId>archunit</artifactId>
+            <version>1.5.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>io.zonky.test</groupId>
             <artifactId>embedded-postgres</artifactId>
             <version>2.2.2</version>
@@ -142,6 +148,7 @@
                             <includes>
                                 <include>com/smarttourplanner/service/*</include>
                                 <include>com/smarttourplanner/catalog/*</include>
+                                <include>com/smarttourplanner/planner/*</include>
                             </includes>
                             <rules>
                                 <rule>
