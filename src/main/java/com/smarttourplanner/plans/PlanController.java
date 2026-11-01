@@ -1,6 +1,8 @@
 package com.smarttourplanner.plans;
 
 import com.smarttourplanner.plans.PlanService.PlanResult;
+import com.smarttourplanner.security.ClientAddress;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import java.net.URI;
@@ -25,14 +27,17 @@ public class PlanController {
             .sMaxAge(Duration.ofDays(1)).cachePublic();
 
     private final PlanService plans;
+    private final ClientAddress clientAddress;
 
-    public PlanController(PlanService plans) {
+    public PlanController(PlanService plans, ClientAddress clientAddress) {
         this.plans = plans;
+        this.clientAddress = clientAddress;
     }
 
     @PostMapping
-    public ResponseEntity<PlanResponse> create(@Valid @RequestBody PlanRequestBody request) {
-        PlanResult result = plans.create(request);
+    public ResponseEntity<PlanResponse> create(
+            @Valid @RequestBody PlanRequestBody request, HttpServletRequest httpRequest) {
+        PlanResult result = plans.create(request, clientAddress.of(httpRequest));
         URI location = URI.create("/api/v1/plans/" + result.plan().publicId());
         HttpStatus status = result.created() ? HttpStatus.CREATED : HttpStatus.OK;
         return ResponseEntity.status(status).location(location).body(result.plan());

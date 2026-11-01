@@ -7,6 +7,7 @@ import com.smarttourplanner.planner.PlannerModels.Leg;
 import com.smarttourplanner.planner.PlannerModels.PlanRequest;
 import com.smarttourplanner.planner.PlannerModels.TripDestination;
 import com.smarttourplanner.planner.PlannerModels.TripPlan;
+import com.smarttourplanner.security.NewPlanLimiter;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -18,16 +19,19 @@ public class PlanService {
     private final PlanRepository plans;
     private final PlanningDataRepository planningData;
     private final VersionedCache cache;
+    private final NewPlanLimiter limiter;
     private final PlanEngine engine = new PlanEngine();
 
-    PlanService(PlanRepository plans, PlanningDataRepository planningData, VersionedCache cache) {
+    PlanService(
+            PlanRepository plans, PlanningDataRepository planningData, VersionedCache cache, NewPlanLimiter limiter) {
         this.plans = plans;
         this.planningData = planningData;
         this.cache = cache;
+        this.limiter = limiter;
     }
 
     /** Returns the existing plan for this request when there is one, and creates it otherwise. */
-    public PlanResult create(PlanRequestBody body) {
+    public PlanResult create(PlanRequestBody body, String client) {
         PlanRequest request = toRequest(body);
         String hash = RequestFingerprint.of(request);
         int version = plans.currentCatalogVersion();
@@ -37,6 +41,7 @@ public class PlanService {
             return new PlanResult(existing.get(), false);
         }
 
+        limiter.check(client);
         TripPlan plan = buildPlan(request);
         plans.insertIfAbsent(PublicIds.next(), hash, version, request, plan);
         return new PlanResult(plans.findByRequest(hash, version).orElseThrow(), true);
