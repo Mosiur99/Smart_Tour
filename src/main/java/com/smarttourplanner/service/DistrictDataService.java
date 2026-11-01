@@ -1,7 +1,7 @@
 package com.smarttourplanner.service;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.core.type.TypeReference;
+import tools.jackson.databind.ObjectMapper;
 import com.smarttourplanner.model.District;
 import com.smarttourplanner.model.DistrictSummary;
 import jakarta.annotation.PostConstruct;

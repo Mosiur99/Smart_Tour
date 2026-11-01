@@ -1,5 +1,5 @@
 # Build stage
-FROM eclipse-temurin:19-jdk AS build
+FROM eclipse-temurin:17-jdk AS build
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends maven && \
     rm -rf /var/lib/apt/lists/*
 
 # Run stage — Debian-based JRE (Alpine breaks JSP compilation in fat JARs)
-FROM eclipse-temurin:19-jre
+FROM eclipse-temurin:17-jre
 WORKDIR /app
 RUN useradd -r -u 10001 app
 COPY --from=build /app/target/smart-tour-planner-1.0.0.war app.war

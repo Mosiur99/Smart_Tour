@@ -2,13 +2,12 @@ package com.smarttourplanner.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.smarttourplanner.model.District;
 import com.smarttourplanner.model.DistrictSummary;
 import java.io.IOException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tools.jackson.databind.json.JsonMapper;
 
 class DistrictDataServiceTest {
 
@@ -16,8 +15,7 @@ class DistrictDataServiceTest {
 
     @BeforeEach
     void loadData() throws IOException {
-        ObjectMapper mapper = new ObjectMapper().disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-        service = new DistrictDataService(mapper);
+        service = new DistrictDataService(JsonMapper.builder().build());
         service.loadIndex();
     }
 
