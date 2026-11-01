@@ -2,6 +2,7 @@ package com.smarttourplanner.web;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.smarttourplanner.support.TestDatabaseConfig;
 import java.io.IOException;
 import java.net.CookieManager;
 import java.net.URI;
@@ -13,9 +14,11 @@ import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 
 /** Runs the real server and renders real JSP pages. */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@Import(TestDatabaseConfig.class)
 class SiteSmokeTest {
 
     private static final String SCRIPT = "<script>alert(1)</script>";
