@@ -10,16 +10,18 @@ import { Notice } from "@/components/ui/Notice";
 import { PlaceSearch, type PlaceOption } from "@/components/ui/PlaceSearch";
 import { Stepper } from "@/components/ui/Stepper";
 import { localePath, type Locale } from "@/i18n/config";
-import { dictionary } from "@/i18n/dictionary";
-import { formatNumber, monthNames } from "@/i18n/format";
+import type { Dictionary } from "@/i18n/dictionary";
+import { formatCount, monthNames } from "@/i18n/format";
 import { matchHubs, toOption } from "./placeOptions";
 
 const BUDGETS: BudgetLevel[] = ["BUDGET", "MID", "PREMIUM"];
 const INTERESTS: Interest[] = ["NATURE", "HERITAGE", "ADVENTURE", "RELAXATION", "CULTURE"];
 const SEARCH_DELAY_MS = 200;
 
-export function PlanForm({ locale }: { locale: Locale }) {
-  const text = dictionary(locale);
+/** Only the plain-text sections, so the browser never downloads the whole dictionary. */
+export type PlanFormText = Pick<Dictionary, "form" | "count">;
+
+export function PlanForm({ locale, text }: { locale: Locale; text: PlanFormText }) {
   const router = useRouter();
   const prefilledDestination = useSearchParams().get("to");
 
@@ -155,7 +157,7 @@ export function PlanForm({ locale }: { locale: Locale }) {
         <Stepper
           label={text.form.days}
           value={days}
-          valueText={text.form.daysValue(formatNumber(days, locale))}
+          valueText={formatCount(text.count.days, days, locale)}
           min={1}
           max={14}
           onChange={setDays}
@@ -165,7 +167,7 @@ export function PlanForm({ locale }: { locale: Locale }) {
         <Stepper
           label={text.form.people}
           value={people}
-          valueText={text.form.peopleValue(formatNumber(people, locale))}
+          valueText={formatCount(text.count.people, people, locale)}
           min={1}
           max={30}
           onChange={setPeople}

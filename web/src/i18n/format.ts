@@ -8,6 +8,12 @@ export function formatNumber(value: number, locale: Locale): string {
   return new Intl.NumberFormat(NUMBER_LOCALE[locale]).format(value);
 }
 
+/** "3 days", "1 day" or "৩ দিন", from the count forms in the dictionary. */
+export function formatCount(forms: { one: string; other: string }, value: number, locale: Locale): string {
+  const form = new Intl.PluralRules(NUMBER_LOCALE[locale]).select(value) === "one" ? forms.one : forms.other;
+  return form.replace("{n}", formatNumber(value, locale));
+}
+
 export function formatDuration(totalMinutes: number, locale: Locale, text: Dictionary): string {
   const hours = Math.floor(totalMinutes / 60);
   const minutes = totalMinutes % 60;

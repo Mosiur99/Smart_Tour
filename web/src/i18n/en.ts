@@ -1,4 +1,8 @@
-/** English text. The Bangla file must provide every key, which TypeScript checks. */
+/**
+ * English text. The Bangla file must provide every key, which TypeScript checks.
+ * Sections used in the browser (form, count, share) hold only plain strings, so
+ * the server can pass them to client components without shipping both languages.
+ */
 export const en = {
   site: {
     name: "SmartTour",
@@ -23,11 +27,9 @@ export const en = {
     pickFrom: "Choose a starting point from the list.",
     pickTo: "Choose a destination from the list.",
     days: "Days",
-    daysValue: (days: string) => `${days} days`,
     fewerDays: "Fewer days",
     moreDays: "More days",
     people: "People",
-    peopleValue: (people: string) => `${people} people`,
     fewerPeople: "Fewer people",
     morePeople: "More people",
     budget: "Spending",
@@ -51,13 +53,24 @@ export const en = {
       offline: "You seem to be offline. Check your connection and try again.",
     },
   },
+  /** "{n}" becomes the number in the visitor's digits. */
+  count: {
+    days: { one: "{n} day", other: "{n} days" },
+    people: { one: "{n} person", other: "{n} people" },
+    rooms: { one: "{n} room", other: "{n} rooms" },
+    nights: { one: "{n} night", other: "{n} nights" },
+  },
+  share: {
+    share: "Share plan",
+    copied: "Link copied",
+    print: "Print",
+  },
   plan: {
-    title: (days: string, place: string) => `${days} days in ${place}`,
-    summary: (from: string, people: string, budget: string) =>
-      `From ${from} · ${people} people · ${budget}`,
+    title: (days: string, place: string) => `${days} in ${place}`,
+    summary: (from: string, people: string, budget: string) => `From ${from} · ${people} · ${budget}`,
     metaDescription: (place: string) => `A day-by-day trip plan for ${place} with estimated costs.`,
     total: "Estimated total",
-    forPeople: (people: string) => `For ${people} people, travel and stay included`,
+    forPeople: (people: string) => `For ${people}, travel and stay included`,
     costs: {
       TRANSPORT: "Travel there and back",
       HOTEL: "Hotel",
@@ -80,7 +93,7 @@ export const en = {
     restDay: "A free day. Rest, or explore at your own pace.",
     hotel: "Where to stay",
     perNight: (range: string) => `${range} per room per night`,
-    rooms: (rooms: string, nights: string) => `${rooms} room, ${nights} nights`,
+    rooms: (rooms: string, nights: string) => `${rooms}, ${nights}`,
     modes: { BUS: "Bus", TRAIN: "Train", LAUNCH: "Launch", SHIP: "Ship", FLIGHT: "Flight", CAR: "Car", BOAT: "Boat" },
     fareUnknown: "fare unknown",
     notices: {
@@ -89,10 +102,7 @@ export const en = {
       HOTEL_AT_OTHER_LEVEL: "We found no hotel at your spending level, so this one is at another level.",
       NO_HOTEL_AVAILABLE: "We have no checked hotel here yet. The total leaves out the stay.",
     },
-    share: "Share plan",
     shareText: (title: string) => `${title}, planned with SmartTour`,
-    copied: "Link copied",
-    print: "Print",
     newPlan: "Make another plan",
   },
   destination: {

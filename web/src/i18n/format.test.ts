@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { dictionary } from "./dictionary";
-import { formatDuration, formatMonthYear, formatNumber, monthNames } from "./format";
+import { formatCount, formatDuration, formatMonthYear, formatNumber, monthNames } from "./format";
 
 describe("formatDuration", () => {
   it("writes hours and minutes in English", () => {
@@ -11,6 +11,17 @@ describe("formatDuration", () => {
 
   it("writes Bangla digits and words in Bangla", () => {
     expect(formatDuration(270, "bn", dictionary("bn"))).toBe("৪ ঘণ্টা ৩০ মিনিট");
+  });
+});
+
+describe("formatCount", () => {
+  it("uses the singular for one in English", () => {
+    expect(formatCount(dictionary("en").count.days, 1, "en")).toBe("1 day");
+    expect(formatCount(dictionary("en").count.days, 3, "en")).toBe("3 days");
+  });
+
+  it("writes Bangla digits", () => {
+    expect(formatCount(dictionary("bn").count.people, 2, "bn")).toBe("২ জন");
   });
 });
 

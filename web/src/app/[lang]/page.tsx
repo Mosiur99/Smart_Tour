@@ -34,7 +34,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       </div>
       {/* The form reads ?to= from the address, which needs a Suspense boundary on a static page. */}
       <Suspense>
-        <PlanForm locale={lang} />
+        <PlanForm locale={lang} text={{ form: text.form, count: text.count }} />
       </Suspense>
     </div>
   );

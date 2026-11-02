@@ -1,7 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { PlanForm } from "./PlanForm";
+import { dictionary } from "@/i18n/dictionary";
+import type { Locale } from "@/i18n/config";
+import { PlanForm as Form } from "./PlanForm";
+
+function PlanForm({ locale }: { locale: Locale }) {
+  const text = dictionary(locale);
+  return <Form locale={locale} text={{ form: text.form, count: text.count }} />;
+}
 
 const push = vi.fn();
 let searchParams = new URLSearchParams();

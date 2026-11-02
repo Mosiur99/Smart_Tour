@@ -4,7 +4,7 @@ import { Notice } from "@/components/ui/Notice";
 import { RouteLine, type RouteStop } from "@/components/ui/RouteLine";
 import { localName, localePath, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionary";
-import { formatDuration, formatNumber } from "@/i18n/format";
+import { formatCount, formatDuration, formatNumber } from "@/i18n/format";
 import { formatTakaRange } from "@/lib/money";
 import { ShareActions } from "./ShareActions";
 
@@ -19,17 +19,17 @@ type PlanViewProps = {
 
 export function planTitle(plan: TripPlan, locale: Locale, text: Dictionary): string {
   const place = localName(locale, { nameEn: plan.destinationNameEn, nameBn: plan.destinationNameBn });
-  return text.plan.title(formatNumber(plan.days, locale), place);
+  return text.plan.title(formatCount(text.count.days, plan.days, locale), place);
 }
 
 export function PlanView({ plan, fromName, budgetName, hubName, locale, text }: PlanViewProps) {
   const title = planTitle(plan, locale, text);
-  const number = (value: number) => formatNumber(value, locale);
+  const people = formatCount(text.count.people, plan.people, locale);
 
   return (
     <article className="flex flex-col gap-8">
       <header className="flex flex-col gap-2">
-        <p className="m-0 text-muted">{text.plan.summary(fromName, number(plan.people), budgetName)}</p>
+        <p className="m-0 text-muted">{text.plan.summary(fromName, people, budgetName)}</p>
         <h1 className="m-0 text-[32px]">{title}</h1>
       </header>
 
@@ -60,7 +60,12 @@ export function PlanView({ plan, fromName, budgetName, hubName, locale, text }: 
           <p className="m-0 text-muted">
             {text.plan.perNight(formatTakaRange(plan.hotel.priceMin, plan.hotel.priceMax, locale))}
           </p>
-          <p className="m-0 text-muted">{text.plan.rooms(number(plan.rooms), number(plan.nights))}</p>
+          <p className="m-0 text-muted">
+            {text.plan.rooms(
+              formatCount(text.count.rooms, plan.rooms, locale),
+              formatCount(text.count.nights, plan.nights, locale),
+            )}
+          </p>
         </section>
       )}
 
@@ -68,7 +73,7 @@ export function PlanView({ plan, fromName, budgetName, hubName, locale, text }: 
         <JourneySection title={text.plan.goingHome} journey={plan.inbound} {...{ hubName, locale, text }} />
       )}
 
-      <ShareActions locale={locale} title={title} />
+      <ShareActions title={title} shareText={text.plan.shareText(title)} text={text.share} />
       <Link href={localePath(locale, "/")} className="text-accent print:hidden">
         {text.plan.newPlan}
       </Link>
@@ -90,7 +95,9 @@ function Budget({ plan, locale, text }: { plan: TripPlan; locale: Locale; text: 
         <p className="m-0 font-display text-[28px] leading-tight font-semibold">
           {formatTakaRange(budget.low, budget.high, locale)}
         </p>
-        <p className="m-0 text-sm text-muted">{text.plan.forPeople(formatNumber(plan.people, locale))}</p>
+        <p className="m-0 text-sm text-muted">
+          {text.plan.forPeople(formatCount(text.count.people, plan.people, locale))}
+        </p>
       </div>
       <dl className="m-0 flex flex-col gap-1 border-t-2 border-dashed border-line pt-3">
         {budget.costs.map((cost) => (
