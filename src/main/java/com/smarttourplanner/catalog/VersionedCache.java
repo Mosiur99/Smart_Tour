@@ -32,6 +32,11 @@ public class VersionedCache {
                 .build();
     }
 
+    /** Rereads the version on the next lookup, so a change made on this server shows at once. */
+    public void forgetVersion() {
+        version.invalidateAll();
+    }
+
     /** A loader that returns null is not cached. A loader must not call this cache itself. */
     @SuppressWarnings("unchecked")
     public <T> T get(String key, Supplier<T> loader) {

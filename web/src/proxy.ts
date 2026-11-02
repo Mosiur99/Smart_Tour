@@ -8,6 +8,9 @@ import { NextResponse, type NextRequest } from "next/server";
 export function proxy(request: NextRequest) {
   const { pathname, search } = request.nextUrl;
 
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    return adminOnly(request);
+  }
   if (pathname === "/en" || pathname.startsWith("/en/")) {
     return NextResponse.next();
   }
@@ -22,7 +25,20 @@ export function proxy(request: NextRequest) {
   return NextResponse.rewrite(url);
 }
 
+/**
+ * In production the admin panel answers only on its own address, which
+ * Cloudflare Access guards. Locally, with no ADMIN_HOST set, it's open,
+ * because the API still refuses anyone who isn't an admin.
+ */
+function adminOnly(request: NextRequest) {
+  const adminHost = process.env.ADMIN_HOST;
+  if (adminHost && request.headers.get("host") !== adminHost) {
+    return new NextResponse(null, { status: 404 });
+  }
+  return NextResponse.next();
+}
+
 export const config = {
-  // Skips the API, Next.js files and anything with a file extension.
-  matcher: ["/((?!api|_next|.*\\..*).*)"],
+  // Skips the API, the API's refresh hook, Next.js files and anything with a file extension.
+  matcher: ["/((?!api|hooks|_next|.*\\..*).*)"],
 };

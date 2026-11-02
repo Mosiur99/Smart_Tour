@@ -1,5 +1,6 @@
 package com.smarttourplanner.api;
 
+import com.smarttourplanner.admin.AdminModels;
 import com.smarttourplanner.catalog.CatalogModels;
 import com.smarttourplanner.planner.PlannerModels;
 import com.smarttourplanner.plans.PlanResponse;
@@ -30,7 +31,8 @@ import org.springframework.context.annotation.Configuration;
 class OpenApiConfig {
 
     /** Request bodies keep the required list that their validation rules produce. */
-    private static final Set<String> REQUEST_BODIES = Set.of("PlanRequestBody");
+    private static final Set<String> REQUEST_BODIES =
+            Set.of("PlanRequestBody", "SaveRequest", "CreateRequest", "StatusRequest");
 
     @Bean
     OpenApiCustomizer exactResponseShapes() {
@@ -58,7 +60,8 @@ class OpenApiConfig {
     /** Every record the API returns, found by walking from the response types, keyed by schema name. */
     static Map<String, Class<?>> responseRecords() {
         Map<String, Class<?>> found = new HashMap<>();
-        Stream.of(CatalogModels.class.getDeclaredClasses(), PlannerModels.class.getDeclaredClasses())
+        Stream.of(AdminModels.class.getDeclaredClasses(), CatalogModels.class.getDeclaredClasses(),
+                        PlannerModels.class.getDeclaredClasses())
                 .flatMap(Stream::of)
                 .forEach(type -> collect(type, found));
         collect(PlanResponse.class, found);

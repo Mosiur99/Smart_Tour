@@ -4,7 +4,7 @@ const SITE_URL = process.env.SITE_URL ?? "http://localhost:3000";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: { userAgent: "*", allow: "/", disallow: ["/design", "/en/design"] },
+    rules: { userAgent: "*", allow: "/", disallow: ["/design", "/en/design", "/admin"] },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

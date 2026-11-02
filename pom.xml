@@ -70,6 +70,12 @@
             <artifactId>caffeine</artifactId>
         </dependency>
         <dependency>
+            <!-- Checks the signed login token Cloudflare Access sends with admin requests. -->
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>10.10</version>
+        </dependency>
+        <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
             <version>3.2.0</version>

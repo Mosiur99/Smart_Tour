@@ -4,6 +4,150 @@
  */
 
 export interface paths {
+    "/api/v1/admin/destinations": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["destinations_1"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/destinations/{slug}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["workspace"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/history": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["history"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/me": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["me"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/schema": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["schema"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/stale": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get: operations["stale"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/{kind}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["create_1"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/{kind}/{id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put: operations["save"];
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/api/v1/admin/{kind}/{id}/status": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["changeStatus"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/v1/destinations": {
         parameters: {
             query?: never;
@@ -104,6 +248,41 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        AdminRecord: {
+            destinationSlug: string | null;
+            entity: string;
+            /** Format: int64 */
+            id: number;
+            label: string;
+            /** Format: int32 */
+            revision: number;
+            status: string;
+            values: {
+                [key: string]: unknown;
+            };
+        };
+        AdminUser: {
+            email: string;
+            /** @enum {string} */
+            role: "EDITOR" | "PUBLISHER";
+        };
+        AuditEntry: {
+            action: string;
+            actor: string;
+            after: {
+                [key: string]: unknown;
+            } | null;
+            /** Format: date-time */
+            at: string;
+            before: {
+                [key: string]: unknown;
+            } | null;
+            entity: string;
+            /** Format: int64 */
+            entityId: number;
+            /** Format: int64 */
+            id: number;
+        };
         BudgetEstimate: {
             costs: components["schemas"]["CostRange"][];
             /** Format: int32 */
@@ -119,6 +298,12 @@ export interface components {
             high: number;
             /** Format: int32 */
             low: number;
+        };
+        CreateRequest: {
+            destinationSlug?: string;
+            values: {
+                [key: string]: unknown;
+            };
         };
         DayPlan: {
             /** Format: int32 */
@@ -168,6 +353,18 @@ export interface components {
             verified: boolean;
             website: string | null;
         };
+        DestinationOverview: {
+            nameBn: string | null;
+            nameEn: string;
+            /** Format: int32 */
+            published: number;
+            /** Format: int32 */
+            records: number;
+            slug: string;
+            /** Format: int32 */
+            stale: number;
+            status: string;
+        };
         DestinationPage: {
             items: components["schemas"]["DestinationSummary"][];
             nextCursor: string | null;
@@ -180,6 +377,20 @@ export interface components {
             nameEn: string;
             slug: string;
             verified: boolean;
+        };
+        EntitySpec: {
+            entity: string;
+            fields: components["schemas"]["FieldSpec"][];
+        };
+        FieldSpec: {
+            createOnly: boolean;
+            max: number | null;
+            min: number | null;
+            name: string;
+            options: string[];
+            required: boolean;
+            /** @enum {string} */
+            type: "TEXT" | "LONG_TEXT" | "URL" | "INTEGER" | "DECIMAL" | "DATE" | "CHOICE" | "HUB" | "NUMBERS" | "TAGS";
         };
         Hotel: {
             /** Format: int64 */
@@ -291,10 +502,32 @@ export interface components {
             publicId: string;
             request: components["schemas"]["PlanRequest"];
         };
+        SaveRequest: {
+            /** Format: int32 */
+            revision: number;
+            values: {
+                [key: string]: unknown;
+            };
+        };
         ScheduledStop: {
             stop: components["schemas"]["Stop"];
             /** Format: int32 */
             travelMinutes: number;
+        };
+        StaleRecord: {
+            /** Format: date */
+            checkedAt: string;
+            destinationSlug: string | null;
+            entity: string;
+            /** Format: int64 */
+            id: number;
+            label: string;
+        };
+        StatusRequest: {
+            /** Format: int32 */
+            revision: number;
+            /** @enum {string} */
+            status: "PUBLISHED" | "DRAFT" | "ARCHIVED";
         };
         Stop: {
             /** Format: int32 */
@@ -363,6 +596,12 @@ export interface components {
             nameEn: string;
             note: string | null;
         };
+        Workspace: {
+            destination: components["schemas"]["AdminRecord"];
+            hotels: components["schemas"]["AdminRecord"][];
+            legs: components["schemas"]["AdminRecord"][];
+            places: components["schemas"]["AdminRecord"][];
+        };
     };
     responses: never;
     parameters: never;
@@ -372,6 +611,211 @@ export interface components {
 }
 export type $defs = Record<string, never>;
 export interface operations {
+    destinations_1: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["DestinationOverview"][];
+                };
+            };
+        };
+    };
+    workspace: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                slug: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["Workspace"];
+                };
+            };
+        };
+    };
+    history: {
+        parameters: {
+            query?: {
+                kind?: string | null;
+                id?: number | null;
+            };
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["AuditEntry"][];
+                };
+            };
+        };
+    };
+    me: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["AdminUser"];
+                };
+            };
+        };
+    };
+    schema: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["EntitySpec"][];
+                };
+            };
+        };
+    };
+    stale: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["StaleRecord"][];
+                };
+            };
+        };
+    };
+    create_1: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                kind: string;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["CreateRequest"];
+            };
+        };
+        responses: {
+            /** @description Created */
+            201: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["AdminRecord"];
+                };
+            };
+        };
+    };
+    save: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                kind: string;
+                id: number;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["SaveRequest"];
+            };
+        };
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["AdminRecord"];
+                };
+            };
+        };
+    };
+    changeStatus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                kind: string;
+                id: number;
+            };
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["StatusRequest"];
+            };
+        };
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "*/*": components["schemas"]["AdminRecord"];
+                };
+            };
+        };
+    };
     destinations: {
         parameters: {
             query?: {

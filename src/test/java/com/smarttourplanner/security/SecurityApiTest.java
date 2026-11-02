@@ -98,6 +98,16 @@ class SecurityApiTest {
     }
 
     @Test
+    void givesAdminSavesMoreRoomButStillALimit() throws Exception {
+        String longNote = "{\"revision\": 0, \"values\": {\"note\": \"%s\"}}";
+
+        // Within the admin limit, so the request reaches the login check.
+        assertThat(put("/api/v1/admin/hotels/1", longNote.formatted("ন".repeat(3_000))).statusCode()).isEqualTo(401);
+        assertThat(put("/api/v1/admin/hotels/1", longNote.formatted("x".repeat(40_000))).statusCode()).isEqualTo(413);
+        assertThat(put("/api/v1/plans/x", longNote.formatted("x".repeat(5_000))).statusCode()).isEqualTo(413);
+    }
+
+    @Test
     void refusesRequestsOfUnknownSize() throws Exception {
         HttpRequest chunked = request("/api/v1/plans")
                 .header("Content-Type", "application/json")
@@ -153,6 +163,12 @@ class SecurityApiTest {
                         .header("Content-Type", "application/json")
                         .POST(HttpRequest.BodyPublishers.ofString(json))
                         .build(),
+                HttpResponse.BodyHandlers.ofString());
+    }
+
+    private HttpResponse<String> put(String path, String json) throws IOException, InterruptedException {
+        return client.send(
+                request(path).header("Content-Type", "application/json").PUT(HttpRequest.BodyPublishers.ofString(json)).build(),
                 HttpResponse.BodyHandlers.ofString());
     }
 

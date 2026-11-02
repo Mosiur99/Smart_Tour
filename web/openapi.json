@@ -1,6 +1,84 @@
 {
   "components" : {
     "schemas" : {
+      "AdminRecord" : {
+        "properties" : {
+          "destinationSlug" : {
+            "type" : [ "string", "null" ]
+          },
+          "entity" : {
+            "type" : "string"
+          },
+          "id" : {
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "label" : {
+            "type" : "string"
+          },
+          "revision" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "status" : {
+            "type" : "string"
+          },
+          "values" : {
+            "additionalProperties" : { },
+            "type" : "object"
+          }
+        },
+        "required" : [ "destinationSlug", "entity", "id", "label", "revision", "status", "values" ],
+        "type" : "object"
+      },
+      "AdminUser" : {
+        "properties" : {
+          "email" : {
+            "type" : "string"
+          },
+          "role" : {
+            "enum" : [ "EDITOR", "PUBLISHER" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "email", "role" ],
+        "type" : "object"
+      },
+      "AuditEntry" : {
+        "properties" : {
+          "action" : {
+            "type" : "string"
+          },
+          "actor" : {
+            "type" : "string"
+          },
+          "after" : {
+            "additionalProperties" : { },
+            "type" : [ "object", "null" ]
+          },
+          "at" : {
+            "format" : "date-time",
+            "type" : "string"
+          },
+          "before" : {
+            "additionalProperties" : { },
+            "type" : [ "object", "null" ]
+          },
+          "entity" : {
+            "type" : "string"
+          },
+          "entityId" : {
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "id" : {
+            "format" : "int64",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "action", "actor", "after", "at", "before", "entity", "entityId", "id" ],
+        "type" : "object"
+      },
       "BudgetEstimate" : {
         "properties" : {
           "costs" : {
@@ -43,6 +121,20 @@
           }
         },
         "required" : [ "category", "high", "low" ],
+        "type" : "object"
+      },
+      "CreateRequest" : {
+        "properties" : {
+          "destinationSlug" : {
+            "pattern" : "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "type" : "string"
+          },
+          "values" : {
+            "additionalProperties" : { },
+            "type" : "object"
+          }
+        },
+        "required" : [ "values" ],
         "type" : "object"
       },
       "DayPlan" : {
@@ -188,6 +280,36 @@
         "required" : [ "address", "checkedAt", "nameBn", "nameEn", "note", "priceMax", "priceMin", "roomCapacity", "tier", "verified", "website" ],
         "type" : "object"
       },
+      "DestinationOverview" : {
+        "properties" : {
+          "nameBn" : {
+            "type" : [ "string", "null" ]
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "published" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "records" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "slug" : {
+            "type" : "string"
+          },
+          "stale" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "status" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "nameBn", "nameEn", "published", "records", "slug", "stale", "status" ],
+        "type" : "object"
+      },
       "DestinationPage" : {
         "properties" : {
           "items" : {
@@ -228,6 +350,52 @@
           }
         },
         "required" : [ "divisionNameBn", "divisionNameEn", "divisionSlug", "nameBn", "nameEn", "slug", "verified" ],
+        "type" : "object"
+      },
+      "EntitySpec" : {
+        "properties" : {
+          "entity" : {
+            "type" : "string"
+          },
+          "fields" : {
+            "items" : {
+              "$ref" : "#/components/schemas/FieldSpec"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "entity", "fields" ],
+        "type" : "object"
+      },
+      "FieldSpec" : {
+        "properties" : {
+          "createOnly" : {
+            "type" : "boolean"
+          },
+          "max" : {
+            "type" : [ "number", "null" ]
+          },
+          "min" : {
+            "type" : [ "number", "null" ]
+          },
+          "name" : {
+            "type" : "string"
+          },
+          "options" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "required" : {
+            "type" : "boolean"
+          },
+          "type" : {
+            "enum" : [ "TEXT", "LONG_TEXT", "URL", "INTEGER", "DECIMAL", "DATE", "CHOICE", "HUB", "NUMBERS", "TAGS" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "createOnly", "max", "min", "name", "options", "required", "type" ],
         "type" : "object"
       },
       "Hotel" : {
@@ -548,6 +716,21 @@
         "required" : [ "createdAt", "plan", "publicId", "request" ],
         "type" : "object"
       },
+      "SaveRequest" : {
+        "properties" : {
+          "revision" : {
+            "format" : "int32",
+            "minimum" : 0,
+            "type" : "integer"
+          },
+          "values" : {
+            "additionalProperties" : { },
+            "type" : "object"
+          }
+        },
+        "required" : [ "revision", "values" ],
+        "type" : "object"
+      },
       "ScheduledStop" : {
         "properties" : {
           "stop" : {
@@ -559,6 +742,44 @@
           }
         },
         "required" : [ "stop", "travelMinutes" ],
+        "type" : "object"
+      },
+      "StaleRecord" : {
+        "properties" : {
+          "checkedAt" : {
+            "format" : "date",
+            "type" : "string"
+          },
+          "destinationSlug" : {
+            "type" : [ "string", "null" ]
+          },
+          "entity" : {
+            "type" : "string"
+          },
+          "id" : {
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "label" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "checkedAt", "destinationSlug", "entity", "id", "label" ],
+        "type" : "object"
+      },
+      "StatusRequest" : {
+        "properties" : {
+          "revision" : {
+            "format" : "int32",
+            "minimum" : 0,
+            "type" : "integer"
+          },
+          "status" : {
+            "enum" : [ "PUBLISHED", "DRAFT", "ARCHIVED" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "revision", "status" ],
         "type" : "object"
       },
       "Stop" : {
@@ -750,6 +971,33 @@
         },
         "required" : [ "kind", "location", "nameEn", "note" ],
         "type" : "object"
+      },
+      "Workspace" : {
+        "properties" : {
+          "destination" : {
+            "$ref" : "#/components/schemas/AdminRecord"
+          },
+          "hotels" : {
+            "items" : {
+              "$ref" : "#/components/schemas/AdminRecord"
+            },
+            "type" : "array"
+          },
+          "legs" : {
+            "items" : {
+              "$ref" : "#/components/schemas/AdminRecord"
+            },
+            "type" : "array"
+          },
+          "places" : {
+            "items" : {
+              "$ref" : "#/components/schemas/AdminRecord"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "destination", "hotels", "legs", "places" ],
+        "type" : "object"
       }
     }
   },
@@ -759,6 +1007,274 @@
   },
   "openapi" : "3.1.0",
   "paths" : {
+    "/api/v1/admin/destinations" : {
+      "get" : {
+        "operationId" : "destinations_1",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "items" : {
+                    "$ref" : "#/components/schemas/DestinationOverview"
+                  },
+                  "type" : "array"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/destinations/{slug}" : {
+      "get" : {
+        "operationId" : "workspace",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "slug",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Workspace"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/history" : {
+      "get" : {
+        "operationId" : "history",
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "kind",
+          "required" : false,
+          "schema" : {
+            "type" : [ "string", "null" ]
+          }
+        }, {
+          "in" : "query",
+          "name" : "id",
+          "required" : false,
+          "schema" : {
+            "format" : "int64",
+            "type" : [ "integer", "null" ]
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "items" : {
+                    "$ref" : "#/components/schemas/AuditEntry"
+                  },
+                  "type" : "array"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/me" : {
+      "get" : {
+        "operationId" : "me",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AdminUser"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/schema" : {
+      "get" : {
+        "operationId" : "schema",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "items" : {
+                    "$ref" : "#/components/schemas/EntitySpec"
+                  },
+                  "type" : "array"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/stale" : {
+      "get" : {
+        "operationId" : "stale",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "items" : {
+                    "$ref" : "#/components/schemas/StaleRecord"
+                  },
+                  "type" : "array"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/{kind}" : {
+      "post" : {
+        "operationId" : "create_1",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "kind",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CreateRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "201" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AdminRecord"
+                }
+              }
+            },
+            "description" : "Created"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/{kind}/{id}" : {
+      "put" : {
+        "operationId" : "save",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "kind",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "format" : "int64",
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/SaveRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AdminRecord"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
+    "/api/v1/admin/{kind}/{id}/status" : {
+      "post" : {
+        "operationId" : "changeStatus",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "kind",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "format" : "int64",
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/StatusRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/AdminRecord"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "admin-controller" ]
+      }
+    },
     "/api/v1/destinations" : {
       "get" : {
         "operationId" : "destinations",

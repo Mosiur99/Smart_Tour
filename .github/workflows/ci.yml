@@ -75,7 +75,11 @@ jobs:
       - name: Start the API
         run: |
           mvn -B -q package -DskipTests
-          nohup java -jar target/smart-tour-planner-*.war --smarttour.catalog.version-check-interval=1s > api.log 2>&1 &
+          # A local admin user stands in for Cloudflare Access, which CI doesn't have.
+          nohup java -jar target/smart-tour-planner-*.war --smarttour.catalog.version-check-interval=1s \
+            --smarttour.admin.local-user=e2e@example.com --smarttour.admin.publishers=e2e@example.com \
+            --smarttour.web.refresh-url=http://localhost:3917/hooks/catalog-changed \
+            --smarttour.web.refresh-secret=e2e-only-refresh-secret > api.log 2>&1 &
           for attempt in $(seq 1 60); do curl -sf http://localhost:8081/health && break; sleep 2; done
           curl -sf http://localhost:8081/health
       - name: Load the fake test data

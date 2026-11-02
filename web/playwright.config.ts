@@ -29,5 +29,7 @@ export default defineConfig({
     command: `npx next start -p ${PORT}`,
     url: `http://localhost:${PORT}/en`,
     reuseExistingServer: !process.env.CI,
+    // Shared with the API's smarttour.web.refresh-secret, so a publish refreshes pages.
+    env: { REFRESH_SECRET: process.env.REFRESH_SECRET ?? "e2e-only-refresh-secret" },
   },
 });

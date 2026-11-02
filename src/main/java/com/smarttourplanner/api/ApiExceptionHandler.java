@@ -1,5 +1,7 @@
 package com.smarttourplanner.api;
 
+import com.smarttourplanner.admin.AdminController;
+import com.smarttourplanner.admin.AdminException;
 import com.smarttourplanner.catalog.CatalogController;
 import com.smarttourplanner.catalog.CatalogNotFoundException;
 import com.smarttourplanner.planner.NoRouteException;
@@ -17,7 +19,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 /** Returns every API error in the standard Problem Details format, without internal details. */
-@RestControllerAdvice(basePackageClasses = {CatalogController.class, PlanController.class})
+@RestControllerAdvice(basePackageClasses = {AdminController.class, CatalogController.class, PlanController.class})
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(ApiExceptionHandler.class);
@@ -46,6 +48,16 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
                 .header(HttpHeaders.RETRY_AFTER, String.valueOf(exception.retryAfterSeconds()))
                 .body(problem);
+    }
+
+    /** Errors that belong to one field list them under "fields", so the admin panel can mark each one. */
+    @ExceptionHandler(AdminException.class)
+    public ProblemDetail handleAdmin(AdminException exception) {
+        ProblemDetail problem = ProblemDetail.forStatusAndDetail(exception.status(), exception.getMessage());
+        if (!exception.fields().isEmpty()) {
+            problem.setProperty("fields", exception.fields());
+        }
+        return problem;
     }
 
     @ExceptionHandler(Exception.class)

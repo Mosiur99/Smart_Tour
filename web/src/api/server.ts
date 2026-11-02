@@ -7,6 +7,9 @@ import type { DestinationDetail, DestinationPage, DestinationSummary, Hub, PlanR
  */
 const API_ORIGIN = process.env.API_ORIGIN ?? "http://localhost:8081";
 
+/** Every catalog read carries this tag, so a publish can refresh them all at once. */
+export const CATALOG_TAG = "catalog";
+
 const TEN_MINUTES = 600;
 const ONE_HOUR = 3600;
 const ONE_DAY = 86400;
@@ -20,9 +23,9 @@ export class ApiError extends Error {
 }
 
 /** Returns null for 404, so pages can show their not-found state. */
-async function get<T>(path: string, revalidate: number): Promise<T | null> {
+async function get<T>(path: string, revalidate: number, tags: string[] = [CATALOG_TAG]): Promise<T | null> {
   const response = await fetch(`${API_ORIGIN}${path}`, {
-    next: { revalidate },
+    next: { revalidate, tags },
     headers: { accept: "application/json" },
     signal: AbortSignal.timeout(5000),
   });
@@ -46,7 +49,7 @@ export function getDestination(slug: string): Promise<DestinationDetail | null> 
 
 /** A saved plan never changes, so it can be cached for a long time. */
 export function getPlan(publicId: string): Promise<PlanResponse | null> {
-  return PUBLIC_ID.test(publicId) ? get(`/api/v1/plans/${publicId}`, ONE_DAY) : Promise.resolve(null);
+  return PUBLIC_ID.test(publicId) ? get(`/api/v1/plans/${publicId}`, ONE_DAY, []) : Promise.resolve(null);
 }
 
 /** Walks every page. There are 64 districts, so this stays small. */

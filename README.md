@@ -221,6 +221,7 @@ The Next.js frontend lives in `web/`. Needs Node 20.9 or newer. Bangla is served
 | Destinations | `/destinations`, `/destinations/<slug>` |
 | Route guide | `/routes/dhaka-to-sylhet` |
 | Every component | `/design` |
+| Admin panel | `/admin` (see [Admin panel](#admin-panel)) |
 
 ```bash
 cd web
@@ -253,4 +254,39 @@ The frontend's API types are generated from `web/openapi.json`. A backend test f
 ```bash
 mvn test -Dtest=OpenApiContractTest -Dopenapi.update=true
 cd web && npm run api:types
+```
+
+## Admin panel
+
+The admin panel is at `/admin` in the web app. Editors and publishers use it to fix data, check prices and publish them. A change to anything visitors see shows on the site within seconds, with no deploy.
+
+| Who | Can |
+|---|---|
+| Editor | Add records and edit drafts |
+| Publisher | Everything, including editing what visitors see and publishing, unpublishing or archiving |
+
+How it works:
+
+- **Login.** Cloudflare Access signs people in. The API checks Access's signed token on every request, so a request that reaches the server another way can't claim to be an admin. No passwords are stored.
+- **Roles.** Admins are listed by email in configuration. There is no user table.
+- **Publishing.** New records start as drafts. The database refuses to publish a record that's missing a source, checked date or other required detail, and the panel says what's missing.
+- **Refreshing.** A change to a visible record raises the catalog version. This API server's cache refreshes at once and other servers' within 5 seconds. Then the API calls the website's `/hooks/catalog-changed`, which rebuilds the pages on their next visit.
+- **Safety.** Every change goes to `audit_log` with the old and new values. A save from an out-of-date screen is refused instead of undoing someone else's change. Changes sent from other sites are refused.
+- **Checking.** Published details last checked more than 90 days ago show at the top of the panel.
+
+| Setting | Example | Purpose |
+|---|---|---|
+| `smarttour.admin.access.team-domain` | `smarttour.cloudflareaccess.com` | Turns on the Access login check |
+| `smarttour.admin.access.audience` | the Access app's audience tag | Accepts only tokens for this app |
+| `smarttour.admin.publishers` | `a@example.com,b@example.com` | Publisher emails |
+| `smarttour.admin.editors` | `c@example.com` | Editor emails |
+| `smarttour.web.refresh-url` | `http://web:3000/hooks/catalog-changed` | Where to tell the website about a change |
+| `smarttour.web.refresh-secret` | a long random string | Shared with the website's `REFRESH_SECRET` |
+
+On the website, `REFRESH_SECRET` turns on the refresh hook, and `ADMIN_HOST` limits `/admin` to the admin address.
+
+To try it locally, run the API with a stand-in login. The app refuses to start with this setting in production or alongside Access:
+
+```bash
+mvn spring-boot:run -Dspring-boot.run.arguments="--smarttour.admin.local-user=me@example.com --smarttour.admin.publishers=me@example.com"
 ```

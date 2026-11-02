@@ -20,3 +20,13 @@ export type Stop = Schemas["Stop"];
 export type MissingCost = Schemas["MissingCost"];
 export type BudgetLevel = PlanRequestBody["budget"];
 export type Interest = NonNullable<PlanRequestBody["interests"]>[number];
+
+export type AdminUser = Schemas["AdminUser"];
+export type AdminRecord = Schemas["AdminRecord"];
+export type AuditEntry = Schemas["AuditEntry"];
+export type DestinationOverview = Schemas["DestinationOverview"];
+export type EntitySpec = Schemas["EntitySpec"];
+export type FieldSpec = Schemas["FieldSpec"];
+export type StaleRecord = Schemas["StaleRecord"];
+export type Workspace = Schemas["Workspace"];
+export type TargetStatus = Schemas["StatusRequest"]["status"];
