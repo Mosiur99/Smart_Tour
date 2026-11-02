@@ -1,0 +1,247 @@
+{
+  "destination": {
+    "slug": "coxs-bazar",
+    "district": "coxs-bazar",
+    "arrivalHub": "coxs-bazar",
+    "nameEn": "Cox's Bazar",
+    "nameBn": "কক্সবাজার",
+    "lat": 21.4272,
+    "lng": 91.9792,
+    "roadFactor": 1.3,
+    "bestMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "minDays": 2,
+    "foodDaily": 700,
+    "localTransportDaily": 500,
+    "travelNote": "Swim only where lifeguard flags allow; rip currents are strong. The beach is busiest on Fridays and holidays."
+  },
+  "archive": [
+    {
+      "kind": "SPOT",
+      "nameEn": "Teknaf and Saint Martin route gateway",
+      "reason": "Not a place to visit. Ships to Saint Martin now leave from Cox's Bazar."
+    }
+  ],
+  "places": [
+    {
+      "kind": "SPOT",
+      "nameEn": "Cox's Bazar sea beach",
+      "nameBn": "কক্সবাজার সমুদ্রসৈকত",
+      "lat": 21.418,
+      "lng": 91.978,
+      "priority": 1,
+      "visitMinutes": 120,
+      "tags": [
+        "beach",
+        "sunset"
+      ],
+      "note": "Laboni and Sugandha points are the main access points."
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Himchari National Park",
+      "nameBn": "হিমছড়ি জাতীয় উদ্যান",
+      "lat": 21.353,
+      "lng": 92.023,
+      "priority": 2,
+      "visitMinutes": 120,
+      "tags": [
+        "hills",
+        "waterfall"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Marine Drive",
+      "nameBn": "মেরিন ড্রাইভ",
+      "lat": 21.3,
+      "lng": 92.035,
+      "priority": 3,
+      "visitMinutes": 60,
+      "tags": [
+        "drive",
+        "sea view"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Inani Beach",
+      "nameBn": "ইনানী সৈকত",
+      "lat": 21.233,
+      "lng": 92.045,
+      "priority": 4,
+      "visitMinutes": 120,
+      "tags": [
+        "beach",
+        "coral stones"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Maheshkhali Island",
+      "nameBn": "মহেশখালী দ্বীপ",
+      "lat": 21.542,
+      "lng": 91.942,
+      "priority": 6,
+      "visitMinutes": 180,
+      "tags": [
+        "island",
+        "temple"
+      ],
+      "note": "Speedboats leave from 6 No. Jetty in town."
+    },
+    {
+      "kind": "HERITAGE",
+      "nameEn": "Ramu Buddhist monasteries",
+      "nameBn": "রামু বৌদ্ধ বিহার",
+      "lat": 21.433,
+      "lng": 92.1,
+      "priority": 5,
+      "visitMinutes": 90,
+      "tags": [
+        "buddhist",
+        "history"
+      ]
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Seafood",
+      "nameBn": "সামুদ্রিক মাছ",
+      "note": "Pick fish at the Kolatoli and Laboni restaurants and have it fried or grilled."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Dried fish",
+      "nameBn": "শুঁটকি",
+      "note": "Loitta, churi and rupchanda shutki are the local favourites."
+    },
+    {
+      "kind": "MARKET",
+      "nameEn": "Burmese Market",
+      "nameBn": "বার্মিজ মার্কেট",
+      "lat": 21.437,
+      "lng": 91.983,
+      "note": "Rakhine-run shops with handloom cloth, pickles and wooden crafts."
+    },
+    {
+      "kind": "MARKET",
+      "nameEn": "Nazirartek dried fish market",
+      "nameBn": "নাজিরারটেক শুঁটকি পল্লী",
+      "lat": 21.46,
+      "lng": 91.97,
+      "note": "The country's largest dried fish yard. Busiest from November to March."
+    },
+    {
+      "kind": "CRAFT",
+      "nameEn": "Rakhine handloom",
+      "nameBn": "রাখাইন তাঁত",
+      "note": "Woven shawls and lungis, sold at the Burmese Market."
+    },
+    {
+      "kind": "CRAFT",
+      "nameEn": "Shell crafts",
+      "nameBn": "ঝিনুক শিল্প",
+      "note": "Shell jewellery and decorations sold along the beach."
+    }
+  ],
+  "hotels": [
+    {
+      "nameEn": "Motel Labonee",
+      "nameBn": "মোটেল লাবণী",
+      "tier": "BUDGET",
+      "address": "Motel Road, Cox's Bazar",
+      "lat": 21.429,
+      "lng": 91.979,
+      "roomCapacity": 2,
+      "priceMin": 1400,
+      "priceMax": 2600,
+      "website": "https://www.hotels.gov.bd/frontend/hotel/11-motel-labonee",
+      "sourceUrl": "https://www.hotels.gov.bd/frontend/hotel/11-motel-labonee",
+      "note": "Parjatan. Non-AC twin Tk1,400, AC twin Tk2,000, executive AC couple Tk2,600."
+    },
+    {
+      "nameEn": "Motel Upal",
+      "nameBn": "মোটেল উপল",
+      "tier": "MID",
+      "address": "Motel Road, Cox's Bazar",
+      "lat": 21.4295,
+      "lng": 91.9795,
+      "roomCapacity": 2,
+      "priceMin": 2500,
+      "priceMax": 3500,
+      "website": "https://www.hotels.gov.bd/frontend/hotel/19-motel-upal",
+      "sourceUrl": "https://www.hotels.gov.bd/frontend/hotel/19-motel-upal",
+      "note": "Parjatan. Non-AC twin Tk2,500, AC couple Tk3,500."
+    },
+    {
+      "nameEn": "Hotel Shaibal",
+      "nameBn": "হোটেল শৈবাল",
+      "tier": "PREMIUM",
+      "address": "Motel Road, Cox's Bazar",
+      "lat": 21.43,
+      "lng": 91.978,
+      "roomCapacity": 2,
+      "priceMin": 4200,
+      "priceMax": 7500,
+      "website": "https://www.hotels.gov.bd/frontend/hotel/6-hotel-shaibal",
+      "sourceUrl": "https://www.hotels.gov.bd/frontend/hotel/6-hotel-shaibal",
+      "note": "Parjatan. AC couple Tk4,200 to suite Tk7,500."
+    }
+  ],
+  "legs": [
+    {
+      "from": "dhaka",
+      "to": "coxs-bazar",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 600,
+      "departureNote": "Night coaches leave Sayedabad and Fakirapool. Shyamoli, Hanif and others run this route.",
+      "fareMin": 900,
+      "fareMax": 1147,
+      "sourceUrl": "https://www.thedailystar.net/news/bangladesh/transport/news/brta-publishes-new-bus-fare-chart-4160666",
+      "note": "BRTA fare chart for Sayedabad to Cox's Bazar. AC coaches cost more."
+    },
+    {
+      "from": "coxs-bazar",
+      "to": "dhaka",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 600,
+      "departureNote": "Night coaches leave Kolatoli and the town bus stand.",
+      "fareMin": 900,
+      "fareMax": 1147,
+      "sourceUrl": "https://www.thedailystar.net/news/bangladesh/transport/news/brta-publishes-new-bus-fare-chart-4160666",
+      "note": "BRTA fare chart. AC coaches cost more."
+    },
+    {
+      "from": "dhaka",
+      "to": "coxs-bazar",
+      "mode": "TRAIN",
+      "serviceName": "Cox's Bazar Express",
+      "durationMinutes": 500,
+      "departureNote": "Leaves Kamalapur at 11:00pm, reaches Cox's Bazar at 7:20am.",
+      "fareMin": 695,
+      "fareMax": 1325,
+      "sourceUrl": "https://www.dhakatribune.com/bangladesh/development/330631/dhaka-to-cox-s-bazar-by-train",
+      "note": "Shovon chair Tk695, AC chair Tk1,325. Tickets sell out early; buy on the railway's site."
+    },
+    {
+      "from": "coxs-bazar",
+      "to": "dhaka",
+      "mode": "TRAIN",
+      "serviceName": "Cox's Bazar Express",
+      "durationMinutes": 500,
+      "departureNote": "Overnight train to Kamalapur.",
+      "fareMin": 695,
+      "fareMax": 1325,
+      "sourceUrl": "https://www.dhakatribune.com/bangladesh/development/330631/dhaka-to-cox-s-bazar-by-train",
+      "note": "Shovon chair Tk695, AC chair Tk1,325."
+    }
+  ]
+}

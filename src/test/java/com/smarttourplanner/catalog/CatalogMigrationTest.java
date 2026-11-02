@@ -28,7 +28,8 @@ class CatalogMigrationTest {
     @BeforeAll
     static void migrate() {
         DataSource dataSource = TestDatabase.createEmpty();
-        flyway = Flyway.configure().dataSource(dataSource).load();
+        // Stops before V7, which adds the researched route data that RouteDataApiTest covers.
+        flyway = Flyway.configure().dataSource(dataSource).target("6").load();
         flyway.migrate();
         jdbc = new JdbcTemplate(dataSource);
     }

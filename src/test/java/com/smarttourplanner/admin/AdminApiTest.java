@@ -349,7 +349,7 @@ class AdminApiTest {
 
         mvc.perform(as(HELPER, get(ADMIN + "/destinations")))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.length()", is(64)))
+                .andExpect(jsonPath("$.length()", is(66)))
                 .andExpect(jsonPath("$[?(@.slug == 'sylhet')].stale", hasItem(org.hamcrest.Matchers.greaterThan(0))));
     }
 

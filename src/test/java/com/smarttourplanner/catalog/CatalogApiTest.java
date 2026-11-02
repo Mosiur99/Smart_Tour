@@ -56,7 +56,8 @@ class CatalogApiTest {
     void listsHubsSortedByName() throws Exception {
         mvc.perform(get("/api/v1/hubs"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(64)))
+                // 64 district hubs, plus Saint Martin and Sajek from the route data.
+                .andExpect(jsonPath("$", hasSize(66)))
                 .andExpect(jsonPath("$[0].nameEn", is("Bagerhat")))
                 .andExpect(jsonPath("$[?(@.slug == 'rajshahi')].nameBn", hasItem("রাজশাহী")))
                 .andExpect(header().string("Cache-Control", containsString("s-maxage=3600")))

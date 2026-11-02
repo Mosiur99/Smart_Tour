@@ -1,0 +1,219 @@
+{
+  "destination": {
+    "slug": "sylhet",
+    "district": "sylhet",
+    "arrivalHub": "sylhet",
+    "nameEn": "Sylhet",
+    "nameBn": "সিলেট",
+    "lat": 24.8949,
+    "lng": 91.8687,
+    "roadFactor": 1.4,
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
+    "minDays": 2,
+    "foodDaily": 600,
+    "localTransportDaily": 800,
+    "travelNote": "Ratargul, Bichanakandi and Lalakhal are best in the rains, from June to October, when the water is high. In winter the water is low and clear. Don't swim in the Piyain river at Jaflong; its currents are strong."
+  },
+  "archive": [
+    {
+      "kind": "SPOT",
+      "nameEn": "Hazrat Shah Jalal shrine",
+      "reason": "Listed twice. The heritage record is kept."
+    }
+  ],
+  "places": [
+    {
+      "kind": "SPOT",
+      "nameEn": "Ratargul Swamp Forest",
+      "nameBn": "রাতারগুল জলাবন",
+      "lat": 25.006,
+      "lng": 91.932,
+      "priority": 1,
+      "visitMinutes": 180,
+      "tags": [
+        "forest",
+        "boat"
+      ],
+      "note": "Explored by small boat, hired at the entrance."
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Jaflong",
+      "nameBn": "জাফলং",
+      "lat": 25.163,
+      "lng": 92.017,
+      "priority": 2,
+      "visitMinutes": 180,
+      "tags": [
+        "river",
+        "hills"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Lalakhal",
+      "nameBn": "লালাখাল",
+      "lat": 25.1,
+      "lng": 92.16,
+      "priority": 3,
+      "visitMinutes": 150,
+      "tags": [
+        "river",
+        "boat"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Bichanakandi",
+      "nameBn": "বিছনাকান্দি",
+      "lat": 25.184,
+      "lng": 91.879,
+      "priority": 4,
+      "visitMinutes": 180,
+      "tags": [
+        "river",
+        "stones"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Malnichhara Tea Estate",
+      "nameBn": "মালনীছড়া চা বাগান",
+      "lat": 24.929,
+      "lng": 91.871,
+      "priority": 5,
+      "visitMinutes": 90,
+      "tags": [
+        "tea",
+        "walk"
+      ]
+    },
+    {
+      "kind": "HERITAGE",
+      "nameEn": "Hazrat Shah Jalal shrine",
+      "nameBn": "হযরত শাহজালাল (রহ.)-এর মাজার",
+      "lat": 24.9,
+      "lng": 91.869,
+      "priority": 1,
+      "visitMinutes": 60,
+      "tags": [
+        "shrine"
+      ],
+      "note": "Dress modestly."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Satkora beef",
+      "nameBn": "সাতকরা দিয়ে গরুর মাংস",
+      "note": "Beef cooked with satkora, a local citrus. Try it at Zindabazar's Sylheti restaurants."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Tea",
+      "nameBn": "সিলেটের চা",
+      "note": "Fresh tea at the estates, and seven-layer tea in nearby Sreemangal."
+    },
+    {
+      "kind": "MARKET",
+      "nameEn": "Zindabazar",
+      "nameBn": "জিন্দাবাজার",
+      "lat": 24.896,
+      "lng": 91.87,
+      "note": "The main market street, for clothes, tea and Manipuri cloth."
+    },
+    {
+      "kind": "CRAFT",
+      "nameEn": "Manipuri handloom",
+      "nameBn": "মণিপুরি তাঁত",
+      "note": "Shawls and saris woven by the Manipuri community."
+    },
+    {
+      "kind": "CRAFT",
+      "nameEn": "Shital pati",
+      "nameBn": "শীতল পাটি",
+      "note": "Cool mats woven from murta cane, a Sylheti tradition."
+    }
+  ],
+  "hotels": [
+    {
+      "nameEn": "Motel Jaflong",
+      "nameBn": "মোটেল জাফলং",
+      "tier": "BUDGET",
+      "address": "Jaflong, Gowainghat, Sylhet",
+      "lat": 25.162,
+      "lng": 92.016,
+      "roomCapacity": 2,
+      "priceMin": 1800,
+      "priceMax": 2000,
+      "website": "https://www.hotels.gov.bd/frontend/hotel/20-motel-jaflong",
+      "sourceUrl": "https://www.hotels.gov.bd/frontend/hotel/20-motel-jaflong",
+      "note": "Parjatan. Non-AC twin Tk1,800, non-AC couple Tk2,000. About an hour and a half from town."
+    },
+    {
+      "nameEn": "Motel Sylhet",
+      "nameBn": "মোটেল সিলেট",
+      "tier": "MID",
+      "address": "Airport Road, Borosola, Sylhet",
+      "lat": 24.937,
+      "lng": 91.875,
+      "roomCapacity": 2,
+      "priceMin": 2800,
+      "priceMax": 4500,
+      "website": "https://www.hotels.gov.bd/frontend/hotel/14-motel-sylhet",
+      "sourceUrl": "https://www.hotels.gov.bd/frontend/hotel/14-motel-sylhet",
+      "note": "Parjatan. Non-AC twin Tk2,800 to AC queen Tk4,500."
+    }
+  ],
+  "legs": [
+    {
+      "from": "dhaka",
+      "to": "sylhet",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 360,
+      "departureNote": "Coaches leave Sayedabad and Mohakhali through the day. Ena, Hanif and Shyamoli run this route.",
+      "sourceUrl": "https://www.shohoz.com/bus-tickets",
+      "note": "Fare not added yet: check on Shohoz."
+    },
+    {
+      "from": "sylhet",
+      "to": "dhaka",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 360,
+      "departureNote": "Coaches leave Kadamtali through the day.",
+      "sourceUrl": "https://www.shohoz.com/bus-tickets",
+      "note": "Fare not added yet: check on Shohoz."
+    },
+    {
+      "from": "dhaka",
+      "to": "sylhet",
+      "mode": "TRAIN",
+      "serviceName": "Intercity train",
+      "durationMinutes": 450,
+      "departureNote": "Parabat, Jayantika, Upaban and Kalni Express run from Kamalapur.",
+      "sourceUrl": "https://eticket.railway.gov.bd",
+      "note": "Fare not added yet: check on the railway's site."
+    },
+    {
+      "from": "sylhet",
+      "to": "dhaka",
+      "mode": "TRAIN",
+      "serviceName": "Intercity train",
+      "durationMinutes": 450,
+      "departureNote": "Parabat, Jayantika, Upaban and Kalni Express run to Kamalapur.",
+      "sourceUrl": "https://eticket.railway.gov.bd",
+      "note": "Fare not added yet: check on the railway's site."
+    }
+  ]
+}

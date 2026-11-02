@@ -1,0 +1,177 @@
+{
+  "destination": {
+    "slug": "bandarban",
+    "district": "bandarban",
+    "arrivalHub": "bandarban",
+    "nameEn": "Bandarban",
+    "nameBn": "বান্দরবান",
+    "lat": 22.1953,
+    "lng": 92.2184,
+    "roadFactor": 1.7,
+    "bestMonths": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "minDays": 2,
+    "foodDaily": 600,
+    "localTransportDaily": 1200,
+    "travelNote": "Hill roads can close in heavy rain. Some areas need permission from the local administration. Boga Lake and Nafakhum need extra days and local permits, so plans leave them out.",
+    "hotelNote": "Book ahead in winter."
+  },
+  "archive": [
+    {
+      "kind": "HERITAGE",
+      "nameEn": "Meghla Tourist Complex",
+      "reason": "Listed twice. The sight record is kept."
+    }
+  ],
+  "places": [
+    {
+      "kind": "SPOT",
+      "nameEn": "Nilgiri",
+      "nameBn": "নীলগিরি",
+      "lat": 21.91,
+      "lng": 92.33,
+      "priority": 1,
+      "visitMinutes": 150,
+      "tags": [
+        "hills",
+        "clouds"
+      ],
+      "note": "About 47 km from town by chander gari. Go early for the clouds."
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Nilachal",
+      "nameBn": "নীলাচল",
+      "lat": 22.179,
+      "lng": 92.205,
+      "priority": 2,
+      "visitMinutes": 90,
+      "tags": [
+        "viewpoint",
+        "sunset"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Chimbuk Hill",
+      "nameBn": "চিম্বুক পাহাড়",
+      "lat": 22.057,
+      "lng": 92.3,
+      "priority": 3,
+      "visitMinutes": 60,
+      "tags": [
+        "hills"
+      ],
+      "note": "On the road to Nilgiri, so it fits the same day."
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Meghla Tourist Complex",
+      "nameBn": "মেঘলা পর্যটন কমপ্লেক্স",
+      "lat": 22.165,
+      "lng": 92.201,
+      "priority": 4,
+      "visitMinutes": 90,
+      "tags": [
+        "lake",
+        "bridge"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Shailaprapat waterfall",
+      "nameBn": "শৈলপ্রপাত",
+      "lat": 22.13,
+      "lng": 92.24,
+      "priority": 5,
+      "visitMinutes": 45,
+      "tags": [
+        "waterfall"
+      ],
+      "note": "Bawm weavers sell cloth beside the falls."
+    },
+    {
+      "kind": "HERITAGE",
+      "nameEn": "Buddha Dhatu Jadi (Golden Temple)",
+      "nameBn": "বুদ্ধ ধাতু জাদি (স্বর্ণ মন্দির)",
+      "lat": 22.22,
+      "lng": 92.205,
+      "priority": 1,
+      "visitMinutes": 60,
+      "tags": [
+        "buddhist"
+      ],
+      "note": "Remove shoes before entering."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Bamboo chicken",
+      "nameBn": "ব্যাম্বু চিকেন",
+      "note": "Chicken cooked inside a bamboo tube over fire."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Hill-tracts seasonal fruits",
+      "nameBn": "পাহাড়ি মৌসুমি ফল",
+      "note": "Pineapple, papaya and jackfruit from the hill farms."
+    },
+    {
+      "kind": "MARKET",
+      "nameEn": "Bandarban Bazar",
+      "nameBn": "বান্দরবান বাজার",
+      "lat": 22.195,
+      "lng": 92.218,
+      "note": "Marma traders bring hill produce on market days."
+    },
+    {
+      "kind": "CRAFT",
+      "nameEn": "Marma and Bawm handloom",
+      "nameBn": "মারমা ও বম তাঁত",
+      "note": "Hand-woven cloth, sold in town and at Shailaprapat."
+    }
+  ],
+  "hotels": [
+    {
+      "nameEn": "Motel Bandarban",
+      "nameBn": "মোটেল বান্দরবান",
+      "tier": "MID",
+      "address": "Meghla, Bandarban",
+      "lat": 22.166,
+      "lng": 92.2,
+      "roomCapacity": 2,
+      "priceMin": 2500,
+      "priceMax": 3500,
+      "website": "https://www.hotels.gov.bd/frontend/hotel/13-motel-bandarban",
+      "sourceUrl": "https://www.hotels.gov.bd/frontend/hotel/13-motel-bandarban",
+      "note": "Parjatan. Non-AC twin Tk2,500, AC twin Tk3,500."
+    }
+  ],
+  "legs": [
+    {
+      "from": "dhaka",
+      "to": "bandarban",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 540,
+      "departureNote": "Night coaches leave Sayedabad and Fakirapool. S. Alam, Shyamoli and Hanif run this route.",
+      "sourceUrl": "https://www.shohoz.com/bus-tickets",
+      "note": "Fare not added yet: check on Shohoz."
+    },
+    {
+      "from": "bandarban",
+      "to": "dhaka",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 540,
+      "departureNote": "Night coaches leave the town bus stand.",
+      "sourceUrl": "https://www.shohoz.com/bus-tickets",
+      "note": "Fare not added yet: check on Shohoz."
+    }
+  ]
+}

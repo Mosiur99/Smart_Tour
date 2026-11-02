@@ -290,3 +290,13 @@ To try it locally, run the API with a stand-in login. The app refuses to start w
 ```bash
 mvn spring-boot:run -Dspring-boot.run.arguments="--smarttour.admin.local-user=me@example.com --smarttour.admin.publishers=me@example.com"
 ```
+
+## Route data
+
+`src/main/resources/data/routes/` holds researched data for the first five routes: Cox's Bazar, Saint Martin's Island, Sylhet, Bandarban and Sajek Valley. Migration V7 loads it once. New records start as drafts, and nothing gets a checked date, so no record can be published until a person has checked it in the admin panel. Records already published are never changed.
+
+Each price links to where it was found. Most hotel prices come from Parjatan's official site. Fares that couldn't be confirmed are left empty, so the planner lists them as "not included" instead of guessing.
+
+`RouteDataTest` checks every record in the files: Bangla names, map positions near the destination, price ranges and their sources, and a way from Dhaka and back. `RouteDataApiTest` loads the data, publishes everything complete, and checks that each route makes a plan.
+
+After this first load, the admin panel is where data changes.

@@ -1,0 +1,138 @@
+{
+  "destination": {
+    "slug": "saint-martin",
+    "district": "coxs-bazar",
+    "arrivalHub": "saint-martin",
+    "create": true,
+    "nameEn": "Saint Martin's Island",
+    "nameBn": "সেন্ট মার্টিন দ্বীপ",
+    "lat": 20.627,
+    "lng": 92.323,
+    "roadFactor": 1.2,
+    "bestMonths": [
+      12,
+      1
+    ],
+    "minDays": 2,
+    "foodDaily": 900,
+    "localTransportDaily": 300,
+    "travelNote": "Open to tourists from November, but overnight stays are allowed only in December and January, so plans cover those months. Tickets are sold only through the Bangladesh Tourism Board's portal, and the ticket is the travel pass. Don't take plastic, and don't walk on the coral.",
+    "hotelNote": "Resorts on the island are small and fill up in December. Book before buying the ship ticket."
+  },
+  "hubs": [
+    {
+      "slug": "saint-martin",
+      "district": "coxs-bazar",
+      "kind": "PORT",
+      "nameEn": "Saint Martin's Island",
+      "nameBn": "সেন্ট মার্টিন দ্বীপ",
+      "lat": 20.627,
+      "lng": 92.323
+    }
+  ],
+  "places": [
+    {
+      "kind": "SPOT",
+      "nameEn": "West beach",
+      "nameBn": "পশ্চিম সৈকত",
+      "lat": 20.623,
+      "lng": 92.315,
+      "priority": 1,
+      "visitMinutes": 120,
+      "tags": [
+        "beach",
+        "sunset"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "North beach",
+      "nameBn": "উত্তর সৈকত",
+      "lat": 20.64,
+      "lng": 92.326,
+      "priority": 2,
+      "visitMinutes": 90,
+      "tags": [
+        "beach"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Chhera Dwip",
+      "nameBn": "ছেঁড়া দ্বীপ",
+      "lat": 20.59,
+      "lng": 92.33,
+      "priority": 3,
+      "visitMinutes": 180,
+      "tags": [
+        "coral",
+        "island"
+      ],
+      "note": "Reached by boat or a long walk at low tide. Go early and come back before the tide turns."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Grilled sea fish",
+      "nameBn": "সামুদ্রিক মাছের বারবিকিউ",
+      "note": "Beach stalls grill the day's catch in the evening."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Green coconut",
+      "nameBn": "ডাব",
+      "note": "Sold everywhere on the island."
+    },
+    {
+      "kind": "MARKET",
+      "nameEn": "Jetty market",
+      "nameBn": "জেটিঘাট বাজার",
+      "lat": 20.634,
+      "lng": 92.33,
+      "note": "Dried fish, pickles and snacks near the ship jetty."
+    }
+  ],
+  "hotels": [
+    {
+      "nameEn": "Blue Marine Resort",
+      "nameBn": "ব্লু মেরিন রিসোর্ট",
+      "lat": 20.63,
+      "lng": 92.32,
+      "roomCapacity": 2,
+      "note": "No official price found. Add the tier, price and a source after checking with the resort."
+    }
+  ],
+  "legs": [
+    {
+      "from": "coxs-bazar",
+      "to": "saint-martin",
+      "mode": "SHIP",
+      "serviceName": "Tourist ship",
+      "durationMinutes": 330,
+      "months": [
+        12,
+        1
+      ],
+      "departureNote": "Ships leave the Nuniyachhara BIWTA jetty in Cox's Bazar between 7am and 10am, timed to the tide.",
+      "fareMin": 1750,
+      "fareMax": 10000,
+      "sourceUrl": "https://www.dhakatribune.com/bangladesh/nation/395620/how-to-visit-saint-martin%E2%80%99s-island-in-tourist",
+      "note": "Half of the reported Tk3,500 to Tk20,000 round trip. Ships from Teknaf are not allowed."
+    },
+    {
+      "from": "saint-martin",
+      "to": "coxs-bazar",
+      "mode": "SHIP",
+      "serviceName": "Tourist ship",
+      "durationMinutes": 330,
+      "months": [
+        12,
+        1
+      ],
+      "departureNote": "Return ships leave between 3pm and 6pm, timed to the tide.",
+      "fareMin": 1750,
+      "fareMax": 10000,
+      "sourceUrl": "https://www.dhakatribune.com/bangladesh/nation/395620/how-to-visit-saint-martin%E2%80%99s-island-in-tourist",
+      "note": "Half of the reported Tk3,500 to Tk20,000 round trip."
+    }
+  ]
+}

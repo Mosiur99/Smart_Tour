@@ -1,0 +1,153 @@
+{
+  "destination": {
+    "slug": "sajek",
+    "district": "rangamati",
+    "arrivalHub": "sajek",
+    "create": true,
+    "nameEn": "Sajek Valley",
+    "nameBn": "সাজেক ভ্যালি",
+    "lat": 23.382,
+    "lng": 92.293,
+    "roadFactor": 1.6,
+    "bestMonths": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
+    "minDays": 2,
+    "foodDaily": 700,
+    "localTransportDaily": 200,
+    "travelNote": "Sajek is in Rangamati district but is reached from Khagrachhari. Vehicles travel the 70 km hill road in escorted groups; ask in Khagrachhari for the day's times. The clouds are best from June to November. Check road and security news before you go, because the area sometimes closes to tourists.",
+    "hotelNote": "Most rooms are in Ruilui Para. Book ahead for Fridays and holidays."
+  },
+  "hubs": [
+    {
+      "slug": "sajek",
+      "district": "rangamati",
+      "kind": "CITY",
+      "nameEn": "Sajek Valley",
+      "nameBn": "সাজেক ভ্যালি",
+      "lat": 23.382,
+      "lng": 92.293
+    }
+  ],
+  "places": [
+    {
+      "kind": "SPOT",
+      "nameEn": "Ruilui Para",
+      "nameBn": "রুইলুই পাড়া",
+      "lat": 23.381,
+      "lng": 92.296,
+      "priority": 1,
+      "visitMinutes": 60,
+      "tags": [
+        "village",
+        "walk"
+      ]
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Helipad viewpoint",
+      "nameBn": "হেলিপ্যাড ভিউপয়েন্ট",
+      "lat": 23.379,
+      "lng": 92.292,
+      "priority": 2,
+      "visitMinutes": 60,
+      "tags": [
+        "sunrise",
+        "clouds"
+      ],
+      "note": "Come before sunrise to see the clouds fill the valley."
+    },
+    {
+      "kind": "SPOT",
+      "nameEn": "Konglak Hill",
+      "nameBn": "কংলাক পাহাড়",
+      "lat": 23.4,
+      "lng": 92.3,
+      "priority": 3,
+      "visitMinutes": 150,
+      "tags": [
+        "hike",
+        "village"
+      ],
+      "note": "A short, steep walk from the end of the road to a Lushai village."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Bamboo chicken",
+      "nameBn": "ব্যাম্বু চিকেন",
+      "note": "Ordered a few hours ahead from the local restaurants."
+    },
+    {
+      "kind": "FOOD",
+      "nameEn": "Bamboo shoot curry",
+      "nameBn": "বাঁশ কোড়ল",
+      "note": "A hill speciality, in season during the rains."
+    },
+    {
+      "kind": "CRAFT",
+      "nameEn": "Tripura and Lushai handloom",
+      "nameBn": "ত্রিপুরা ও লুসাই তাঁত",
+      "note": "Woven wraps and bags sold by village families."
+    }
+  ],
+  "hotels": [
+    {
+      "nameEn": "Runmoy Resort",
+      "nameBn": "রুনময় রিসোর্ট",
+      "lat": 23.3815,
+      "lng": 92.295,
+      "roomCapacity": 2,
+      "note": "Run by the army. No official price found. Add the tier, price and a source after checking."
+    }
+  ],
+  "legs": [
+    {
+      "from": "dhaka",
+      "to": "khagrachhari",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 450,
+      "departureNote": "Night coaches leave Sayedabad and Fakirapool. Shanti, Shyamoli and Hanif run this route.",
+      "sourceUrl": "https://www.shohoz.com/bus-tickets",
+      "note": "Fare not added yet: check on Shohoz."
+    },
+    {
+      "from": "khagrachhari",
+      "to": "dhaka",
+      "mode": "BUS",
+      "serviceName": "Non-AC coach",
+      "durationMinutes": 450,
+      "departureNote": "Night coaches leave Shapla Chattar.",
+      "sourceUrl": "https://www.shohoz.com/bus-tickets",
+      "note": "Fare not added yet: check on Shohoz."
+    },
+    {
+      "from": "khagrachhari",
+      "to": "sajek",
+      "mode": "JEEP",
+      "serviceName": "Chander gari",
+      "durationMinutes": 180,
+      "departureNote": "Hired by the vehicle in Khagrachhari, about Tk8,000 to Tk10,000 for the return trip for 12 to 15 people.",
+      "sourceUrl": "https://beautifulbangladesh.gov.bd/loc/chattogram/11",
+      "note": "Priced by the vehicle, not the seat, so it's left out of the per-person total."
+    },
+    {
+      "from": "sajek",
+      "to": "khagrachhari",
+      "mode": "JEEP",
+      "serviceName": "Chander gari",
+      "durationMinutes": 180,
+      "departureNote": "The same jeep usually brings the group back.",
+      "sourceUrl": "https://beautifulbangladesh.gov.bd/loc/chattogram/11",
+      "note": "Priced by the vehicle, not the seat, so it's left out of the per-person total."
+    }
+  ]
+}
