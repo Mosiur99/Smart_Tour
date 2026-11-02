@@ -104,115 +104,172 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        BudgetEstimate: {
+            costs: components["schemas"]["CostRange"][];
+            /** Format: int32 */
+            high: number;
+            /** Format: int32 */
+            low: number;
+            notIncluded: components["schemas"]["MissingCost"][];
+        };
+        CostRange: {
+            /** @enum {string} */
+            category: "TRANSPORT" | "HOTEL" | "FOOD" | "LOCAL_TRANSPORT" | "ENTRY_FEES";
+            /** Format: int32 */
+            high: number;
+            /** Format: int32 */
+            low: number;
+        };
+        DayPlan: {
+            /** Format: int32 */
+            availableMinutes: number;
+            craft: components["schemas"]["Stop"] | null;
+            /** Format: int32 */
+            day: number;
+            market: components["schemas"]["Stop"] | null;
+            meal: components["schemas"]["Stop"] | null;
+            stops: components["schemas"]["ScheduledStop"][];
+            /** Format: int32 */
+            usedMinutes: number;
+        };
         DestinationDetail: {
             /** Format: int32 */
-            foodDaily?: number;
-            guideUrl?: string;
-            hotelNote?: string;
-            hotels?: components["schemas"]["Hotel"][];
+            foodDaily: number | null;
+            guideUrl: string | null;
+            hotelNote: string | null;
+            hotels: components["schemas"]["DestinationHotel"][];
             /** Format: double */
-            lat?: number;
+            lat: number | null;
             /** Format: double */
-            lng?: number;
+            lng: number | null;
             /** Format: int32 */
-            localTransportDaily?: number;
-            places?: components["schemas"]["Places"];
-            summary?: components["schemas"]["DestinationSummary"];
-            transport?: components["schemas"]["Transport"];
-            travelNote?: string;
-            universities?: components["schemas"]["University"][];
-            universityNote?: string;
+            localTransportDaily: number | null;
+            places: components["schemas"]["Places"];
+            summary: components["schemas"]["DestinationSummary"];
+            transport: components["schemas"]["Transport"];
+            travelNote: string | null;
+            universities: components["schemas"]["University"][];
+            universityNote: string | null;
+        };
+        DestinationHotel: {
+            address: string | null;
+            /** Format: date */
+            checkedAt: string | null;
+            nameBn: string | null;
+            nameEn: string;
+            note: string | null;
+            /** Format: int32 */
+            priceMax: number | null;
+            /** Format: int32 */
+            priceMin: number | null;
+            /** Format: int32 */
+            roomCapacity: number;
+            tier: string | null;
+            verified: boolean;
+            website: string | null;
         };
         DestinationPage: {
-            items?: components["schemas"]["DestinationSummary"][];
-            nextCursor?: string;
+            items: components["schemas"]["DestinationSummary"][];
+            nextCursor: string | null;
         };
         DestinationSummary: {
-            divisionNameBn?: string;
-            divisionNameEn?: string;
-            divisionSlug?: string;
-            nameBn?: string;
-            nameEn?: string;
-            slug?: string;
-            verified?: boolean;
+            divisionNameBn: string;
+            divisionNameEn: string;
+            divisionSlug: string;
+            nameBn: string | null;
+            nameEn: string;
+            slug: string;
+            verified: boolean;
         };
         Hotel: {
-            address?: string;
-            /** Format: date */
-            checkedAt?: string;
-            nameBn?: string;
-            nameEn?: string;
-            note?: string;
+            /** Format: int64 */
+            id: number;
+            /** Format: double */
+            lat: number;
+            /** @enum {string} */
+            level: "BUDGET" | "MID" | "PREMIUM";
+            /** Format: double */
+            lng: number;
+            nameBn: string | null;
+            nameEn: string;
             /** Format: int32 */
-            priceMax?: number;
+            priceMax: number;
             /** Format: int32 */
-            priceMin?: number;
+            priceMin: number;
             /** Format: int32 */
-            roomCapacity?: number;
-            tier?: string;
-            verified?: boolean;
-            website?: string;
+            roomCapacity: number;
         };
         Hub: {
-            nameBn?: string;
-            nameEn?: string;
-            slug?: string;
+            nameBn: string | null;
+            nameEn: string;
+            slug: string;
         };
-        JsonNode: {
-            array?: boolean;
-            bigDecimal?: boolean;
-            bigInteger?: boolean;
-            binary?: boolean;
-            boolean?: boolean;
-            container?: boolean;
-            double?: boolean;
-            embeddedValue?: boolean;
-            empty?: boolean;
-            float?: boolean;
-            floatingPointNumber?: boolean;
-            int?: boolean;
-            integralNumber?: boolean;
-            long?: boolean;
-            missingNode?: boolean;
+        Journey: {
+            legs: components["schemas"]["Leg"][];
+            /** Format: int32 */
+            totalMinutes: number;
+        };
+        Leg: {
+            /** Format: int32 */
+            durationMinutes: number;
+            /** Format: int32 */
+            fareMax: number | null;
+            /** Format: int32 */
+            fareMin: number | null;
+            fromHub: string;
+            /** Format: int64 */
+            id: number;
+            mode: string;
+            months: number[];
+            serviceName: string;
+            toHub: string;
+        };
+        MissingCost: {
             /** @enum {string} */
-            nodeType?: "ARRAY" | "BINARY" | "BOOLEAN" | "MISSING" | "NULL" | "NUMBER" | "OBJECT" | "POJO" | "STRING";
-            null?: boolean;
-            number?: boolean;
-            object?: boolean;
-            pojo?: boolean;
-            short?: boolean;
-            string?: boolean;
-            /** @deprecated */
-            textual?: boolean;
-            valueNode?: boolean;
+            category: "TRANSPORT" | "HOTEL" | "FOOD" | "LOCAL_TRANSPORT" | "ENTRY_FEES";
+            nameBn: string | null;
+            nameEn: string | null;
         };
         Place: {
             /** Format: date */
-            checkedAt?: string;
+            checkedAt: string | null;
             /** Format: int32 */
-            feeMax?: number;
+            feeMax: number | null;
             /** Format: int32 */
-            feeMin?: number;
+            feeMin: number | null;
             /** Format: double */
-            lat?: number;
+            lat: number | null;
             /** Format: double */
-            lng?: number;
-            nameBn?: string;
-            nameEn?: string;
-            note?: string;
+            lng: number | null;
+            nameBn: string | null;
+            nameEn: string;
+            note: string | null;
             /** Format: int32 */
-            priority?: number;
-            tags?: string[];
-            verified?: boolean;
+            priority: number;
+            tags: string[];
+            verified: boolean;
             /** Format: int32 */
-            visitMinutes?: number;
+            visitMinutes: number | null;
         };
         Places: {
-            crafts?: components["schemas"]["Place"][];
-            food?: components["schemas"]["Place"][];
-            heritage?: components["schemas"]["Place"][];
-            markets?: components["schemas"]["Place"][];
-            spots?: components["schemas"]["Place"][];
+            crafts: components["schemas"]["Place"][];
+            food: components["schemas"]["Place"][];
+            heritage: components["schemas"]["Place"][];
+            markets: components["schemas"]["Place"][];
+            spots: components["schemas"]["Place"][];
+        };
+        PlanRequest: {
+            /** @enum {string} */
+            budget: "BUDGET" | "MID" | "PREMIUM";
+            /** Format: int32 */
+            days: number;
+            destination: string;
+            interests: ("NATURE" | "HERITAGE" | "ADVENTURE" | "RELAXATION" | "CULTURE")[];
+            /** Format: int32 */
+            month: number;
+            originHub: string;
+            /** Format: int32 */
+            people: number;
         };
         PlanRequestBody: {
             /** @enum {string} */
@@ -229,37 +286,82 @@ export interface components {
         };
         PlanResponse: {
             /** Format: date-time */
-            createdAt?: string;
-            plan?: components["schemas"]["JsonNode"];
-            publicId?: string;
-            request?: components["schemas"]["JsonNode"];
+            createdAt: string;
+            plan: components["schemas"]["TripPlan"];
+            publicId: string;
+            request: components["schemas"]["PlanRequest"];
+        };
+        ScheduledStop: {
+            stop: components["schemas"]["Stop"];
+            /** Format: int32 */
+            travelMinutes: number;
+        };
+        Stop: {
+            /** Format: int32 */
+            feeMax: number | null;
+            /** Format: int32 */
+            feeMin: number | null;
+            /** Format: int64 */
+            id: number;
+            /** @enum {string} */
+            kind: "SPOT" | "HERITAGE" | "MARKET" | "FOOD" | "CRAFT";
+            /** Format: double */
+            lat: number | null;
+            /** Format: double */
+            lng: number | null;
+            nameBn: string;
+            nameEn: string;
+            /** Format: int32 */
+            priority: number;
+            tags: string[];
+            /** Format: int32 */
+            visitMinutes: number | null;
         };
         Transport: {
-            arriving?: components["schemas"]["TransportOption"][];
-            leaving?: components["schemas"]["TransportOption"][];
+            arriving: components["schemas"]["TransportOption"][];
+            leaving: components["schemas"]["TransportOption"][];
         };
         TransportOption: {
             /** Format: date */
-            checkedAt?: string;
-            departureNote?: string;
+            checkedAt: string | null;
+            departureNote: string | null;
             /** Format: int32 */
-            durationMinutes?: number;
+            durationMinutes: number | null;
             /** Format: int32 */
-            fareMax?: number;
+            fareMax: number | null;
             /** Format: int32 */
-            fareMin?: number;
-            fromHub?: string;
-            mode?: string;
-            note?: string;
-            serviceName?: string;
-            toHub?: string;
-            verified?: boolean;
+            fareMin: number | null;
+            fromHub: string;
+            mode: string;
+            note: string | null;
+            serviceName: string;
+            toHub: string;
+            verified: boolean;
+        };
+        TripPlan: {
+            budget: components["schemas"]["BudgetEstimate"];
+            dayPlans: components["schemas"]["DayPlan"][];
+            /** Format: int32 */
+            days: number;
+            destination: string;
+            destinationNameBn: string;
+            destinationNameEn: string;
+            hotel: components["schemas"]["Hotel"] | null;
+            inbound: components["schemas"]["Journey"];
+            /** Format: int32 */
+            nights: number;
+            notices: ("OFF_SEASON" | "SHORTER_THAN_RECOMMENDED" | "HOTEL_AT_OTHER_LEVEL" | "NO_HOTEL_AVAILABLE")[];
+            outbound: components["schemas"]["Journey"];
+            /** Format: int32 */
+            people: number;
+            /** Format: int32 */
+            rooms: number;
         };
         University: {
-            kind?: string;
-            location?: string;
-            nameEn?: string;
-            note?: string;
+            kind: string | null;
+            location: string | null;
+            nameEn: string;
+            note: string | null;
         };
     };
     responses: never;

@@ -1,35 +1,124 @@
 {
   "components" : {
     "schemas" : {
+      "BudgetEstimate" : {
+        "properties" : {
+          "costs" : {
+            "items" : {
+              "$ref" : "#/components/schemas/CostRange"
+            },
+            "type" : "array"
+          },
+          "high" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "low" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "notIncluded" : {
+            "items" : {
+              "$ref" : "#/components/schemas/MissingCost"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "costs", "high", "low", "notIncluded" ],
+        "type" : "object"
+      },
+      "CostRange" : {
+        "properties" : {
+          "category" : {
+            "enum" : [ "TRANSPORT", "HOTEL", "FOOD", "LOCAL_TRANSPORT", "ENTRY_FEES" ],
+            "type" : "string"
+          },
+          "high" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "low" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "category", "high", "low" ],
+        "type" : "object"
+      },
+      "DayPlan" : {
+        "properties" : {
+          "availableMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "craft" : {
+            "anyOf" : [ {
+              "$ref" : "#/components/schemas/Stop"
+            }, {
+              "type" : "null"
+            } ]
+          },
+          "day" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "market" : {
+            "anyOf" : [ {
+              "$ref" : "#/components/schemas/Stop"
+            }, {
+              "type" : "null"
+            } ]
+          },
+          "meal" : {
+            "anyOf" : [ {
+              "$ref" : "#/components/schemas/Stop"
+            }, {
+              "type" : "null"
+            } ]
+          },
+          "stops" : {
+            "items" : {
+              "$ref" : "#/components/schemas/ScheduledStop"
+            },
+            "type" : "array"
+          },
+          "usedMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "availableMinutes", "craft", "day", "market", "meal", "stops", "usedMinutes" ],
+        "type" : "object"
+      },
       "DestinationDetail" : {
         "properties" : {
           "foodDaily" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "guideUrl" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "hotelNote" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "hotels" : {
             "items" : {
-              "$ref" : "#/components/schemas/Hotel"
+              "$ref" : "#/components/schemas/DestinationHotel"
             },
             "type" : "array"
           },
           "lat" : {
             "format" : "double",
-            "type" : "number"
+            "type" : [ "number", "null" ]
           },
           "lng" : {
             "format" : "double",
-            "type" : "number"
+            "type" : [ "number", "null" ]
           },
           "localTransportDaily" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "places" : {
             "$ref" : "#/components/schemas/Places"
@@ -41,7 +130,7 @@
             "$ref" : "#/components/schemas/Transport"
           },
           "travelNote" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "universities" : {
             "items" : {
@@ -50,9 +139,53 @@
             "type" : "array"
           },
           "universityNote" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           }
         },
+        "required" : [ "foodDaily", "guideUrl", "hotelNote", "hotels", "lat", "lng", "localTransportDaily", "places", "summary", "transport", "travelNote", "universities", "universityNote" ],
+        "type" : "object"
+      },
+      "DestinationHotel" : {
+        "properties" : {
+          "address" : {
+            "type" : [ "string", "null" ]
+          },
+          "checkedAt" : {
+            "format" : "date",
+            "type" : [ "string", "null" ]
+          },
+          "nameBn" : {
+            "type" : [ "string", "null" ]
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "note" : {
+            "type" : [ "string", "null" ]
+          },
+          "priceMax" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "priceMin" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "roomCapacity" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "tier" : {
+            "type" : [ "string", "null" ]
+          },
+          "verified" : {
+            "type" : "boolean"
+          },
+          "website" : {
+            "type" : [ "string", "null" ]
+          }
+        },
+        "required" : [ "address", "checkedAt", "nameBn", "nameEn", "note", "priceMax", "priceMin", "roomCapacity", "tier", "verified", "website" ],
         "type" : "object"
       },
       "DestinationPage" : {
@@ -64,9 +197,10 @@
             "type" : "array"
           },
           "nextCursor" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           }
         },
+        "required" : [ "items", "nextCursor" ],
         "type" : "object"
       },
       "DestinationSummary" : {
@@ -81,7 +215,7 @@
             "type" : "string"
           },
           "nameBn" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "nameEn" : {
             "type" : "string"
@@ -93,24 +227,31 @@
             "type" : "boolean"
           }
         },
+        "required" : [ "divisionNameBn", "divisionNameEn", "divisionSlug", "nameBn", "nameEn", "slug", "verified" ],
         "type" : "object"
       },
       "Hotel" : {
         "properties" : {
-          "address" : {
+          "id" : {
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "lat" : {
+            "format" : "double",
+            "type" : "number"
+          },
+          "level" : {
+            "enum" : [ "BUDGET", "MID", "PREMIUM" ],
             "type" : "string"
           },
-          "checkedAt" : {
-            "format" : "date",
-            "type" : "string"
+          "lng" : {
+            "format" : "double",
+            "type" : "number"
           },
           "nameBn" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "nameEn" : {
-            "type" : "string"
-          },
-          "note" : {
             "type" : "string"
           },
           "priceMax" : {
@@ -124,23 +265,15 @@
           "roomCapacity" : {
             "format" : "int32",
             "type" : "integer"
-          },
-          "tier" : {
-            "type" : "string"
-          },
-          "verified" : {
-            "type" : "boolean"
-          },
-          "website" : {
-            "type" : "string"
           }
         },
+        "required" : [ "id", "lat", "level", "lng", "nameBn", "nameEn", "priceMax", "priceMin", "roomCapacity" ],
         "type" : "object"
       },
       "Hub" : {
         "properties" : {
           "nameBn" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "nameEn" : {
             "type" : "string"
@@ -149,117 +282,113 @@
             "type" : "string"
           }
         },
+        "required" : [ "nameBn", "nameEn", "slug" ],
         "type" : "object"
       },
-      "JsonNode" : {
+      "Journey" : {
         "properties" : {
-          "array" : {
-            "type" : "boolean"
+          "legs" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Leg"
+            },
+            "type" : "array"
           },
-          "bigDecimal" : {
-            "type" : "boolean"
-          },
-          "bigInteger" : {
-            "type" : "boolean"
-          },
-          "binary" : {
-            "type" : "boolean"
-          },
-          "boolean" : {
-            "type" : "boolean"
-          },
-          "container" : {
-            "type" : "boolean"
-          },
-          "double" : {
-            "type" : "boolean"
-          },
-          "embeddedValue" : {
-            "type" : "boolean"
-          },
-          "empty" : {
-            "type" : "boolean"
-          },
-          "float" : {
-            "type" : "boolean"
-          },
-          "floatingPointNumber" : {
-            "type" : "boolean"
-          },
-          "int" : {
-            "type" : "boolean"
-          },
-          "integralNumber" : {
-            "type" : "boolean"
-          },
-          "long" : {
-            "type" : "boolean"
-          },
-          "missingNode" : {
-            "type" : "boolean"
-          },
-          "nodeType" : {
-            "enum" : [ "ARRAY", "BINARY", "BOOLEAN", "MISSING", "NULL", "NUMBER", "OBJECT", "POJO", "STRING" ],
-            "type" : "string"
-          },
-          "null" : {
-            "type" : "boolean"
-          },
-          "number" : {
-            "type" : "boolean"
-          },
-          "object" : {
-            "type" : "boolean"
-          },
-          "pojo" : {
-            "type" : "boolean"
-          },
-          "short" : {
-            "type" : "boolean"
-          },
-          "string" : {
-            "type" : "boolean"
-          },
-          "textual" : {
-            "deprecated" : true,
-            "type" : "boolean"
-          },
-          "valueNode" : {
-            "type" : "boolean"
+          "totalMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
           }
         },
+        "required" : [ "legs", "totalMinutes" ],
+        "type" : "object"
+      },
+      "Leg" : {
+        "properties" : {
+          "durationMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "fareMax" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "fareMin" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "fromHub" : {
+            "type" : "string"
+          },
+          "id" : {
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "mode" : {
+            "type" : "string"
+          },
+          "months" : {
+            "items" : {
+              "format" : "int32",
+              "type" : "integer"
+            },
+            "type" : "array",
+            "uniqueItems" : true
+          },
+          "serviceName" : {
+            "type" : "string"
+          },
+          "toHub" : {
+            "type" : "string"
+          }
+        },
+        "required" : [ "durationMinutes", "fareMax", "fareMin", "fromHub", "id", "mode", "months", "serviceName", "toHub" ],
+        "type" : "object"
+      },
+      "MissingCost" : {
+        "properties" : {
+          "category" : {
+            "enum" : [ "TRANSPORT", "HOTEL", "FOOD", "LOCAL_TRANSPORT", "ENTRY_FEES" ],
+            "type" : "string"
+          },
+          "nameBn" : {
+            "type" : [ "string", "null" ]
+          },
+          "nameEn" : {
+            "type" : [ "string", "null" ]
+          }
+        },
+        "required" : [ "category", "nameBn", "nameEn" ],
         "type" : "object"
       },
       "Place" : {
         "properties" : {
           "checkedAt" : {
             "format" : "date",
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "feeMax" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "feeMin" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "lat" : {
             "format" : "double",
-            "type" : "number"
+            "type" : [ "number", "null" ]
           },
           "lng" : {
             "format" : "double",
-            "type" : "number"
+            "type" : [ "number", "null" ]
           },
           "nameBn" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "nameEn" : {
             "type" : "string"
           },
           "note" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "priority" : {
             "format" : "int32",
@@ -276,9 +405,10 @@
           },
           "visitMinutes" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           }
         },
+        "required" : [ "checkedAt", "feeMax", "feeMin", "lat", "lng", "nameBn", "nameEn", "note", "priority", "tags", "verified", "visitMinutes" ],
         "type" : "object"
       },
       "Places" : {
@@ -314,6 +444,43 @@
             "type" : "array"
           }
         },
+        "required" : [ "crafts", "food", "heritage", "markets", "spots" ],
+        "type" : "object"
+      },
+      "PlanRequest" : {
+        "properties" : {
+          "budget" : {
+            "enum" : [ "BUDGET", "MID", "PREMIUM" ],
+            "type" : "string"
+          },
+          "days" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "destination" : {
+            "type" : "string"
+          },
+          "interests" : {
+            "items" : {
+              "enum" : [ "NATURE", "HERITAGE", "ADVENTURE", "RELAXATION", "CULTURE" ],
+              "type" : "string"
+            },
+            "type" : "array",
+            "uniqueItems" : true
+          },
+          "month" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "originHub" : {
+            "type" : "string"
+          },
+          "people" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "budget", "days", "destination", "interests", "month", "originHub", "people" ],
         "type" : "object"
       },
       "PlanRequestBody" : {
@@ -369,15 +536,80 @@
             "type" : "string"
           },
           "plan" : {
-            "$ref" : "#/components/schemas/JsonNode"
+            "$ref" : "#/components/schemas/TripPlan"
           },
           "publicId" : {
             "type" : "string"
           },
           "request" : {
-            "$ref" : "#/components/schemas/JsonNode"
+            "$ref" : "#/components/schemas/PlanRequest"
           }
         },
+        "required" : [ "createdAt", "plan", "publicId", "request" ],
+        "type" : "object"
+      },
+      "ScheduledStop" : {
+        "properties" : {
+          "stop" : {
+            "$ref" : "#/components/schemas/Stop"
+          },
+          "travelMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "stop", "travelMinutes" ],
+        "type" : "object"
+      },
+      "Stop" : {
+        "properties" : {
+          "feeMax" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "feeMin" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "id" : {
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "kind" : {
+            "enum" : [ "SPOT", "HERITAGE", "MARKET", "FOOD", "CRAFT" ],
+            "type" : "string"
+          },
+          "lat" : {
+            "format" : "double",
+            "type" : [ "number", "null" ]
+          },
+          "lng" : {
+            "format" : "double",
+            "type" : [ "number", "null" ]
+          },
+          "nameBn" : {
+            "type" : "string"
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "priority" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "tags" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array",
+            "uniqueItems" : true
+          },
+          "visitMinutes" : {
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          }
+        },
+        "required" : [ "feeMax", "feeMin", "id", "kind", "lat", "lng", "nameBn", "nameEn", "priority", "tags", "visitMinutes" ],
         "type" : "object"
       },
       "Transport" : {
@@ -395,28 +627,29 @@
             "type" : "array"
           }
         },
+        "required" : [ "arriving", "leaving" ],
         "type" : "object"
       },
       "TransportOption" : {
         "properties" : {
           "checkedAt" : {
             "format" : "date",
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "departureNote" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "durationMinutes" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "fareMax" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "fareMin" : {
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "fromHub" : {
             "type" : "string"
@@ -425,7 +658,7 @@
             "type" : "string"
           },
           "note" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "serviceName" : {
             "type" : "string"
@@ -437,23 +670,85 @@
             "type" : "boolean"
           }
         },
+        "required" : [ "checkedAt", "departureNote", "durationMinutes", "fareMax", "fareMin", "fromHub", "mode", "note", "serviceName", "toHub", "verified" ],
+        "type" : "object"
+      },
+      "TripPlan" : {
+        "properties" : {
+          "budget" : {
+            "$ref" : "#/components/schemas/BudgetEstimate"
+          },
+          "dayPlans" : {
+            "items" : {
+              "$ref" : "#/components/schemas/DayPlan"
+            },
+            "type" : "array"
+          },
+          "days" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "destination" : {
+            "type" : "string"
+          },
+          "destinationNameBn" : {
+            "type" : "string"
+          },
+          "destinationNameEn" : {
+            "type" : "string"
+          },
+          "hotel" : {
+            "anyOf" : [ {
+              "$ref" : "#/components/schemas/Hotel"
+            }, {
+              "type" : "null"
+            } ]
+          },
+          "inbound" : {
+            "$ref" : "#/components/schemas/Journey"
+          },
+          "nights" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "notices" : {
+            "items" : {
+              "enum" : [ "OFF_SEASON", "SHORTER_THAN_RECOMMENDED", "HOTEL_AT_OTHER_LEVEL", "NO_HOTEL_AVAILABLE" ],
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "outbound" : {
+            "$ref" : "#/components/schemas/Journey"
+          },
+          "people" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "rooms" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "budget", "dayPlans", "days", "destination", "destinationNameBn", "destinationNameEn", "hotel", "inbound", "nights", "notices", "outbound", "people", "rooms" ],
         "type" : "object"
       },
       "University" : {
         "properties" : {
           "kind" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "location" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           },
           "nameEn" : {
             "type" : "string"
           },
           "note" : {
-            "type" : "string"
+            "type" : [ "string", "null" ]
           }
         },
+        "required" : [ "kind", "location", "nameEn", "note" ],
         "type" : "object"
       }
     }

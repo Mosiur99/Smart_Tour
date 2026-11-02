@@ -1,7 +1,9 @@
 package com.smarttourplanner.catalog;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.LocalDate;
 import java.util.List;
+import org.jspecify.annotations.Nullable;
 
 /** Response shapes for the public catalog API. A null price means unknown. */
 public final class CatalogModels {
@@ -9,34 +11,38 @@ public final class CatalogModels {
     private CatalogModels() {
     }
 
-    public record Hub(String slug, String nameEn, String nameBn) {
+    public record Hub(String slug, String nameEn, @Nullable String nameBn) {
     }
 
     public record DestinationSummary(
-            String slug, String nameEn, String nameBn, String divisionSlug, String divisionNameEn,
+            String slug, String nameEn, @Nullable String nameBn, String divisionSlug, String divisionNameEn,
             String divisionNameBn, boolean verified) {
     }
 
-    public record DestinationPage(List<DestinationSummary> items, String nextCursor) {
+    public record DestinationPage(List<DestinationSummary> items, @Nullable String nextCursor) {
     }
 
     public record Place(
-            String nameEn, String nameBn, Double lat, Double lng, int priority, Integer visitMinutes,
-            Integer feeMin, Integer feeMax, List<String> tags, String note, LocalDate checkedAt, boolean verified) {
+            String nameEn, @Nullable String nameBn, @Nullable Double lat, @Nullable Double lng, int priority,
+            @Nullable Integer visitMinutes, @Nullable Integer feeMin, @Nullable Integer feeMax, List<String> tags,
+            @Nullable String note, @Nullable LocalDate checkedAt, boolean verified) {
     }
 
+    // The planner has its own Hotel, so this one needs a distinct name in the API contract.
+    @Schema(name = "DestinationHotel")
     public record Hotel(
-            String nameEn, String nameBn, String tier, String address, Integer roomCapacity, Integer priceMin,
-            Integer priceMax, String website, String note, LocalDate checkedAt, boolean verified) {
+            String nameEn, @Nullable String nameBn, @Nullable String tier, @Nullable String address,
+            Integer roomCapacity, @Nullable Integer priceMin, @Nullable Integer priceMax, @Nullable String website,
+            @Nullable String note, @Nullable LocalDate checkedAt, boolean verified) {
     }
 
     public record TransportOption(
-            String fromHub, String toHub, String mode, String serviceName, Integer durationMinutes,
-            String departureNote, Integer fareMin, Integer fareMax, String note, LocalDate checkedAt,
-            boolean verified) {
+            String fromHub, String toHub, String mode, String serviceName, @Nullable Integer durationMinutes,
+            @Nullable String departureNote, @Nullable Integer fareMin, @Nullable Integer fareMax, @Nullable String note,
+            @Nullable LocalDate checkedAt, boolean verified) {
     }
 
-    public record University(String nameEn, String kind, String location, String note) {
+    public record University(String nameEn, @Nullable String kind, @Nullable String location, @Nullable String note) {
     }
 
     public record Places(
@@ -47,8 +53,9 @@ public final class CatalogModels {
     }
 
     public record DestinationDetail(
-            DestinationSummary summary, Double lat, Double lng, Integer localTransportDaily, Integer foodDaily,
-            String travelNote, String hotelNote, String universityNote, String guideUrl, Places places,
+            DestinationSummary summary, @Nullable Double lat, @Nullable Double lng,
+            @Nullable Integer localTransportDaily, @Nullable Integer foodDaily, @Nullable String travelNote,
+            @Nullable String hotelNote, @Nullable String universityNote, @Nullable String guideUrl, Places places,
             List<Hotel> hotels, List<University> universities, Transport transport) {
     }
 }

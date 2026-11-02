@@ -78,9 +78,9 @@ class PlanEngineTest {
         TripPlan plan = engine.plan(request(1, 1, BudgetLevel.MID), place, unknownFares);
 
         assertThat(plan.budget().notIncluded()).containsExactlyInAnyOrder(
-                new MissingCost(CostCategory.TRANSPORT, "Service 1"),
-                new MissingCost(CostCategory.FOOD, "FOOD"),
-                new MissingCost(CostCategory.ENTRY_FEES, "Spot 1"));
+                new MissingCost(CostCategory.TRANSPORT, "Service 1", null),
+                new MissingCost(CostCategory.FOOD, null, null),
+                new MissingCost(CostCategory.ENTRY_FEES, "Spot 1", "স্থান 1"));
     }
 
     @Test

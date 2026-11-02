@@ -44,7 +44,7 @@ final class BudgetEstimator {
         for (Journey journey : List.of(outbound, inbound)) {
             for (Leg leg : journey.legs()) {
                 if (leg.fareMin() == null) {
-                    notIncluded.add(new MissingCost(CostCategory.TRANSPORT, leg.serviceName()));
+                    notIncluded.add(new MissingCost(CostCategory.TRANSPORT, leg.serviceName(), null));
                 } else {
                     low += leg.fareMin() * people;
                     high += leg.fareMax() * people;
@@ -63,7 +63,7 @@ final class BudgetEstimator {
 
     private void addDaily(CostCategory category, Integer dailyCost, int units) {
         if (dailyCost == null) {
-            notIncluded.add(new MissingCost(category, category.name()));
+            notIncluded.add(new MissingCost(category, null, null));
         } else {
             add(category, dailyCost * units, dailyCost * units);
         }
@@ -75,7 +75,7 @@ final class BudgetEstimator {
         for (DayPlan day : days) {
             for (ScheduledStop item : day.stops()) {
                 if (item.stop().feeMin() == null) {
-                    notIncluded.add(new MissingCost(CostCategory.ENTRY_FEES, item.stop().nameEn()));
+                    notIncluded.add(new MissingCost(CostCategory.ENTRY_FEES, item.stop().nameEn(), item.stop().nameBn()));
                 } else {
                     low += item.stop().feeMin() * people;
                     high += feeHigh(item) * people;
