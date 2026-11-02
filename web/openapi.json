@@ -1,0 +1,647 @@
+{
+  "components" : {
+    "schemas" : {
+      "DestinationDetail" : {
+        "properties" : {
+          "foodDaily" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "guideUrl" : {
+            "type" : "string"
+          },
+          "hotelNote" : {
+            "type" : "string"
+          },
+          "hotels" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Hotel"
+            },
+            "type" : "array"
+          },
+          "lat" : {
+            "format" : "double",
+            "type" : "number"
+          },
+          "lng" : {
+            "format" : "double",
+            "type" : "number"
+          },
+          "localTransportDaily" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "places" : {
+            "$ref" : "#/components/schemas/Places"
+          },
+          "summary" : {
+            "$ref" : "#/components/schemas/DestinationSummary"
+          },
+          "transport" : {
+            "$ref" : "#/components/schemas/Transport"
+          },
+          "travelNote" : {
+            "type" : "string"
+          },
+          "universities" : {
+            "items" : {
+              "$ref" : "#/components/schemas/University"
+            },
+            "type" : "array"
+          },
+          "universityNote" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "DestinationPage" : {
+        "properties" : {
+          "items" : {
+            "items" : {
+              "$ref" : "#/components/schemas/DestinationSummary"
+            },
+            "type" : "array"
+          },
+          "nextCursor" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "DestinationSummary" : {
+        "properties" : {
+          "divisionNameBn" : {
+            "type" : "string"
+          },
+          "divisionNameEn" : {
+            "type" : "string"
+          },
+          "divisionSlug" : {
+            "type" : "string"
+          },
+          "nameBn" : {
+            "type" : "string"
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "slug" : {
+            "type" : "string"
+          },
+          "verified" : {
+            "type" : "boolean"
+          }
+        },
+        "type" : "object"
+      },
+      "Hotel" : {
+        "properties" : {
+          "address" : {
+            "type" : "string"
+          },
+          "checkedAt" : {
+            "format" : "date",
+            "type" : "string"
+          },
+          "nameBn" : {
+            "type" : "string"
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "note" : {
+            "type" : "string"
+          },
+          "priceMax" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "priceMin" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "roomCapacity" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "tier" : {
+            "type" : "string"
+          },
+          "verified" : {
+            "type" : "boolean"
+          },
+          "website" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "Hub" : {
+        "properties" : {
+          "nameBn" : {
+            "type" : "string"
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "slug" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "JsonNode" : {
+        "properties" : {
+          "array" : {
+            "type" : "boolean"
+          },
+          "bigDecimal" : {
+            "type" : "boolean"
+          },
+          "bigInteger" : {
+            "type" : "boolean"
+          },
+          "binary" : {
+            "type" : "boolean"
+          },
+          "boolean" : {
+            "type" : "boolean"
+          },
+          "container" : {
+            "type" : "boolean"
+          },
+          "double" : {
+            "type" : "boolean"
+          },
+          "embeddedValue" : {
+            "type" : "boolean"
+          },
+          "empty" : {
+            "type" : "boolean"
+          },
+          "float" : {
+            "type" : "boolean"
+          },
+          "floatingPointNumber" : {
+            "type" : "boolean"
+          },
+          "int" : {
+            "type" : "boolean"
+          },
+          "integralNumber" : {
+            "type" : "boolean"
+          },
+          "long" : {
+            "type" : "boolean"
+          },
+          "missingNode" : {
+            "type" : "boolean"
+          },
+          "nodeType" : {
+            "enum" : [ "ARRAY", "BINARY", "BOOLEAN", "MISSING", "NULL", "NUMBER", "OBJECT", "POJO", "STRING" ],
+            "type" : "string"
+          },
+          "null" : {
+            "type" : "boolean"
+          },
+          "number" : {
+            "type" : "boolean"
+          },
+          "object" : {
+            "type" : "boolean"
+          },
+          "pojo" : {
+            "type" : "boolean"
+          },
+          "short" : {
+            "type" : "boolean"
+          },
+          "string" : {
+            "type" : "boolean"
+          },
+          "textual" : {
+            "deprecated" : true,
+            "type" : "boolean"
+          },
+          "valueNode" : {
+            "type" : "boolean"
+          }
+        },
+        "type" : "object"
+      },
+      "Place" : {
+        "properties" : {
+          "checkedAt" : {
+            "format" : "date",
+            "type" : "string"
+          },
+          "feeMax" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "feeMin" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "lat" : {
+            "format" : "double",
+            "type" : "number"
+          },
+          "lng" : {
+            "format" : "double",
+            "type" : "number"
+          },
+          "nameBn" : {
+            "type" : "string"
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "note" : {
+            "type" : "string"
+          },
+          "priority" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "tags" : {
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "verified" : {
+            "type" : "boolean"
+          },
+          "visitMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "type" : "object"
+      },
+      "Places" : {
+        "properties" : {
+          "crafts" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Place"
+            },
+            "type" : "array"
+          },
+          "food" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Place"
+            },
+            "type" : "array"
+          },
+          "heritage" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Place"
+            },
+            "type" : "array"
+          },
+          "markets" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Place"
+            },
+            "type" : "array"
+          },
+          "spots" : {
+            "items" : {
+              "$ref" : "#/components/schemas/Place"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "PlanRequestBody" : {
+        "properties" : {
+          "budget" : {
+            "enum" : [ "BUDGET", "MID", "PREMIUM" ],
+            "type" : "string"
+          },
+          "days" : {
+            "format" : "int32",
+            "maximum" : 14,
+            "minimum" : 1,
+            "type" : "integer"
+          },
+          "destination" : {
+            "pattern" : "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "type" : "string"
+          },
+          "interests" : {
+            "items" : {
+              "enum" : [ "NATURE", "HERITAGE", "ADVENTURE", "RELAXATION", "CULTURE" ],
+              "type" : "string"
+            },
+            "maxItems" : 5,
+            "minItems" : 0,
+            "type" : "array",
+            "uniqueItems" : true
+          },
+          "month" : {
+            "format" : "int32",
+            "maximum" : 12,
+            "minimum" : 1,
+            "type" : "integer"
+          },
+          "originHub" : {
+            "pattern" : "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "type" : "string"
+          },
+          "people" : {
+            "format" : "int32",
+            "maximum" : 30,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        },
+        "required" : [ "budget", "destination", "originHub" ],
+        "type" : "object"
+      },
+      "PlanResponse" : {
+        "properties" : {
+          "createdAt" : {
+            "format" : "date-time",
+            "type" : "string"
+          },
+          "plan" : {
+            "$ref" : "#/components/schemas/JsonNode"
+          },
+          "publicId" : {
+            "type" : "string"
+          },
+          "request" : {
+            "$ref" : "#/components/schemas/JsonNode"
+          }
+        },
+        "type" : "object"
+      },
+      "Transport" : {
+        "properties" : {
+          "arriving" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TransportOption"
+            },
+            "type" : "array"
+          },
+          "leaving" : {
+            "items" : {
+              "$ref" : "#/components/schemas/TransportOption"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "TransportOption" : {
+        "properties" : {
+          "checkedAt" : {
+            "format" : "date",
+            "type" : "string"
+          },
+          "departureNote" : {
+            "type" : "string"
+          },
+          "durationMinutes" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "fareMax" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "fareMin" : {
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "fromHub" : {
+            "type" : "string"
+          },
+          "mode" : {
+            "type" : "string"
+          },
+          "note" : {
+            "type" : "string"
+          },
+          "serviceName" : {
+            "type" : "string"
+          },
+          "toHub" : {
+            "type" : "string"
+          },
+          "verified" : {
+            "type" : "boolean"
+          }
+        },
+        "type" : "object"
+      },
+      "University" : {
+        "properties" : {
+          "kind" : {
+            "type" : "string"
+          },
+          "location" : {
+            "type" : "string"
+          },
+          "nameEn" : {
+            "type" : "string"
+          },
+          "note" : {
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      }
+    }
+  },
+  "info" : {
+    "title" : "OpenAPI definition",
+    "version" : "v0"
+  },
+  "openapi" : "3.1.0",
+  "paths" : {
+    "/api/v1/destinations" : {
+      "get" : {
+        "operationId" : "destinations",
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "q",
+          "required" : false,
+          "schema" : {
+            "maxLength" : 60,
+            "minLength" : 0,
+            "type" : "string"
+          }
+        }, {
+          "in" : "query",
+          "name" : "division",
+          "required" : false,
+          "schema" : {
+            "pattern" : "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "type" : "string"
+          }
+        }, {
+          "in" : "query",
+          "name" : "cursor",
+          "required" : false,
+          "schema" : {
+            "pattern" : "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "type" : "string"
+          }
+        }, {
+          "in" : "query",
+          "name" : "limit",
+          "required" : false,
+          "schema" : {
+            "default" : 20,
+            "format" : "int32",
+            "maximum" : 50,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/DestinationPage"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "catalog-controller" ]
+      }
+    },
+    "/api/v1/destinations/{slug}" : {
+      "get" : {
+        "operationId" : "destination",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "slug",
+          "required" : true,
+          "schema" : {
+            "pattern" : "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/DestinationDetail"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "catalog-controller" ]
+      }
+    },
+    "/api/v1/hubs" : {
+      "get" : {
+        "operationId" : "hubs",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "items" : {
+                    "$ref" : "#/components/schemas/Hub"
+                  },
+                  "type" : "array"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "catalog-controller" ]
+      }
+    },
+    "/api/v1/plans" : {
+      "post" : {
+        "operationId" : "create",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/PlanRequestBody"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PlanResponse"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "plan-controller" ]
+      }
+    },
+    "/api/v1/plans/{publicId}" : {
+      "get" : {
+        "operationId" : "read",
+        "parameters" : [ {
+          "in" : "path",
+          "name" : "publicId",
+          "required" : true,
+          "schema" : {
+            "pattern" : "^[2-9a-zA-Z]{12}$",
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/PlanResponse"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "plan-controller" ]
+      }
+    },
+    "/health" : {
+      "get" : {
+        "operationId" : "health",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "*/*" : {
+                "schema" : {
+                  "additionalProperties" : {
+                    "type" : "string"
+                  },
+                  "type" : "object"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "tags" : [ "health-controller" ]
+      }
+    }
+  }
+}

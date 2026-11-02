@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  --color-*: initial;
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-sunk: var(--sunk);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-stitch: var(--stitch);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-on-accent: var(--on-accent);
+  --color-soft: var(--soft);
+  --color-soft-ink: var(--soft-ink);
+  --color-caution: var(--caution);
+  --color-caution-soft: var(--caution-soft);
+  --color-problem: var(--problem);
+  --color-problem-soft: var(--problem-soft);
+  --color-transparent: transparent;
+
+  --font-display: var(--font-anek), var(--font-hind), system-ui, sans-serif;
+  --font-body: var(--font-hind), system-ui, sans-serif;
+
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-panel: 16px;
+}
+
+@layer base {
+  html {
+    background: var(--ground);
+  }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Bangla letters need more room: conjuncts and matras collide when tight. */
+  :lang(bn) {
+    font-size: 1.0625em;
+    line-height: 1.75;
+  }
+
+  :lang(bn) :lang(bn) {
+    font-size: inherit;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}

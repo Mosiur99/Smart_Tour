@@ -209,3 +209,24 @@ DATABASE_URL=jdbc:postgresql://localhost:54329/postgres DB_USERNAME=postgres mvn
 ```bash
 mvn test -Dtest=ApiSpeedCheck -DexcludedGroups=none
 ```
+
+## Web app
+
+The Next.js frontend lives in `web/`. Needs Node 20.9 or newer.
+
+```bash
+cd web
+npm ci
+npm run dev        # http://localhost:3000/design shows every component
+npm test           # component, accessibility and colour contrast tests
+npm run typecheck
+```
+
+Colours live in `web/src/styles/tokens.css`. Components use token names only, so a colour changes in one place.
+
+The frontend's API types are generated from `web/openapi.json`. A backend test fails when that file no longer matches the API. After a deliberate API change, run:
+
+```bash
+mvn test -Dtest=OpenApiContractTest -Dopenapi.update=true
+cd web && npm run api:types
+```

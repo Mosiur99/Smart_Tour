@@ -1,0 +1,65 @@
+/*
+ * Kantha design tokens. Components use only these names, so a colour change
+ * happens here once. tokens.test.ts checks every text pair for contrast.
+ */
+:root {
+  color-scheme: light;
+  --ground: #f4f7f5;
+  --surface: #ffffff;
+  --sunk: #e9efec;
+  --ink: #14231e;
+  --muted: #4c5d57;
+  --line: #cbd6d1;
+  --stitch: #6f8a80;
+  --accent: #0b6554;
+  --accent-hover: #0a5243;
+  --on-accent: #ffffff;
+  --soft: #d9eee8;
+  --soft-ink: #0a5243;
+  --caution: #7e4c00;
+  --caution-soft: #fbeeda;
+  --problem: #a12c1b;
+  --problem-soft: #fbe6e1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground: #0e1614;
+    --surface: #16201d;
+    --sunk: #0a100f;
+    --ink: #e7efeb;
+    --muted: #a5b5af;
+    --line: #2c3b37;
+    --stitch: #6e8a80;
+    --accent: #62cdb7;
+    --accent-hover: #7adcc8;
+    --on-accent: #06231d;
+    --soft: #143a31;
+    --soft-ink: #9fe6d6;
+    --caution: #edbb6c;
+    --caution-soft: #38290f;
+    --problem: #f4a08d;
+    --problem-soft: #3f1d16;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #0e1614;
+  --surface: #16201d;
+  --sunk: #0a100f;
+  --ink: #e7efeb;
+  --muted: #a5b5af;
+  --line: #2c3b37;
+  --stitch: #6e8a80;
+  --accent: #62cdb7;
+  --accent-hover: #7adcc8;
+  --on-accent: #06231d;
+  --soft: #143a31;
+  --soft-ink: #9fe6d6;
+  --caution: #edbb6c;
+  --caution-soft: #38290f;
+  --problem: #f4a08d;
+  --problem-soft: #3f1d16;
+}
