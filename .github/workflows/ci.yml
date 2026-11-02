@@ -92,7 +92,16 @@ jobs:
           npx playwright test
       - name: Check Lighthouse scores and the script budget
         working-directory: web
-        run: npx --yes @lhci/cli@0.15.1 autorun
+        run: |
+          npx --yes @lhci/cli@0.15.1 autorun || {
+            # Show each failed check on the run page, not only in the log.
+            node -e '
+              const results = require("./.lighthouseci/assertion-results.json");
+              for (const r of results.filter((r) => !r.passed)) {
+                console.log(`::error title=Lighthouse ${r.level}::${r.url} ${r.auditProperty ? r.auditId + "." + r.auditProperty : r.auditId}: found ${r.actual}, needs ${r.operator} ${r.expected}`);
+              }'
+            exit 1
+          }
       - name: Keep reports when something fails
         if: failure()
         uses: actions/upload-artifact@v4
