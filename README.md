@@ -212,19 +212,43 @@ mvn test -Dtest=ApiSpeedCheck -DexcludedGroups=none
 
 ## Web app
 
-The Next.js frontend lives in `web/`. Needs Node 20.9 or newer.
+The Next.js frontend lives in `web/`. Needs Node 20.9 or newer. Bangla is served at `/` and English at `/en`.
+
+| Page | Address |
+|---|---|
+| Plan form | `/` |
+| Saved plan, shareable and printable | `/plan/<id>` |
+| Destinations | `/destinations`, `/destinations/<slug>` |
+| Route guide | `/routes/dhaka-to-sylhet` |
+| Every component | `/design` |
 
 ```bash
 cd web
 npm ci
-npm run dev        # http://localhost:3000/design shows every component
+npm run dev        # expects the API on http://localhost:8081 (set API_ORIGIN to change it)
 npm test           # component, accessibility and colour contrast tests
 npm run typecheck
 ```
 
+The browser calls `/api/...` on the site itself. Next.js forwards those calls to the API, so locally every visitor reaches the API from one address and shares one rate limit. In production the CDN sends `/api` straight to the API.
+
 Colours live in `web/src/styles/tokens.css`. Components use token names only, so a colour changes in one place.
 
-The frontend's API types are generated from `web/openapi.json`. A backend test fails when that file no longer matches the API. After a deliberate API change, run:
+### End-to-end tests
+
+Nothing in the catalog is verified yet, so no real plan can be made. `web/e2e/test-data.sql` publishes Sylhet with invented places and prices for testing. Never run it on a production database.
+
+```bash
+# with the API running against a local database (see "Run locally without Docker")
+psql "$DATABASE_URL" -f web/e2e/test-data.sql
+cd web && npm run build && npx playwright test   # PW_CHANNEL=chrome uses the installed Chrome
+```
+
+GitHub Actions runs the same journeys, then Lighthouse with a 150KB script budget.
+
+### API types
+
+The frontend's API types are generated from `web/openapi.json`. A backend test fails when that file no longer matches the API. Mark a record field `@Nullable` (JSpecify) when it can be null, and the contract and types follow. After a deliberate API change, run:
 
 ```bash
 mvn test -Dtest=OpenApiContractTest -Dopenapi.update=true

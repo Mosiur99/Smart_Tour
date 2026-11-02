@@ -102,7 +102,7 @@ export function DesignPreview() {
   }, [query, locale]);
 
   return (
-    <main lang={locale} className="mx-auto flex max-w-xl flex-col gap-10 px-5 py-8">
+    <div lang={locale} className="flex flex-col gap-10">
       <header className="flex flex-col gap-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <span className="font-display text-xl font-semibold text-accent">SmartTour</span>
@@ -178,6 +178,6 @@ export function DesignPreview() {
         <Skeleton width="70%" label={text.loading} />
         <Skeleton width="45%" />
       </section>
-    </main>
+    </div>
   );
 }

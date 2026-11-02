@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "../styles/tokens.css";
+@import "./tokens.css";
 
 @theme inline {
   --color-*: initial;

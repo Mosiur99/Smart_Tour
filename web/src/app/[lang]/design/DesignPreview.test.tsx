@@ -14,7 +14,7 @@ describe("DesignPreview", () => {
     await userEvent.click(screen.getByRole("button", { name: "বাংলা" }));
 
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("তিন দিনে শ্রীমঙ্গল");
-    expect(screen.getByRole("main")).toHaveAttribute("lang", "bn");
+    expect(screen.getByRole("heading", { level: 1 }).closest("[lang]")).toHaveAttribute("lang", "bn");
     expect(screen.getByText("৳৮,৪০০ থেকে ৳১৩,৬০০")).toBeInTheDocument();
   });
 

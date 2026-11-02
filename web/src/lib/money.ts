@@ -1,4 +1,6 @@
-export type Locale = "en" | "bn";
+import type { Locale } from "@/i18n/config";
+
+export type { Locale };
 
 const NUMBER_LOCALE: Record<Locale, string> = {
   // en-IN, because en-BD groups thousands the Western way (125,000).
