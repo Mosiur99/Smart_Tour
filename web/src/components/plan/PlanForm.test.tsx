@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { dictionary } from "@/i18n/dictionary";
@@ -71,6 +71,8 @@ describe("PlanForm", () => {
     await userEvent.click(screen.getByLabelText("Nature"));
     await userEvent.click(screen.getByRole("button", { name: "Make my plan" }));
 
+    // The plan is sent and opened after the API answers, which a busy machine can delay.
+    await waitFor(() => expect(push).toHaveBeenCalledWith("/en/plan/7W7TmZWry2a6"));
     const [, init] = fetchMock.mock.calls.find(([url]) => url === "/api/v1/plans")!;
     expect(JSON.parse(init!.body as string)).toMatchObject({
       originHub: "dhaka",
@@ -80,7 +82,6 @@ describe("PlanForm", () => {
       budget: "MID",
       interests: ["NATURE"],
     });
-    expect(push).toHaveBeenCalledWith("/en/plan/7W7TmZWry2a6");
   });
 
   it("opens the Bangla plan address from the Bangla form", async () => {
@@ -91,7 +92,7 @@ describe("PlanForm", () => {
     await userEvent.type(screen.getByRole("combobox", { name: "কোথায়" }), "সিলে");
     await userEvent.click(await screen.findByRole("option", { name: /সিলেট/ }));
     await userEvent.click(screen.getByRole("button", { name: "প্ল্যান তৈরি করুন" }));
-    expect(push).toHaveBeenCalledWith("/plan/7W7TmZWry2a6");
+    await waitFor(() => expect(push).toHaveBeenCalledWith("/plan/7W7TmZWry2a6"));
   });
 
   it("asks for both places and sends nothing until then", async () => {
